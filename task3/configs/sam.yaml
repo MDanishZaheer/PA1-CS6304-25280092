@@ -1,0 +1,8 @@
+base_config: base.yaml
+
+method:
+  name: sam
+  run_name: sam
+  trainable: true
+  rho: 0.05
+  adaptive: false

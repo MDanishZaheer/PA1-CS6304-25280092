@@ -1,0 +1,21 @@
+# Raw datasets and generated data artifacts
+Data/*
+!Data/README.md
+
+# Python and notebook caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local environments and experiment trackers
+.venv/
+wandb/
+
+# Large model checkpoints
+checkpoints/
+*.pt
+*.pth
+
+# report subfiles and main report
+*.pdf
+*.doc

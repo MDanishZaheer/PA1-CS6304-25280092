@@ -1,0 +1,515 @@
+{
+  "created_utc": "2026-09-19T15:16:05.783207+00:00",
+  "seed": 6304,
+  "target_domain": "sketch",
+  "target_labels_used_for_selection": false,
+  "runs": {
+    "source_only": {
+      "method": "source_only",
+      "run_name": "source_only",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\source_only_best.pt",
+      "checkpoint_sha256": "64f089863fc171878a0a22fafc59a56514b1c25d2fbd7f6fcfc6b39bd68e4fbe",
+      "configuration_sha256": "15c891b8115d91c55620add9810091aeaa555ce4d31ce04abcb94ccacac89cee",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "source_only",
+          "run_name": "source_only"
+        }
+      }
+    },
+    "dan": {
+      "method": "dan",
+      "run_name": "dan",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\dan_best.pt",
+      "checkpoint_sha256": "32af6194c39d8f29fdd84e353849c658227faa5d777eb0cf5a789ebe0200656d",
+      "configuration_sha256": "ff430d77243340ab24fafb308ae8df070e7a0bce1eaffd407400cbfb63f41ab7",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "dan",
+          "run_name": "dan",
+          "mmd_weight": 1.0,
+          "kernel_bandwidth_multipliers": [
+            0.5,
+            1.0,
+            2.0
+          ]
+        }
+      }
+    },
+    "dann": {
+      "method": "dann",
+      "run_name": "dann",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\dann_best.pt",
+      "checkpoint_sha256": "0a51bf37ec2f8e31d6d7fc1b2758d452bc028e46a2ea6c48b2e18175d49c59f4",
+      "configuration_sha256": "7f4ba2ad4eb292c12391ac89c161d8251a02e383eea96cb421d9862404b5748e",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "dann",
+          "run_name": "dann",
+          "domain_loss_weight": 1.0,
+          "discriminator_hidden_dimension": 256,
+          "discriminator_dropout": 0.5,
+          "grl_maximum_strength": 1.0
+        }
+      }
+    },
+    "cdan": {
+      "method": "cdan",
+      "run_name": "cdan",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\cdan_best.pt",
+      "checkpoint_sha256": "d99fd7859021bfbbe18f6261c5e796bf3ca49a8627cd64d19d6bcfd8fb2ece2f",
+      "configuration_sha256": "32b8cac40a156a7e286070487fe7e891a57667e25ab26cc308942235f73b4eda",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "cdan",
+          "run_name": "cdan",
+          "domain_loss_weight": 1.0,
+          "discriminator_input_dimension": 3584,
+          "discriminator_hidden_dimension": 256,
+          "discriminator_dropout": 0.5,
+          "grl_maximum_strength": 1.0
+        }
+      }
+    },
+    "dan_lambda_0p1": {
+      "method": "dan",
+      "run_name": "dan_lambda_0p1",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\dan_lambda_0p1_best.pt",
+      "checkpoint_sha256": "d2a615e7f65dbc3c5712c58480b4a320170b2a5bc52c02b1f53a4ba2563239f1",
+      "configuration_sha256": "57ea4cae21f76ac844106f491d9aa4fec40fb16e03968635dbdcedbbd992d350",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "dan",
+          "run_name": "dan_lambda_0p1",
+          "mmd_weight": 0.1,
+          "kernel_bandwidth_multipliers": [
+            0.5,
+            1.0,
+            2.0
+          ]
+        }
+      }
+    },
+    "dan_lambda_10": {
+      "method": "dan",
+      "run_name": "dan_lambda_10",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\dan_lambda_10_best.pt",
+      "checkpoint_sha256": "d482ae03fe5b85dced73cec9df69aaa2767ca9cbf95c8ab75ca66f9da21cc105",
+      "configuration_sha256": "6703562e4fdf3c9f8641dcd552bc2a0d3293680f260f3d348454bf2497fa3234",
+      "configuration": {
+        "experiment_name": "task2_pacs_uda",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "download_directory": "Data/task2_cache/downloads",
+          "feature_cache_directory": "Data/task2_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "results_directory": "task2/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2,
+          "require_official_counts": true
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "target_batch_size": 24,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "gradient_clip_norm": 5.0,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "evaluation": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "design_study_mmd_weights": [
+            0.1,
+            1.0,
+            10.0
+          ]
+        },
+        "method": {
+          "name": "dan",
+          "run_name": "dan_lambda_10",
+          "mmd_weight": 10.0,
+          "kernel_bandwidth_multipliers": [
+            0.5,
+            1.0,
+            2.0
+          ]
+        }
+      }
+    }
+  }
+}

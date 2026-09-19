@@ -1,0 +1,10 @@
+base_config: base.yaml
+
+method:
+  name: gcsc
+  run_name: gcsc
+  use_randaugment: true
+  randaugment_number_of_operations: 2
+  randaugment_magnitude: 9
+  initialize_from_vanilla: false
+  number_of_dummy_classes: 0

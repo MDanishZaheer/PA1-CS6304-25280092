@@ -1,0 +1,11 @@
+base_config: base.yaml
+
+method:
+  name: dan_dg
+  run_name: dan_dg
+  trainable: true
+  mmd_weight: 1.0
+  kernel_bandwidth_multipliers:
+    - 0.5
+    - 1.0
+    - 2.0

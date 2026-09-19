@@ -1,0 +1,32 @@
+{
+  "dataset": "CIFAR100",
+  "partition": "test",
+  "selection_source": "ATML-PA1 Task 4 fixed protocol",
+  "examples_per_class": 100,
+  "near": {
+    "expected_count": 800,
+    "classes": {
+      "bus": 13,
+      "pickup_truck": 58,
+      "motorcycle": 48,
+      "tractor": 89,
+      "wolf": 97,
+      "fox": 34,
+      "leopard": 42,
+      "camel": 15
+    }
+  },
+  "far": {
+    "expected_count": 800,
+    "classes": {
+      "bottle": 9,
+      "bowl": 10,
+      "chair": 20,
+      "clock": 22,
+      "keyboard": 39,
+      "mushroom": 51,
+      "sunflower": 82,
+      "wardrobe": 94
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "resnet50_linear": {
+    "shape_count": 115,
+    "texture_count": 38,
+    "other_count": 80,
+    "total_count": 233,
+    "shape_bias_percent": 75.16339869281046,
+    "coverage_percent": 65.66523605150215
+  },
+  "vit_b_16_linear": {
+    "shape_count": 169,
+    "texture_count": 11,
+    "other_count": 53,
+    "total_count": 233,
+    "shape_bias_percent": 93.88888888888889,
+    "coverage_percent": 77.25321888412017
+  },
+  "clip_linear": {
+    "shape_count": 173,
+    "texture_count": 7,
+    "other_count": 53,
+    "total_count": 233,
+    "shape_bias_percent": 96.11111111111111,
+    "coverage_percent": 77.25321888412017
+  },
+  "clip_zero_shot": {
+    "shape_count": 182,
+    "texture_count": 5,
+    "other_count": 46,
+    "total_count": 233,
+    "shape_bias_percent": 97.32620320855615,
+    "coverage_percent": 80.25751072961373
+  },
+  "visual_review": {
+    "seed": 6304,
+    "source_implementation": "https://github.com/naoto0804/pytorch-AdaIN",
+    "style_strength": 0.8,
+    "visual_rejection_rule": "Reject an image if the content object is no longer visually identifiable, the stylization contains severe artifacts, or the output is not valid RGB.",
+    "minimum_required_valid_images": 200,
+    "candidate_count": 300,
+    "pending_count": 0,
+    "accepted_count": 233,
+    "rejected_count": 67,
+    "minimum_valid_requirement_met": true,
+    "pair_direction_counts": {
+      "airplane__cat:airplane_shape__cat_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 19,
+        "rejected_count": 11
+      },
+      "airplane__cat:cat_shape__airplane_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 18,
+        "rejected_count": 12
+      },
+      "bird__car:bird_shape__car_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 21,
+        "rejected_count": 9
+      },
+      "bird__car:car_shape__bird_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 28,
+        "rejected_count": 2
+      },
+      "deer__ship:deer_shape__ship_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 26,
+        "rejected_count": 4
+      },
+      "deer__ship:ship_shape__deer_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 24,
+        "rejected_count": 6
+      },
+      "dog__truck:dog_shape__truck_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 26,
+        "rejected_count": 4
+      },
+      "dog__truck:truck_shape__dog_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 23,
+        "rejected_count": 7
+      },
+      "horse__monkey:horse_shape__monkey_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 28,
+        "rejected_count": 2
+      },
+      "horse__monkey:monkey_shape__horse_texture": {
+        "candidate_count": 30,
+        "pending_count": 0,
+        "accepted_count": 20,
+        "rejected_count": 10
+      }
+    }
+  }
+}

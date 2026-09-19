@@ -1,0 +1,8 @@
+class_index,class_name,correct,total,accuracy
+0,dog,0,772,0.0
+1,elephant,0,740,0.0
+2,giraffe,0,753,0.0
+3,guitar,0,608,0.0
+4,horse,0,816,0.0
+5,house,0,80,0.0
+6,person,160,160,1.0

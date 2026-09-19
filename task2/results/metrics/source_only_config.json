@@ -1,0 +1,73 @@
+{
+  "experiment_name": "task2_pacs_uda",
+  "seed": 6304,
+  "paths": {
+    "dataset_directory": "Data/pacs",
+    "download_directory": "Data/task2_cache/downloads",
+    "feature_cache_directory": "Data/task2_cache/features",
+    "model_cache_directory": "Data/task2_cache/model_weights/torch",
+    "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+    "results_directory": "task2/results"
+  },
+  "dataset": {
+    "name": "PACS",
+    "class_names": [
+      "dog",
+      "elephant",
+      "giraffe",
+      "guitar",
+      "horse",
+      "house",
+      "person"
+    ],
+    "source_domains": [
+      "photo",
+      "art_painting",
+      "cartoon"
+    ],
+    "target_domain": "sketch",
+    "source_train_ratio": 0.8,
+    "source_validation_ratio": 0.2,
+    "require_official_counts": true
+  },
+  "transforms": {
+    "resize_size": 256,
+    "crop_size": 224,
+    "random_horizontal_flip": true,
+    "normalization": "imagenet1k_v1"
+  },
+  "model": {
+    "backbone": "resnet18",
+    "pretrained_weights": "IMAGENET1K_V1",
+    "feature_dimension": 512,
+    "number_of_classes": 7,
+    "freeze_batch_norm_statistics": true
+  },
+  "training": {
+    "maximum_epochs": 30,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 5,
+    "source_batch_size_per_domain": 8,
+    "target_batch_size": 24,
+    "evaluation_batch_size": 64,
+    "number_of_workers": 0,
+    "pin_memory": true,
+    "mixed_precision": false,
+    "gradient_clip_norm": 5.0,
+    "checkpoint_metric": "mean_source_validation_macro_f1"
+  },
+  "evaluation": {
+    "logistic_regression_c": 1.0,
+    "diagnostic_train_ratio": 0.7,
+    "design_study_mmd_weights": [
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "method": {
+    "name": "source_only",
+    "run_name": "source_only"
+  }
+}

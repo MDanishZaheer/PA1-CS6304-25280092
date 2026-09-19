@@ -1,0 +1,5 @@
+model,shape_count,texture_count,other_count,total_count,shape_bias_percent,coverage_percent
+ResNet-50 + linear head,115,38,80,233,75.16339869281046,65.66523605150215
+ViT-B/16 + linear head,169,11,53,233,93.88888888888889,77.25321888412017
+CLIP + linear head,173,7,53,233,96.11111111111111,77.25321888412017
+CLIP zero-shot,182,5,46,233,97.32620320855615,80.25751072961373

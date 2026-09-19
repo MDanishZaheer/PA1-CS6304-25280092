@@ -1,0 +1,158 @@
+{
+  "task1_config": {
+    "PROJECT_ROOT": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1",
+    "DATA_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data",
+    "STL10_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\stl10",
+    "TASK1_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1",
+    "RESULTS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results",
+    "SPLITS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\splits",
+    "METRICS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\metrics",
+    "PREDICTIONS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\predictions",
+    "FIGURES_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\figures",
+    "CHECKPOINTS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\checkpoints",
+    "HISTORIES_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\histories",
+    "CACHE_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache",
+    "FEATURE_CACHE_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\features",
+    "CUE_CONFLICT_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\cue_conflicts",
+    "MODEL_CACHE_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights",
+    "TORCH_HUB_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\torch",
+    "OPENCLIP_CACHE_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\open_clip",
+    "ADAIN_WEIGHTS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\adain",
+    "ADAIN_VGG_WEIGHTS_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\adain\\vgg_normalised.pth",
+    "ADAIN_DECODER_WEIGHTS_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\adain\\decoder.pth",
+    "ADAIN_VGG_WEIGHTS_URL": "https://github.com/naoto0804/pytorch-AdaIN/releases/download/v0.0.0/vgg_normalised.pth",
+    "ADAIN_DECODER_WEIGHTS_URL": "https://github.com/naoto0804/pytorch-AdaIN/releases/download/v0.0.0/decoder.pth",
+    "CUE_CONFLICT_IMAGE_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\cue_conflicts\\candidates",
+    "CUE_CONFLICT_RESULTS_DIR": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\cue_conflicts",
+    "CUE_CONFLICT_REVIEW_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\cue_conflicts\\visual_review.csv",
+    "CUE_CONFLICT_SUMMARY_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\cue_conflicts\\review_summary.json",
+    "SEED": 6304,
+    "DATASET_NAME": "STL10",
+    "STL10_CLASSES": [
+      "airplane",
+      "bird",
+      "car",
+      "cat",
+      "deer",
+      "dog",
+      "horse",
+      "monkey",
+      "ship",
+      "truck"
+    ],
+    "TRAIN_RATIO": 0.8,
+    "VALIDATION_RATIO": 0.2,
+    "TEST_SUBSET_SIZE": 500,
+    "TEST_IMAGES_PER_CLASS": 50,
+    "IMAGE_SIZE": 224,
+    "IMAGE_CHANNELS": 3,
+    "RESNET_MODEL_NAME": "resnet50",
+    "RESNET_WEIGHTS": "IMAGENET1K_V2",
+    "VIT_MODEL_NAME": "vit_b_16",
+    "VIT_WEIGHTS": "IMAGENET1K_V1",
+    "CLIP_MODEL_NAME": "ViT-B-32",
+    "CLIP_PRETRAINED": "openai",
+    "CLIP_PROMPT_TEMPLATE": "a photo of a {}.",
+    "FEATURE_BATCH_SIZE": 32,
+    "LINEAR_HEAD_BATCH_SIZE": 64,
+    "LINEAR_HEAD_MAX_EPOCHS": 50,
+    "LINEAR_HEAD_LEARNING_RATE": 0.001,
+    "LINEAR_HEAD_WEIGHT_DECAY": 0.0001,
+    "LINEAR_HEAD_EARLY_STOPPING_PATIENCE": 5,
+    "LINEAR_HEAD_SELECTION_METRIC": "validation_accuracy",
+    "NUM_WORKERS": 0,
+    "COLOR_INTERVENTIONS": [
+      "grayscale",
+      "hue_rotation"
+    ],
+    "HUE_ROTATION_DEGREES": 90.0,
+    "CUE_CONFLICT_CLASS_PAIRS": [
+      [
+        "airplane",
+        "cat"
+      ],
+      [
+        "bird",
+        "car"
+      ],
+      [
+        "deer",
+        "ship"
+      ],
+      [
+        "dog",
+        "truck"
+      ],
+      [
+        "horse",
+        "monkey"
+      ]
+    ],
+    "CUE_CONFLICT_STYLE_STRENGTH": 0.8,
+    "CUE_CONFLICT_CANDIDATES_PER_DIRECTION": 30,
+    "CUE_CONFLICT_MIN_VALID_IMAGES": 200,
+    "ADAIN_BATCH_SIZE": 8,
+    "CUE_CONFLICT_REJECTION_RULE": "Reject an image if the content object is no longer visually identifiable, the stylization contains severe artifacts, or the output is not valid RGB.",
+    "TRANSLATION_PIXELS": [
+      0,
+      8,
+      16,
+      32
+    ],
+    "TRANSLATION_DIRECTIONS": [
+      "up",
+      "down",
+      "left",
+      "right"
+    ],
+    "TRANSLATION_PADDING_MODE": "reflect",
+    "PATCH_GRID_SIZE": 4,
+    "REPRESENTATION_INTERVENTIONS": [
+      "grayscale",
+      "cue_conflict",
+      "translation",
+      "patch_shuffle"
+    ],
+    "REPRESENTATION_METHOD": "tsne",
+    "TSNE_COMPONENTS": 2,
+    "TSNE_PERPLEXITY": 30.0,
+    "TSNE_LEARNING_RATE": "auto",
+    "TSNE_INITIALIZATION": "pca",
+    "TSNE_MAX_ITERATIONS": 1000,
+    "TSNE_NORMALIZE_FEATURES": true,
+    "TSNE_METRIC": "euclidean",
+    "SPLIT_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\splits\\stl10_splits_seed6304.json",
+    "CONFIG_SNAPSHOT_FILE": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\task1_config_snapshot.json",
+    "OUTPUT_DIRECTORIES": [
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\stl10",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\splits",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\metrics",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\predictions",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\figures",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\checkpoints",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\histories",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\features",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\cue_conflicts",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\torch",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\open_clip",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\model_weights\\adain",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task1_cache\\cue_conflicts\\candidates",
+      "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task1\\results\\cue_conflicts"
+    ]
+  },
+  "device": "cuda",
+  "representation_translation_pixels": [
+    8,
+    16,
+    32
+  ],
+  "representation_translation_directions": [
+    "up",
+    "down",
+    "left",
+    "right"
+  ],
+  "hypotheses": {
+    "Pre-knowledge:": "The dataset stratification will be giving equal oppurtunity so there will not be a bias of class imbalance in any performance measureThe CNNs will be more of a textured biased and ViTs will be more of a shape biased as the ClIP is based on ViTs, i am expecting it tobehave the same way. The tranformation we will be applying that will affect images by permutation and translation will affect the performancescores of the models however CNNs will be more affected by permutation and translation will affect the ViTs more."
+  }
+}

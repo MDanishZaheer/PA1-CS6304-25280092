@@ -1,0 +1,9 @@
+base_config: base.yaml
+
+method:
+  name: dann
+  run_name: dann
+  domain_loss_weight: 1.0
+  discriminator_hidden_dimension: 256
+  discriminator_dropout: 0.5
+  grl_maximum_strength: 1.0

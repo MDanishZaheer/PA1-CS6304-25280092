@@ -1,0 +1,74 @@
+{
+  "seed": 6304,
+  "source_implementation": "https://github.com/naoto0804/pytorch-AdaIN",
+  "style_strength": 0.8,
+  "visual_rejection_rule": "Reject an image if the content object is no longer visually identifiable, the stylization contains severe artifacts, or the output is not valid RGB.",
+  "minimum_required_valid_images": 200,
+  "candidate_count": 300,
+  "pending_count": 300,
+  "accepted_count": 0,
+  "rejected_count": 0,
+  "minimum_valid_requirement_met": false,
+  "pair_direction_counts": {
+    "airplane__cat:airplane_shape__cat_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "airplane__cat:cat_shape__airplane_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "bird__car:bird_shape__car_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "bird__car:car_shape__bird_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "deer__ship:deer_shape__ship_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "deer__ship:ship_shape__deer_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "dog__truck:dog_shape__truck_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "dog__truck:truck_shape__dog_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "horse__monkey:horse_shape__monkey_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    },
+    "horse__monkey:monkey_shape__horse_texture": {
+      "candidate_count": 30,
+      "pending_count": 30,
+      "accepted_count": 0,
+      "rejected_count": 0
+    }
+  }
+}

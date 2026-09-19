@@ -1,0 +1,5164 @@
+{
+  "feature_stability": {
+    "resnet50": {
+      "grayscale": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.7884412822357121,
+          "standard_deviation": 0.09782341310478895,
+          "median": 0.7987295948443294,
+          "minimum": 0.3014681908474297,
+          "maximum": 1.0
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8437458167798901,
+            "standard_deviation": 0.08359342611720046,
+            "median": 0.8538841697871749,
+            "minimum": 0.6184349823622042,
+            "maximum": 1.0
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7327745188053868,
+            "standard_deviation": 0.12617975758734015,
+            "median": 0.7715313035518785,
+            "minimum": 0.3014681908474297,
+            "maximum": 0.9169975145203427
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.849106778689492,
+            "standard_deviation": 0.06784663491680011,
+            "median": 0.8514595885971549,
+            "minimum": 0.6898149275554105,
+            "maximum": 0.9932531196762906
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7749271273509528,
+            "standard_deviation": 0.09250090037312651,
+            "median": 0.773993446144094,
+            "minimum": 0.5044100602662306,
+            "maximum": 1.0
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7451265081932269,
+            "standard_deviation": 0.0856793400553466,
+            "median": 0.7570866295699472,
+            "minimum": 0.5787068307773572,
+            "maximum": 0.9703830453490423
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7841533583323711,
+            "standard_deviation": 0.08497248527264752,
+            "median": 0.7911813144622106,
+            "minimum": 0.4609069029580423,
+            "maximum": 0.9169415369732049
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7770966564079123,
+            "standard_deviation": 0.09062873952417574,
+            "median": 0.7841648307541775,
+            "minimum": 0.6073768649228579,
+            "maximum": 1.0
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7543577125746979,
+            "standard_deviation": 0.10390157168514443,
+            "median": 0.7515047823605032,
+            "minimum": 0.512918329606542,
+            "maximum": 0.9999999999999999
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8002333609439463,
+            "standard_deviation": 0.07638539545075743,
+            "median": 0.8107407706851295,
+            "minimum": 0.5472696959009058,
+            "maximum": 0.9128702581590651
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8228909842792441,
+            "standard_deviation": 0.07542694814941313,
+            "median": 0.8415494121142197,
+            "minimum": 0.6209407980617835,
+            "maximum": 0.9388403019888258
+          }
+        }
+      },
+      "cue_conflict": {
+        "overall": {
+          "number_of_examples": 233,
+          "cosine_stability": 0.3641293133069191,
+          "standard_deviation": 0.16807243537624936,
+          "median": 0.35617431023118745,
+          "minimum": 0.056445259590325876,
+          "maximum": 0.7660100057415085
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 19,
+            "cosine_stability": 0.2667960972900481,
+            "standard_deviation": 0.0927910955590787,
+            "median": 0.25834726178125855,
+            "minimum": 0.10256046025643738,
+            "maximum": 0.4474185266164084
+          },
+          "bird": {
+            "number_of_examples": 21,
+            "cosine_stability": 0.3917172414576243,
+            "standard_deviation": 0.14980782358884295,
+            "median": 0.39670925732776907,
+            "minimum": 0.08705053137369566,
+            "maximum": 0.6375289647954575
+          },
+          "car": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.3158027340268327,
+            "standard_deviation": 0.14855061015599696,
+            "median": 0.31054110657,
+            "minimum": 0.06410839053321256,
+            "maximum": 0.6387607446493461
+          },
+          "cat": {
+            "number_of_examples": 18,
+            "cosine_stability": 0.31500701970670764,
+            "standard_deviation": 0.1636819029510668,
+            "median": 0.24509850098511948,
+            "minimum": 0.09859534745869294,
+            "maximum": 0.6299490891168671
+          },
+          "deer": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.32815673153709096,
+            "standard_deviation": 0.11899945968476336,
+            "median": 0.2979869763926316,
+            "minimum": 0.15300794483131108,
+            "maximum": 0.5954431928389358
+          },
+          "dog": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.32449306757146645,
+            "standard_deviation": 0.1806537392227088,
+            "median": 0.295913755606684,
+            "minimum": 0.07497169659151094,
+            "maximum": 0.6381947246897284
+          },
+          "horse": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.5239376932341593,
+            "standard_deviation": 0.11558233555810839,
+            "median": 0.5377515832279238,
+            "minimum": 0.24673072941417037,
+            "maximum": 0.7490913877806366
+          },
+          "monkey": {
+            "number_of_examples": 20,
+            "cosine_stability": 0.5774761431797454,
+            "standard_deviation": 0.12900788436811042,
+            "median": 0.5884496903860948,
+            "minimum": 0.16088359831814153,
+            "maximum": 0.7660100057415085
+          },
+          "ship": {
+            "number_of_examples": 24,
+            "cosine_stability": 0.278335086408557,
+            "standard_deviation": 0.09882548161721837,
+            "median": 0.2793347836362069,
+            "minimum": 0.056445259590325876,
+            "maximum": 0.4456264489295199
+          },
+          "truck": {
+            "number_of_examples": 23,
+            "cosine_stability": 0.3115488717017321,
+            "standard_deviation": 0.13891632854355537,
+            "median": 0.34022671212667477,
+            "minimum": 0.08812079137077743,
+            "maximum": 0.6211527510497008
+          }
+        }
+      },
+      "patch_shuffle": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.718113203213545,
+          "standard_deviation": 0.07203803216864596,
+          "median": 0.7206032003440395,
+          "minimum": 0.44536896782765156,
+          "maximum": 0.8846669303406208
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7235494925345628,
+            "standard_deviation": 0.07437253498283149,
+            "median": 0.7160754335843345,
+            "minimum": 0.5414394021793911,
+            "maximum": 0.8846669303406208
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7140419899322681,
+            "standard_deviation": 0.05750633013059761,
+            "median": 0.7172809809514147,
+            "minimum": 0.5927727462237057,
+            "maximum": 0.8303632259815579
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7351217206845801,
+            "standard_deviation": 0.05911933278585204,
+            "median": 0.7314596641948277,
+            "minimum": 0.605379541652376,
+            "maximum": 0.8474677508207378
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7009351752348849,
+            "standard_deviation": 0.07674519397385862,
+            "median": 0.6909317824206649,
+            "minimum": 0.5276072531168774,
+            "maximum": 0.8806933645375438
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7302259494096057,
+            "standard_deviation": 0.06135163714582034,
+            "median": 0.7270804285216835,
+            "minimum": 0.6000604226781441,
+            "maximum": 0.8610501435596057
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7219793541573435,
+            "standard_deviation": 0.061009287753444164,
+            "median": 0.7329332879270027,
+            "minimum": 0.5672199854105546,
+            "maximum": 0.8573257778041542
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7309852103435697,
+            "standard_deviation": 0.08195873852729232,
+            "median": 0.7355799480263905,
+            "minimum": 0.44536896782765156,
+            "maximum": 0.8540536327222897
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6879212553290018,
+            "standard_deviation": 0.07466434410872305,
+            "median": 0.6782705224431924,
+            "minimum": 0.5021554854803879,
+            "maximum": 0.8412346974276455
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7428817073438033,
+            "standard_deviation": 0.05680690257406818,
+            "median": 0.7426135733198447,
+            "minimum": 0.5860329072144311,
+            "maximum": 0.8796475641299676
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6934901771658301,
+            "standard_deviation": 0.0870473784368286,
+            "median": 0.703790535561171,
+            "minimum": 0.4804604083126379,
+            "maximum": 0.8638588949336415
+          }
+        }
+      },
+      "translation_8_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9692078373193097,
+          "standard_deviation": 0.014399783612935578,
+          "median": 0.9720522516137863,
+          "minimum": 0.867108904285311,
+          "maximum": 0.9908533780412813
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9708367153774183,
+            "standard_deviation": 0.013687290775477727,
+            "median": 0.9745183810201975,
+            "minimum": 0.921456529928194,
+            "maximum": 0.985542897660463
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.968202667986449,
+            "standard_deviation": 0.014488226983877533,
+            "median": 0.9695886329812076,
+            "minimum": 0.9253972063926534,
+            "maximum": 0.9900854344077153
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9737091109787948,
+            "standard_deviation": 0.00968706027254764,
+            "median": 0.9748852911645183,
+            "minimum": 0.9422016735817065,
+            "maximum": 0.9905937656775898
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9633421181803332,
+            "standard_deviation": 0.01946958556853113,
+            "median": 0.9683980967281067,
+            "minimum": 0.867108904285311,
+            "maximum": 0.9849332931014915
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9698115364874391,
+            "standard_deviation": 0.011230567581312514,
+            "median": 0.9721698592624293,
+            "minimum": 0.9302658001430695,
+            "maximum": 0.9882307071624884
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9705381985566565,
+            "standard_deviation": 0.011360942361772207,
+            "median": 0.9720958545009503,
+            "minimum": 0.9429838346416259,
+            "maximum": 0.9908533780412813
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9688562810969772,
+            "standard_deviation": 0.011903113404039857,
+            "median": 0.9720913503235511,
+            "minimum": 0.9355499169278289,
+            "maximum": 0.9875767070600462
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9741419981271757,
+            "standard_deviation": 0.0108057033351545,
+            "median": 0.9774625112262013,
+            "minimum": 0.9521159171212071,
+            "maximum": 0.9895752916681569
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9638238562879862,
+            "standard_deviation": 0.021073181100064866,
+            "median": 0.9692047171462244,
+            "minimum": 0.8840411642988008,
+            "maximum": 0.9879534151615273
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9688158901138678,
+            "standard_deviation": 0.011470994736313222,
+            "median": 0.9705699455099865,
+            "minimum": 0.9217507669073575,
+            "maximum": 0.9853592782923405
+          }
+        }
+      },
+      "translation_8_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.965525789306735,
+          "standard_deviation": 0.018487636431053705,
+          "median": 0.9693430789226507,
+          "minimum": 0.8350367661870147,
+          "maximum": 0.9935091803734518
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9688934268126297,
+            "standard_deviation": 0.014301163327618306,
+            "median": 0.970711344884365,
+            "minimum": 0.9024364424568103,
+            "maximum": 0.9886701496767284
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9656996851396958,
+            "standard_deviation": 0.015608993174723744,
+            "median": 0.9689752498826758,
+            "minimum": 0.9311432159740614,
+            "maximum": 0.989205324658385
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.970589771298785,
+            "standard_deviation": 0.013109376193688412,
+            "median": 0.9729661751603648,
+            "minimum": 0.9075564224997262,
+            "maximum": 0.9879972072265314
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9607500438908773,
+            "standard_deviation": 0.02259879956566884,
+            "median": 0.9641611106081802,
+            "minimum": 0.8350367661870147,
+            "maximum": 0.9849435141813041
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9657108662809775,
+            "standard_deviation": 0.02098821222075734,
+            "median": 0.97017813909658,
+            "minimum": 0.8408811519066021,
+            "maximum": 0.9870478735468257
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9681882800945537,
+            "standard_deviation": 0.012058048496319798,
+            "median": 0.9704748506414598,
+            "minimum": 0.9302755147277427,
+            "maximum": 0.9907132327927691
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9655018688012886,
+            "standard_deviation": 0.012162903654022656,
+            "median": 0.967769022055874,
+            "minimum": 0.9203748104611623,
+            "maximum": 0.9860781968680826
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9680798855895715,
+            "standard_deviation": 0.020101096761077825,
+            "median": 0.9741355058736572,
+            "minimum": 0.8807023452980208,
+            "maximum": 0.9935091803734518
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9607347607357106,
+            "standard_deviation": 0.022418931571594986,
+            "median": 0.9657137899468602,
+            "minimum": 0.8528760630204526,
+            "maximum": 0.9879140990535704
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9611093044232617,
+            "standard_deviation": 0.023038487852635587,
+            "median": 0.9634230620226851,
+            "minimum": 0.8367478300583061,
+            "maximum": 0.9862188510500681
+          }
+        }
+      },
+      "translation_8_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9737907973423641,
+          "standard_deviation": 0.013902947799162452,
+          "median": 0.9767834866741092,
+          "minimum": 0.9112443522823818,
+          "maximum": 0.994438504845558
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9733465757262502,
+            "standard_deviation": 0.01689140963175881,
+            "median": 0.9794072512833598,
+            "minimum": 0.9135599305428971,
+            "maximum": 0.9914662110518753
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.970783805571792,
+            "standard_deviation": 0.016027067351894082,
+            "median": 0.9734458797308585,
+            "minimum": 0.9112443522823818,
+            "maximum": 0.992577200447714
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9814502291327482,
+            "standard_deviation": 0.010298903476566274,
+            "median": 0.9838850843803253,
+            "minimum": 0.9490674226406226,
+            "maximum": 0.994438504845558
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9661636179134347,
+            "standard_deviation": 0.017551872782947037,
+            "median": 0.9720891040033884,
+            "minimum": 0.9116681059592491,
+            "maximum": 0.9877156173415076
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.97111170730489,
+            "standard_deviation": 0.01325672051636663,
+            "median": 0.9740017629578199,
+            "minimum": 0.9258265489201745,
+            "maximum": 0.9883440703651478
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9714837155601771,
+            "standard_deviation": 0.011029868818515311,
+            "median": 0.9753585432989782,
+            "minimum": 0.9438692807201897,
+            "maximum": 0.9905645325536289
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.971688935872164,
+            "standard_deviation": 0.013368059702059924,
+            "median": 0.9728505037218824,
+            "minimum": 0.9212677033458881,
+            "maximum": 0.9912937304338165
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9729685592723165,
+            "standard_deviation": 0.012204192776840605,
+            "median": 0.975849255614458,
+            "minimum": 0.9432987477893423,
+            "maximum": 0.9897171734937319
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9805758260930922,
+            "standard_deviation": 0.008502791526099932,
+            "median": 0.9820707086343679,
+            "minimum": 0.9560281986661446,
+            "maximum": 0.9938987857221487
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9783350009767757,
+            "standard_deviation": 0.008300200244940334,
+            "median": 0.9785298464575332,
+            "minimum": 0.9535164033103605,
+            "maximum": 0.9917737071153018
+          }
+        }
+      },
+      "translation_8_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9655980656228391,
+          "standard_deviation": 0.021775036477127127,
+          "median": 0.9716092309224195,
+          "minimum": 0.855510559625593,
+          "maximum": 0.9931213653334924
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.968450454299065,
+            "standard_deviation": 0.02143918796319636,
+            "median": 0.9757372109333267,
+            "minimum": 0.895383011016226,
+            "maximum": 0.9906455947537222
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9636478678482551,
+            "standard_deviation": 0.021045374546286282,
+            "median": 0.9687848510288919,
+            "minimum": 0.9013747020503635,
+            "maximum": 0.9930338742315566
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9733725441465847,
+            "standard_deviation": 0.01445304115997759,
+            "median": 0.9786894776085091,
+            "minimum": 0.9309092214227409,
+            "maximum": 0.9919367477886235
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.951369271527693,
+            "standard_deviation": 0.028100872988492325,
+            "median": 0.9590727044520261,
+            "minimum": 0.855510559625593,
+            "maximum": 0.9839848946175056
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.965263026676234,
+            "standard_deviation": 0.01800273285317292,
+            "median": 0.9696319496650931,
+            "minimum": 0.8929292474345706,
+            "maximum": 0.9862741165872754
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9553280034210175,
+            "standard_deviation": 0.02820937393834765,
+            "median": 0.9642291339178513,
+            "minimum": 0.8637535573373478,
+            "maximum": 0.9911649712540144
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9655809928183536,
+            "standard_deviation": 0.016144487620946047,
+            "median": 0.969973183428648,
+            "minimum": 0.9108134621075209,
+            "maximum": 0.9877343854239912
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9602057692914201,
+            "standard_deviation": 0.025323111936819073,
+            "median": 0.9680637515081131,
+            "minimum": 0.8794976497013505,
+            "maximum": 0.9891974511418608
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9773602532484033,
+            "standard_deviation": 0.010145599034218033,
+            "median": 0.9795704050583371,
+            "minimum": 0.9470981534297361,
+            "maximum": 0.9917938607281728
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9754024729513654,
+            "standard_deviation": 0.008470049963281434,
+            "median": 0.9763108412258041,
+            "minimum": 0.9560263305701582,
+            "maximum": 0.9931213653334924
+          }
+        }
+      },
+      "translation_16_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9559150768067566,
+          "standard_deviation": 0.023934232173642916,
+          "median": 0.9611607695723907,
+          "minimum": 0.7920129435868275,
+          "maximum": 0.9883311192821905
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9576625595577767,
+            "standard_deviation": 0.02740041502345682,
+            "median": 0.9657476774488634,
+            "minimum": 0.8444487963096738,
+            "maximum": 0.9852526451346212
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9565312058819173,
+            "standard_deviation": 0.019783313677551782,
+            "median": 0.9596777206096125,
+            "minimum": 0.8849237504026702,
+            "maximum": 0.987679147543347
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9611736153090967,
+            "standard_deviation": 0.016876633578818457,
+            "median": 0.9641044622333705,
+            "minimum": 0.8951474230221944,
+            "maximum": 0.9868535309534094
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9480402499038059,
+            "standard_deviation": 0.025651031930499866,
+            "median": 0.9557201601265579,
+            "minimum": 0.8648696680356456,
+            "maximum": 0.9873924697456243
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9595913014463539,
+            "standard_deviation": 0.018563672004422684,
+            "median": 0.9647991122703247,
+            "minimum": 0.9063296696212176,
+            "maximum": 0.9850124179299453
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9590617372373706,
+            "standard_deviation": 0.02029091279571304,
+            "median": 0.9661870621150401,
+            "minimum": 0.8903062467482996,
+            "maximum": 0.9883311192821905
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9544571650491327,
+            "standard_deviation": 0.019087031065832028,
+            "median": 0.9581537259593578,
+            "minimum": 0.8922840213126173,
+            "maximum": 0.9832247882070563
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9610800466416031,
+            "standard_deviation": 0.0185216394844534,
+            "median": 0.9627508465216416,
+            "minimum": 0.8943938212626564,
+            "maximum": 0.984958622349246
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9418104522561008,
+            "standard_deviation": 0.04055494636554775,
+            "median": 0.9556659452447941,
+            "minimum": 0.7920129435868275,
+            "maximum": 0.9815053440707605
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9597424347844096,
+            "standard_deviation": 0.013274395480277647,
+            "median": 0.9619102377135285,
+            "minimum": 0.9350612870196274,
+            "maximum": 0.9857780268278941
+          }
+        }
+      },
+      "translation_16_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9493029081374472,
+          "standard_deviation": 0.030263521033491194,
+          "median": 0.9560790603902947,
+          "minimum": 0.7761951049505185,
+          "maximum": 0.9880426636548244
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9538954079814194,
+            "standard_deviation": 0.023216401241217797,
+            "median": 0.9560331611064932,
+            "minimum": 0.875214530470804,
+            "maximum": 0.9837027097860724
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9491423613404507,
+            "standard_deviation": 0.022660661796125473,
+            "median": 0.9545162707922307,
+            "minimum": 0.8833504870713078,
+            "maximum": 0.9880426636548244
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9547988527448217,
+            "standard_deviation": 0.023086731490852858,
+            "median": 0.9625289560320975,
+            "minimum": 0.8870120686494074,
+            "maximum": 0.9824168811961035
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9436258567604757,
+            "standard_deviation": 0.0296856836082516,
+            "median": 0.9485875411641753,
+            "minimum": 0.8216615942083122,
+            "maximum": 0.9842312290648728
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9555056590726001,
+            "standard_deviation": 0.02421934315125834,
+            "median": 0.9615232133223053,
+            "minimum": 0.8546957431388055,
+            "maximum": 0.9858856563345073
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9579729150794603,
+            "standard_deviation": 0.01608400402807594,
+            "median": 0.9616863617397926,
+            "minimum": 0.9072538023537516,
+            "maximum": 0.9862601496158008
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9490900893072552,
+            "standard_deviation": 0.020400592214834295,
+            "median": 0.9530796998385959,
+            "minimum": 0.9042061387431011,
+            "maximum": 0.9830418164205582
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9524642635895231,
+            "standard_deviation": 0.032715079333552013,
+            "median": 0.959713439091415,
+            "minimum": 0.8324086326273041,
+            "maximum": 0.9869747571708715
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9344602596313085,
+            "standard_deviation": 0.046849855482091474,
+            "median": 0.9514094500118511,
+            "minimum": 0.7984147941173947,
+            "maximum": 0.9818042398062867
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9420734158671573,
+            "standard_deviation": 0.041056282877608194,
+            "median": 0.9539282836226282,
+            "minimum": 0.7761951049505185,
+            "maximum": 0.9844840122552428
+          }
+        }
+      },
+      "translation_16_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9607936557517673,
+          "standard_deviation": 0.02216465802006806,
+          "median": 0.966219356032358,
+          "minimum": 0.8261936181252884,
+          "maximum": 0.9918451078617603
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9590101347970321,
+            "standard_deviation": 0.022426103323426285,
+            "median": 0.9634048791445042,
+            "minimum": 0.9017046137910251,
+            "maximum": 0.9883894836172452
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9566691398329223,
+            "standard_deviation": 0.02751813301537521,
+            "median": 0.9659459013608694,
+            "minimum": 0.8703360620667931,
+            "maximum": 0.9893978369009441
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9692873654093901,
+            "standard_deviation": 0.018419355973031133,
+            "median": 0.9737178326435654,
+            "minimum": 0.9107080493607663,
+            "maximum": 0.9917816812740531
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9480661282789516,
+            "standard_deviation": 0.033532978515809324,
+            "median": 0.961549703355881,
+            "minimum": 0.8261936181252884,
+            "maximum": 0.9818844904783848
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.962511949977375,
+            "standard_deviation": 0.017720507353350175,
+            "median": 0.9647543148082781,
+            "minimum": 0.910729125536069,
+            "maximum": 0.9878162338021589
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.958889189079253,
+            "standard_deviation": 0.021649459229235824,
+            "median": 0.9625607283336169,
+            "minimum": 0.8916960470618079,
+            "maximum": 0.9918451078617603
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9608940470347261,
+            "standard_deviation": 0.015277308729359094,
+            "median": 0.9639421411349072,
+            "minimum": 0.9100933179335539,
+            "maximum": 0.986179655799007
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9593421162845408,
+            "standard_deviation": 0.019435348958371623,
+            "median": 0.9658378775577404,
+            "minimum": 0.906898549474522,
+            "maximum": 0.9858858987480222
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9673705551199602,
+            "standard_deviation": 0.01654447353847337,
+            "median": 0.9698798949641738,
+            "minimum": 0.9112212408152762,
+            "maximum": 0.9893216208974939
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9658959317035222,
+            "standard_deviation": 0.01374534523735007,
+            "median": 0.9688236027656901,
+            "minimum": 0.9239040752299931,
+            "maximum": 0.9850760433585208
+          }
+        }
+      },
+      "translation_16_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9439600959967553,
+          "standard_deviation": 0.035977904975722126,
+          "median": 0.9549040691165444,
+          "minimum": 0.797080706128659,
+          "maximum": 0.9889770601145983
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9508866023126086,
+            "standard_deviation": 0.02803264669248137,
+            "median": 0.9580181937304281,
+            "minimum": 0.8699183356782022,
+            "maximum": 0.9867426835121407
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.936063292497968,
+            "standard_deviation": 0.04254576260028669,
+            "median": 0.9518067178080113,
+            "minimum": 0.8181133297131347,
+            "maximum": 0.9889770601145983
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9563384297353124,
+            "standard_deviation": 0.02591532601622409,
+            "median": 0.9631846260179248,
+            "minimum": 0.8572611453285571,
+            "maximum": 0.9876848223250784
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9243379730023369,
+            "standard_deviation": 0.044596196701686984,
+            "median": 0.9412369868414239,
+            "minimum": 0.7999153772135,
+            "maximum": 0.985182159151764
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9385095240263829,
+            "standard_deviation": 0.03942605376470828,
+            "median": 0.9481310431690477,
+            "minimum": 0.8158480112904838,
+            "maximum": 0.9838320758298831
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9349046881724079,
+            "standard_deviation": 0.04286510518274211,
+            "median": 0.9465650854190757,
+            "minimum": 0.797080706128659,
+            "maximum": 0.9848262679732478
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9492121059134007,
+            "standard_deviation": 0.020189562865402678,
+            "median": 0.951536778462513,
+            "minimum": 0.8789915394870864,
+            "maximum": 0.9795081253173364
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9307708784682504,
+            "standard_deviation": 0.040266653292722186,
+            "median": 0.9412607848103296,
+            "minimum": 0.8296631314680509,
+            "maximum": 0.983105576212482
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9631100674829547,
+            "standard_deviation": 0.018537530173027283,
+            "median": 0.9671326046192801,
+            "minimum": 0.8990998396861046,
+            "maximum": 0.9865042952766347
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9554673983559304,
+            "standard_deviation": 0.021499607123622845,
+            "median": 0.9602853510576788,
+            "minimum": 0.8863588777233662,
+            "maximum": 0.9831253871058885
+          }
+        }
+      },
+      "translation_32_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9379681791030822,
+          "standard_deviation": 0.03904140086158605,
+          "median": 0.9472703722902878,
+          "minimum": 0.7336226258962961,
+          "maximum": 0.9940013931402196
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9426176639125734,
+            "standard_deviation": 0.05464856002046906,
+            "median": 0.9596685926947717,
+            "minimum": 0.7336226258962961,
+            "maximum": 0.9940013931402196
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.935766416579406,
+            "standard_deviation": 0.038741296020091257,
+            "median": 0.9438797300211894,
+            "minimum": 0.8243057375167189,
+            "maximum": 0.9878938918010212
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9472733805739963,
+            "standard_deviation": 0.028374859615567252,
+            "median": 0.9524034175094966,
+            "minimum": 0.8619453188639343,
+            "maximum": 0.9854372342820714
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9274748422150239,
+            "standard_deviation": 0.04118004467997013,
+            "median": 0.9346708793222964,
+            "minimum": 0.8060015950723137,
+            "maximum": 0.9871537869088766
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.944219226673673,
+            "standard_deviation": 0.033498576957942866,
+            "median": 0.9540630812564421,
+            "minimum": 0.8599290829306969,
+            "maximum": 0.9900493100996395
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.941401395299691,
+            "standard_deviation": 0.0332819309141735,
+            "median": 0.95548705296488,
+            "minimum": 0.8599705948619902,
+            "maximum": 0.9879997065537346
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9390924659937859,
+            "standard_deviation": 0.03136357946854804,
+            "median": 0.9460308771246795,
+            "minimum": 0.8529093096733004,
+            "maximum": 0.9886497722100438
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9264478858640678,
+            "standard_deviation": 0.043839102012224684,
+            "median": 0.9348702863740128,
+            "minimum": 0.7593019467593337,
+            "maximum": 0.9842139791460369
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9230944494924058,
+            "standard_deviation": 0.043176131014579705,
+            "median": 0.9312314730004547,
+            "minimum": 0.8042895310035275,
+            "maximum": 0.9862097747973086
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9522940644261982,
+            "standard_deviation": 0.020493954215599033,
+            "median": 0.9570360234975454,
+            "minimum": 0.9059695568583581,
+            "maximum": 0.9888492542143561
+          }
+        }
+      },
+      "translation_32_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9326639556613383,
+          "standard_deviation": 0.044882821603683835,
+          "median": 0.9450087152914111,
+          "minimum": 0.6762415698252218,
+          "maximum": 0.9914063208787028
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9455443507552214,
+            "standard_deviation": 0.05046510309776518,
+            "median": 0.960507384432509,
+            "minimum": 0.7587572015706283,
+            "maximum": 0.9914063208787028
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9367439934747014,
+            "standard_deviation": 0.030172695897781803,
+            "median": 0.9470916824959315,
+            "minimum": 0.8608698443115498,
+            "maximum": 0.9818030766251278
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9319375586790352,
+            "standard_deviation": 0.037672188090519296,
+            "median": 0.9403596785921546,
+            "minimum": 0.8173437200286762,
+            "maximum": 0.9805450956768588
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9336350299552264,
+            "standard_deviation": 0.03586246979716461,
+            "median": 0.9451975678622486,
+            "minimum": 0.8066417297924862,
+            "maximum": 0.9842797431521887
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.948144274643725,
+            "standard_deviation": 0.03288781850262631,
+            "median": 0.9568045903424698,
+            "minimum": 0.8505562900196703,
+            "maximum": 0.9896528930589841
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9441450168118665,
+            "standard_deviation": 0.0243027030329662,
+            "median": 0.9494314765322049,
+            "minimum": 0.8820310925895909,
+            "maximum": 0.9820712720204955
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9306609116379504,
+            "standard_deviation": 0.03275014414116918,
+            "median": 0.9341713627767472,
+            "minimum": 0.8467619216655102,
+            "maximum": 0.9888758384477982
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9323708028185272,
+            "standard_deviation": 0.0493679619687828,
+            "median": 0.944215702527865,
+            "minimum": 0.6910226484656822,
+            "maximum": 0.9841825251973468
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9045869640289158,
+            "standard_deviation": 0.06887169617424085,
+            "median": 0.9300661955679281,
+            "minimum": 0.6762415698252218,
+            "maximum": 0.9758266278087797
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.918870653808213,
+            "standard_deviation": 0.05018757015704258,
+            "median": 0.9311491667352747,
+            "minimum": 0.7540312817523047,
+            "maximum": 0.9858138345939573
+          }
+        }
+      },
+      "translation_32_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9402149975425862,
+          "standard_deviation": 0.03592436773134566,
+          "median": 0.9486108815019021,
+          "minimum": 0.7405998925888997,
+          "maximum": 0.9947332752541181
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9415172085267212,
+            "standard_deviation": 0.028794794819325207,
+            "median": 0.9481979998147201,
+            "minimum": 0.8486499835630316,
+            "maximum": 0.9875667664817455
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9324622675192831,
+            "standard_deviation": 0.04968316510893317,
+            "median": 0.9413209740455187,
+            "minimum": 0.7405998925888997,
+            "maximum": 0.9937653977187328
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9468255582779206,
+            "standard_deviation": 0.03517391655411778,
+            "median": 0.9537644038276782,
+            "minimum": 0.8027304377217138,
+            "maximum": 0.9892393716602426
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9218397815618828,
+            "standard_deviation": 0.05056026620748491,
+            "median": 0.9352697287601958,
+            "minimum": 0.7679988898192222,
+            "maximum": 0.9878502486979793
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9449884725317446,
+            "standard_deviation": 0.02973822717314938,
+            "median": 0.9499800388041331,
+            "minimum": 0.8569220240716808,
+            "maximum": 0.9947332752541181
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9416571990087165,
+            "standard_deviation": 0.02969697955111694,
+            "median": 0.9476822742678744,
+            "minimum": 0.8584390489640014,
+            "maximum": 0.9880969282164139
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9446205375942643,
+            "standard_deviation": 0.025348937855790916,
+            "median": 0.9477582243719063,
+            "minimum": 0.8748975776819666,
+            "maximum": 0.9885402617227863
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.931021768372009,
+            "standard_deviation": 0.037251308748573034,
+            "median": 0.9396163068264556,
+            "minimum": 0.8152727794177538,
+            "maximum": 0.9845443722840918
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9502440820459879,
+            "standard_deviation": 0.027036881158712858,
+            "median": 0.9561259894684598,
+            "minimum": 0.8659052645915191,
+            "maximum": 0.9902016753408732
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9469730999873311,
+            "standard_deviation": 0.023849784129589473,
+            "median": 0.9534971565170759,
+            "minimum": 0.8884932047625614,
+            "maximum": 0.9822675927704937
+          }
+        }
+      },
+      "translation_32_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9200513719337016,
+          "standard_deviation": 0.04523925564705214,
+          "median": 0.9306514385697948,
+          "minimum": 0.7443734650121455,
+          "maximum": 0.9966758284445798
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9291759769405636,
+            "standard_deviation": 0.033496734756870955,
+            "median": 0.9349971835492763,
+            "minimum": 0.8498154158625114,
+            "maximum": 0.98462701357558
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9101104667778637,
+            "standard_deviation": 0.058711394494400576,
+            "median": 0.9250175973315549,
+            "minimum": 0.7971813708773168,
+            "maximum": 0.9966758284445798
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9336388238341445,
+            "standard_deviation": 0.03446406097422223,
+            "median": 0.9340616680976128,
+            "minimum": 0.7913382410901606,
+            "maximum": 0.9796321717452703
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8940244756240151,
+            "standard_deviation": 0.05468985679649856,
+            "median": 0.908590361828777,
+            "minimum": 0.7443734650121455,
+            "maximum": 0.979295536692839
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9184701079101875,
+            "standard_deviation": 0.04499981339357186,
+            "median": 0.935066865917847,
+            "minimum": 0.7893980759305808,
+            "maximum": 0.979173990229172
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9054397679447416,
+            "standard_deviation": 0.04887833285212205,
+            "median": 0.9105367174205615,
+            "minimum": 0.788503000615678,
+            "maximum": 0.9788803396661421
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9278898135691607,
+            "standard_deviation": 0.027630436232114763,
+            "median": 0.9327323511464081,
+            "minimum": 0.8451450504072595,
+            "maximum": 0.9784308024392453
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9015769682060327,
+            "standard_deviation": 0.04644426689875867,
+            "median": 0.9029092825212691,
+            "minimum": 0.7944930582303109,
+            "maximum": 0.9799917072253072
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9452698557439245,
+            "standard_deviation": 0.02752825072531146,
+            "median": 0.9471813531706026,
+            "minimum": 0.8533997426778736,
+            "maximum": 0.9847000684364386
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9349174627863825,
+            "standard_deviation": 0.03325487098227715,
+            "median": 0.9420728129323832,
+            "minimum": 0.8220661791443784,
+            "maximum": 0.9829628136691302
+          }
+        }
+      }
+    },
+    "vit_b_16": {
+      "grayscale": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.7393350625879199,
+          "standard_deviation": 0.1260410826184496,
+          "median": 0.7531033087054088,
+          "minimum": 0.16784514261261324,
+          "maximum": 1.0
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8039924384835397,
+            "standard_deviation": 0.10653093087674634,
+            "median": 0.8070367699896989,
+            "minimum": 0.5393149806317892,
+            "maximum": 1.0
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6592281219892034,
+            "standard_deviation": 0.17978201878650277,
+            "median": 0.6938117066152055,
+            "minimum": 0.16784514261261324,
+            "maximum": 0.9141600537196332
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7930978294625219,
+            "standard_deviation": 0.08048236258404261,
+            "median": 0.7992143075085218,
+            "minimum": 0.5609728656956727,
+            "maximum": 0.9740937831224957
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7124773924149325,
+            "standard_deviation": 0.1324629698375965,
+            "median": 0.717479153307156,
+            "minimum": 0.20013778957233327,
+            "maximum": 1.0
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7196032965996133,
+            "standard_deviation": 0.08865583600485333,
+            "median": 0.7205395684061777,
+            "minimum": 0.48993314469404226,
+            "maximum": 0.9895136314970182
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7339379351123609,
+            "standard_deviation": 0.12559481806807027,
+            "median": 0.7449520842240441,
+            "minimum": 0.370853322848439,
+            "maximum": 0.9093422816597334
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7123497629087819,
+            "standard_deviation": 0.1147785144022227,
+            "median": 0.7045192469095778,
+            "minimum": 0.46997001383555487,
+            "maximum": 0.9999999999999999
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7500511263769871,
+            "standard_deviation": 0.12309910974679557,
+            "median": 0.7641777000852756,
+            "minimum": 0.47359135455353485,
+            "maximum": 1.0
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7397190289598207,
+            "standard_deviation": 0.10712460963554746,
+            "median": 0.753835984665409,
+            "minimum": 0.4901735306863203,
+            "maximum": 0.9649654493320752
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7688936935714377,
+            "standard_deviation": 0.10671151252925323,
+            "median": 0.7786680025918331,
+            "minimum": 0.38437871545327373,
+            "maximum": 0.929523300470605
+          }
+        }
+      },
+      "cue_conflict": {
+        "overall": {
+          "number_of_examples": 233,
+          "cosine_stability": 0.3819303239603516,
+          "standard_deviation": 0.21558640928431372,
+          "median": 0.35578508458656427,
+          "minimum": -0.006791995627024588,
+          "maximum": 0.8702012567875049
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 19,
+            "cosine_stability": 0.3734843426952276,
+            "standard_deviation": 0.15128996942103173,
+            "median": 0.3588850991244152,
+            "minimum": 0.06475377457135269,
+            "maximum": 0.687868787780388
+          },
+          "bird": {
+            "number_of_examples": 21,
+            "cosine_stability": 0.3862817195803099,
+            "standard_deviation": 0.185812171436916,
+            "median": 0.35448539159135656,
+            "minimum": 0.04509224850674246,
+            "maximum": 0.6736653689884791
+          },
+          "car": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.4071950347738773,
+            "standard_deviation": 0.1768691562058196,
+            "median": 0.39125727006413946,
+            "minimum": 0.07425386375816283,
+            "maximum": 0.7733207249321434
+          },
+          "cat": {
+            "number_of_examples": 18,
+            "cosine_stability": 0.19936228453978322,
+            "standard_deviation": 0.15527815630380887,
+            "median": 0.16930597682925944,
+            "minimum": -0.006071195281124019,
+            "maximum": 0.5113601060551043
+          },
+          "deer": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.28340057049754297,
+            "standard_deviation": 0.1730905639555453,
+            "median": 0.25089955354459864,
+            "minimum": 0.057386564139764756,
+            "maximum": 0.5876636833636076
+          },
+          "dog": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.29210945493264845,
+            "standard_deviation": 0.2300646929579684,
+            "median": 0.2129865191466192,
+            "minimum": -0.005850655522427463,
+            "maximum": 0.7845640364967444
+          },
+          "horse": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.5575820167372341,
+            "standard_deviation": 0.15682618733850615,
+            "median": 0.5534360082017643,
+            "minimum": 0.13898096591156625,
+            "maximum": 0.851947563909512
+          },
+          "monkey": {
+            "number_of_examples": 20,
+            "cosine_stability": 0.6663671794372337,
+            "standard_deviation": 0.16250190146617327,
+            "median": 0.7363247061326399,
+            "minimum": 0.3487713984408604,
+            "maximum": 0.8702012567875049
+          },
+          "ship": {
+            "number_of_examples": 24,
+            "cosine_stability": 0.27799614558306274,
+            "standard_deviation": 0.13064182543888317,
+            "median": 0.2826492394286868,
+            "minimum": 0.0301228564753582,
+            "maximum": 0.5631697799378682
+          },
+          "truck": {
+            "number_of_examples": 23,
+            "cosine_stability": 0.3572546327137264,
+            "standard_deviation": 0.17947524100285037,
+            "median": 0.3351815493864377,
+            "minimum": -0.006791995627024588,
+            "maximum": 0.7065400758027482
+          }
+        }
+      },
+      "patch_shuffle": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.6572411516508353,
+          "standard_deviation": 0.11279929487304738,
+          "median": 0.6597853561241611,
+          "minimum": 0.2104416896102644,
+          "maximum": 0.9345337843948908
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6948891222696258,
+            "standard_deviation": 0.09422403671995931,
+            "median": 0.7235862628612044,
+            "minimum": 0.48557217784531403,
+            "maximum": 0.8771022154244223
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6701335917043081,
+            "standard_deviation": 0.11062447074985678,
+            "median": 0.667656755420637,
+            "minimum": 0.23691940092947747,
+            "maximum": 0.8995708467961051
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6053170231726153,
+            "standard_deviation": 0.11353437968251687,
+            "median": 0.601199353025228,
+            "minimum": 0.3661822887696384,
+            "maximum": 0.8504279657094935
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6419736263929218,
+            "standard_deviation": 0.09139013441982545,
+            "median": 0.6580729135968262,
+            "minimum": 0.3862944628132026,
+            "maximum": 0.8250758600113978
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6429101642076518,
+            "standard_deviation": 0.10150777159496922,
+            "median": 0.6582509299656959,
+            "minimum": 0.33653956341065117,
+            "maximum": 0.7857330707135017
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.682297324518625,
+            "standard_deviation": 0.09963960553570353,
+            "median": 0.681011223383402,
+            "minimum": 0.4473663319914455,
+            "maximum": 0.880302630614255
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6301494527630864,
+            "standard_deviation": 0.10749986085150094,
+            "median": 0.6436998720036793,
+            "minimum": 0.3868819939972146,
+            "maximum": 0.8726288615831851
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7331303421668642,
+            "standard_deviation": 0.10550503780200446,
+            "median": 0.7553760892398964,
+            "minimum": 0.4520794749907763,
+            "maximum": 0.9345337843948908
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6766691985191028,
+            "standard_deviation": 0.1024678859960976,
+            "median": 0.6720284166948729,
+            "minimum": 0.3387363266486638,
+            "maximum": 0.8754036225265017
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.5949416707935509,
+            "standard_deviation": 0.12394266936921426,
+            "median": 0.610333284029052,
+            "minimum": 0.2104416896102644,
+            "maximum": 0.816857929791393
+          }
+        }
+      },
+      "translation_8_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9448002920283107,
+          "standard_deviation": 0.03239485467642278,
+          "median": 0.9507319392959661,
+          "minimum": 0.7615823577120949,
+          "maximum": 0.990939033424989
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9512388393048397,
+            "standard_deviation": 0.02522049527851147,
+            "median": 0.9578117661549599,
+            "minimum": 0.8783652386221592,
+            "maximum": 0.9851354729713595
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9423002030806176,
+            "standard_deviation": 0.04689130822025334,
+            "median": 0.9569407949262574,
+            "minimum": 0.7615823577120949,
+            "maximum": 0.990939033424989
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9443778080196031,
+            "standard_deviation": 0.02429647816308172,
+            "median": 0.9510255245611485,
+            "minimum": 0.886774281345584,
+            "maximum": 0.9785139757350592
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9306712999145377,
+            "standard_deviation": 0.04240498516336273,
+            "median": 0.9424289922044016,
+            "minimum": 0.763257036974237,
+            "maximum": 0.973971927220109
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9366195760120399,
+            "standard_deviation": 0.024447637557782242,
+            "median": 0.94199171600473,
+            "minimum": 0.8354021438502677,
+            "maximum": 0.9703844628050267
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9491214456335823,
+            "standard_deviation": 0.024382980951110442,
+            "median": 0.9478724544434944,
+            "minimum": 0.8884521915769584,
+            "maximum": 0.9896427397482872
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9420011447517603,
+            "standard_deviation": 0.025253812956617598,
+            "median": 0.9451007174588046,
+            "minimum": 0.8707446236762344,
+            "maximum": 0.9864928845446251
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9617474780996608,
+            "standard_deviation": 0.028850643870390238,
+            "median": 0.9721342623877756,
+            "minimum": 0.8737222165359328,
+            "maximum": 0.9904832824006804
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9446953576619259,
+            "standard_deviation": 0.032592697731757145,
+            "median": 0.9541084305979568,
+            "minimum": 0.825888714164922,
+            "maximum": 0.9798930622327383
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9452297678045408,
+            "standard_deviation": 0.030297431718413124,
+            "median": 0.9538488181512579,
+            "minimum": 0.8175715248759754,
+            "maximum": 0.984882197182102
+          }
+        }
+      },
+      "translation_8_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9447149456116538,
+          "standard_deviation": 0.03197220972200524,
+          "median": 0.9491633544402933,
+          "minimum": 0.7751945368813264,
+          "maximum": 0.9917589361157392
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9524270193345313,
+            "standard_deviation": 0.024212416599413773,
+            "median": 0.9607783159486774,
+            "minimum": 0.8616071332940578,
+            "maximum": 0.985952150728319
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9460346495219679,
+            "standard_deviation": 0.04441582543497071,
+            "median": 0.9600658704747986,
+            "minimum": 0.7808765389292273,
+            "maximum": 0.9917589361157392
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9438383409053993,
+            "standard_deviation": 0.025835107395667883,
+            "median": 0.9486737437051369,
+            "minimum": 0.8672321557544772,
+            "maximum": 0.9787778713575578
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9332109997112212,
+            "standard_deviation": 0.03847630224776582,
+            "median": 0.939361875536856,
+            "minimum": 0.7751945368813264,
+            "maximum": 0.9756317807198427
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9357218992550935,
+            "standard_deviation": 0.024525132836531342,
+            "median": 0.9414181189382702,
+            "minimum": 0.8689466202179411,
+            "maximum": 0.9745918472106743
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9495136323477409,
+            "standard_deviation": 0.02369727729633283,
+            "median": 0.9497294433417252,
+            "minimum": 0.870521762139012,
+            "maximum": 0.9893944904434233
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9422558438144157,
+            "standard_deviation": 0.024511659783332484,
+            "median": 0.9472584781254948,
+            "minimum": 0.867338152997352,
+            "maximum": 0.9848404903751811
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9598832786653388,
+            "standard_deviation": 0.03233254325983577,
+            "median": 0.972907686196808,
+            "minimum": 0.8487581070187077,
+            "maximum": 0.9909461194697006
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9409149989410994,
+            "standard_deviation": 0.03576582303579612,
+            "median": 0.948553244094104,
+            "minimum": 0.8286109744460909,
+            "maximum": 0.9811377820816226
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9433487936197282,
+            "standard_deviation": 0.029601081099961124,
+            "median": 0.9501003077087018,
+            "minimum": 0.843252525066762,
+            "maximum": 0.9846515260144044
+          }
+        }
+      },
+      "translation_8_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9500127714620725,
+          "standard_deviation": 0.031703833874079865,
+          "median": 0.9577215388805509,
+          "minimum": 0.762239920310155,
+          "maximum": 0.9920079025389388
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9602787535401238,
+            "standard_deviation": 0.021811612121410338,
+            "median": 0.9631777365270046,
+            "minimum": 0.8702833792790309,
+            "maximum": 0.9897116006995437
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9535016332992637,
+            "standard_deviation": 0.036693595998521136,
+            "median": 0.9658089874010974,
+            "minimum": 0.7917319910947223,
+            "maximum": 0.9920079025389388
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9519670410292957,
+            "standard_deviation": 0.025639540608222388,
+            "median": 0.9603155112085633,
+            "minimum": 0.8544778439484539,
+            "maximum": 0.983025737513587
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9286862704437702,
+            "standard_deviation": 0.047002201086147846,
+            "median": 0.9380056831020818,
+            "minimum": 0.762239920310155,
+            "maximum": 0.9813976959022996
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9433472944038961,
+            "standard_deviation": 0.019105353897994656,
+            "median": 0.9441834369479454,
+            "minimum": 0.9078600402007857,
+            "maximum": 0.9796143404222688
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9445995560811348,
+            "standard_deviation": 0.030738560637709196,
+            "median": 0.9508323765206641,
+            "minimum": 0.8577831549569375,
+            "maximum": 0.9896952969378722
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9412874886890518,
+            "standard_deviation": 0.03289929663850153,
+            "median": 0.948210225501342,
+            "minimum": 0.8222028807490174,
+            "maximum": 0.988122769155582
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9630366642880215,
+            "standard_deviation": 0.028720353129568343,
+            "median": 0.9736800500832914,
+            "minimum": 0.8641062787829668,
+            "maximum": 0.9913850636954962
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9597346579961199,
+            "standard_deviation": 0.021837895356784605,
+            "median": 0.9649699359147825,
+            "minimum": 0.8850612564115142,
+            "maximum": 0.9840218225571951
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9536883548500483,
+            "standard_deviation": 0.02578510322528411,
+            "median": 0.9602900224990558,
+            "minimum": 0.8695363722319436,
+            "maximum": 0.9901419709190845
+          }
+        }
+      },
+      "translation_8_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9489455530654753,
+          "standard_deviation": 0.03253228526826057,
+          "median": 0.9576410191117535,
+          "minimum": 0.7785407411601951,
+          "maximum": 0.9918672543650358
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9573768405865483,
+            "standard_deviation": 0.028018174421461525,
+            "median": 0.9649166947234507,
+            "minimum": 0.8646508005855166,
+            "maximum": 0.9879915980055991
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9545123350176258,
+            "standard_deviation": 0.03652691268961631,
+            "median": 0.9704030477457739,
+            "minimum": 0.82043561209935,
+            "maximum": 0.9918672543650358
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.950468112215282,
+            "standard_deviation": 0.024851903072417914,
+            "median": 0.9569454955359811,
+            "minimum": 0.8692454123050246,
+            "maximum": 0.9857204222235185
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.929002482803001,
+            "standard_deviation": 0.04269936226412721,
+            "median": 0.9367894392135324,
+            "minimum": 0.7785407411601951,
+            "maximum": 0.9803635787298992
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9420514412562337,
+            "standard_deviation": 0.021827497746838082,
+            "median": 0.9457232810045282,
+            "minimum": 0.8910724584949468,
+            "maximum": 0.9748440991128414
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9432079800197538,
+            "standard_deviation": 0.03625281816546746,
+            "median": 0.9501249566227818,
+            "minimum": 0.7801776520202948,
+            "maximum": 0.9911665393832121
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.941239498593256,
+            "standard_deviation": 0.031447612466429936,
+            "median": 0.9472866157386735,
+            "minimum": 0.7974350810681866,
+            "maximum": 0.9883217608922042
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9610172645597587,
+            "standard_deviation": 0.0339417051769468,
+            "median": 0.9747216364747336,
+            "minimum": 0.8490611946996153,
+            "maximum": 0.9907656560615896
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.955783141171669,
+            "standard_deviation": 0.026271387339956973,
+            "median": 0.962366180616877,
+            "minimum": 0.8533028482841718,
+            "maximum": 0.986360095127063
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9547964344316253,
+            "standard_deviation": 0.023083814049150556,
+            "median": 0.9598299812468647,
+            "minimum": 0.8526049987316325,
+            "maximum": 0.9867027639391496
+          }
+        }
+      },
+      "translation_16_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9744415433325182,
+          "standard_deviation": 0.0245835376650606,
+          "median": 0.9822703966457407,
+          "minimum": 0.8469511163826864,
+          "maximum": 0.9994289035615862
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.983784081302456,
+            "standard_deviation": 0.016092994704041217,
+            "median": 0.9891520076688082,
+            "minimum": 0.9373590885244839,
+            "maximum": 0.9994289035615862
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9664317982287552,
+            "standard_deviation": 0.03258405986660629,
+            "median": 0.978410697414999,
+            "minimum": 0.8469511163826864,
+            "maximum": 0.9965640987820187
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9740530866296204,
+            "standard_deviation": 0.02418364757620916,
+            "median": 0.9798744789808878,
+            "minimum": 0.9085409392475658,
+            "maximum": 0.998531662360689
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9653740033930873,
+            "standard_deviation": 0.026240540755449834,
+            "median": 0.9761903248259054,
+            "minimum": 0.8996684233134484,
+            "maximum": 0.9960999478961009
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9754955287293795,
+            "standard_deviation": 0.02074861393034484,
+            "median": 0.9818609546064455,
+            "minimum": 0.9123545470282588,
+            "maximum": 0.9985723810805459
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9748411395857746,
+            "standard_deviation": 0.026311033610860072,
+            "median": 0.9844641253308816,
+            "minimum": 0.8615751881078779,
+            "maximum": 0.9982231333771829
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9695048991267886,
+            "standard_deviation": 0.02274806765554351,
+            "median": 0.9772081876774592,
+            "minimum": 0.9147544924244358,
+            "maximum": 0.9966026091260263
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9783229397545213,
+            "standard_deviation": 0.019098829514310512,
+            "median": 0.9843583224930408,
+            "minimum": 0.9112389817556701,
+            "maximum": 0.9976715303692582
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.975347297673685,
+            "standard_deviation": 0.025063259836101123,
+            "median": 0.9826004883715924,
+            "minimum": 0.8707158047178881,
+            "maximum": 0.998718262495927
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9812606589011135,
+            "standard_deviation": 0.022234286266555124,
+            "median": 0.9889515735790033,
+            "minimum": 0.9139665993701228,
+            "maximum": 0.9992522613471143
+          }
+        }
+      },
+      "translation_16_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9716614865413767,
+          "standard_deviation": 0.030196881874307635,
+          "median": 0.9815791880537399,
+          "minimum": 0.7631045037904446,
+          "maximum": 0.999538209873228
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9775532819124676,
+            "standard_deviation": 0.028252512706695404,
+            "median": 0.9889301985874925,
+            "minimum": 0.8507952051354009,
+            "maximum": 0.999538209873228
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9643336925749608,
+            "standard_deviation": 0.032734831653314436,
+            "median": 0.9733975900944316,
+            "minimum": 0.8230308980209378,
+            "maximum": 0.9958922338909848
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9719938727120132,
+            "standard_deviation": 0.025049283551544753,
+            "median": 0.9805480277743357,
+            "minimum": 0.901623952148577,
+            "maximum": 0.9985385476028247
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9644058067967787,
+            "standard_deviation": 0.029556873952935065,
+            "median": 0.972465115785828,
+            "minimum": 0.8592570840557348,
+            "maximum": 0.9970518720164007
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9781676060847464,
+            "standard_deviation": 0.01950067042211144,
+            "median": 0.9841100425012612,
+            "minimum": 0.8981290319691249,
+            "maximum": 0.9978194643078157
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9735862507527301,
+            "standard_deviation": 0.022253639095701567,
+            "median": 0.9798402969431139,
+            "minimum": 0.8907114839437051,
+            "maximum": 0.9979071552618888
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9660664713983717,
+            "standard_deviation": 0.03332513923175646,
+            "median": 0.9758329934834228,
+            "minimum": 0.7947845826828593,
+            "maximum": 0.9945583477566452
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9774438363601833,
+            "standard_deviation": 0.023524593965814185,
+            "median": 0.9850575733036289,
+            "minimum": 0.8666630601989279,
+            "maximum": 0.9981839600002868
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9661895385199851,
+            "standard_deviation": 0.04406013427534226,
+            "median": 0.9825629543952097,
+            "minimum": 0.7631045037904446,
+            "maximum": 0.9982207901797412
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9768745083015312,
+            "standard_deviation": 0.030949041004881436,
+            "median": 0.9916022994207013,
+            "minimum": 0.8565031040962091,
+            "maximum": 0.9992026967113271
+          }
+        }
+      },
+      "translation_16_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9760961166541999,
+          "standard_deviation": 0.021637497880091613,
+          "median": 0.9820111514018418,
+          "minimum": 0.8399292950769293,
+          "maximum": 0.9996263482149783
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9783626181838782,
+            "standard_deviation": 0.017015702990598295,
+            "median": 0.9826650320448918,
+            "minimum": 0.9114330306332242,
+            "maximum": 0.9973946598675687
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9804014902447742,
+            "standard_deviation": 0.020828440163542718,
+            "median": 0.9903258493345135,
+            "minimum": 0.9131133948777322,
+            "maximum": 0.9996263482149783
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9692784905917893,
+            "standard_deviation": 0.0210573876587739,
+            "median": 0.9745025373194831,
+            "minimum": 0.8754976829740102,
+            "maximum": 0.9923957595247239
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9682622574889137,
+            "standard_deviation": 0.026480550084732386,
+            "median": 0.9742862044215661,
+            "minimum": 0.8882062159757922,
+            "maximum": 0.9988893102144921
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9780695361716896,
+            "standard_deviation": 0.019197216228766634,
+            "median": 0.9829191622551154,
+            "minimum": 0.8951628530714332,
+            "maximum": 0.9968650559935424
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9778701681399731,
+            "standard_deviation": 0.02204627908005044,
+            "median": 0.9840249659551612,
+            "minimum": 0.8698203281065491,
+            "maximum": 0.99830540716482
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9724705180201583,
+            "standard_deviation": 0.019300509668069725,
+            "median": 0.976574545579024,
+            "minimum": 0.900694255316142,
+            "maximum": 0.9985464631629517
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9889724214555325,
+            "standard_deviation": 0.01373359666980021,
+            "median": 0.99446721665464,
+            "minimum": 0.9333559957877918,
+            "maximum": 0.9989686935678315
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9696660954558891,
+            "standard_deviation": 0.027679752666364726,
+            "median": 0.9776427618535988,
+            "minimum": 0.8399292950769293,
+            "maximum": 0.9954351773406087
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9776075707894024,
+            "standard_deviation": 0.016456677453911116,
+            "median": 0.9809721170087455,
+            "minimum": 0.9031463146900706,
+            "maximum": 0.9986938088382661
+          }
+        }
+      },
+      "translation_16_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9750802124253344,
+          "standard_deviation": 0.025049306916534796,
+          "median": 0.9822059770791575,
+          "minimum": 0.7927967901342506,
+          "maximum": 0.99958269268579
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9772765923689694,
+            "standard_deviation": 0.01961229067644178,
+            "median": 0.9820585668447551,
+            "minimum": 0.909758287768354,
+            "maximum": 0.9961003425964406
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9803129970705231,
+            "standard_deviation": 0.030847551851834895,
+            "median": 0.9898686684727378,
+            "minimum": 0.7927967901342506,
+            "maximum": 0.99958269268579
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9673734918502026,
+            "standard_deviation": 0.023360446006076632,
+            "median": 0.9736401814554188,
+            "minimum": 0.8746029545855618,
+            "maximum": 0.9930695425140549
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.967175541328956,
+            "standard_deviation": 0.03001379490953857,
+            "median": 0.9743916949673176,
+            "minimum": 0.8611343304155221,
+            "maximum": 0.9983818151902666
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9770748456978972,
+            "standard_deviation": 0.02292551451623282,
+            "median": 0.9828797378950638,
+            "minimum": 0.8656101776622087,
+            "maximum": 0.9968913883364006
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9739510761158314,
+            "standard_deviation": 0.02822377473155384,
+            "median": 0.9833108484445832,
+            "minimum": 0.8466257880040289,
+            "maximum": 0.9976314005174222
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9724999811860421,
+            "standard_deviation": 0.02422342862110712,
+            "median": 0.9810015907670389,
+            "minimum": 0.8614239509195325,
+            "maximum": 0.9963782722352162
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9880294795694005,
+            "standard_deviation": 0.014124113753986343,
+            "median": 0.9936701399193317,
+            "minimum": 0.9242189098072777,
+            "maximum": 0.9988004686831438
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9713949879067569,
+            "standard_deviation": 0.025099148949933755,
+            "median": 0.9803381295121406,
+            "minimum": 0.8764345395890237,
+            "maximum": 0.9962933608684249
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9757131311587638,
+            "standard_deviation": 0.020146300719731003,
+            "median": 0.9826934521422266,
+            "minimum": 0.8778732997713762,
+            "maximum": 0.9987471496327552
+          }
+        }
+      },
+      "translation_32_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9370504009790386,
+          "standard_deviation": 0.052429837461152554,
+          "median": 0.9540545053817875,
+          "minimum": 0.6640762956914256,
+          "maximum": 0.9985728776378351
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9649530667056339,
+            "standard_deviation": 0.031234087208347566,
+            "median": 0.9760111692422824,
+            "minimum": 0.866461200053826,
+            "maximum": 0.9985728776378351
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9211002962032876,
+            "standard_deviation": 0.0650380630152932,
+            "median": 0.9418973588720816,
+            "minimum": 0.6702379459803629,
+            "maximum": 0.9889155354399408
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9313299226606557,
+            "standard_deviation": 0.055556182344594515,
+            "median": 0.9484753613193867,
+            "minimum": 0.7312036758918237,
+            "maximum": 0.992843713011359
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9160917500210551,
+            "standard_deviation": 0.05459522316158232,
+            "median": 0.9227948418902587,
+            "minimum": 0.7829444831565044,
+            "maximum": 0.9919183269443906
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9423984404753455,
+            "standard_deviation": 0.03964421803920135,
+            "median": 0.9535812551776801,
+            "minimum": 0.8453868022431672,
+            "maximum": 0.9945234770619769
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.939350298415139,
+            "standard_deviation": 0.04956120040483938,
+            "median": 0.9585022630172426,
+            "minimum": 0.7748164438505657,
+            "maximum": 0.9952666391944959
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9251517618690304,
+            "standard_deviation": 0.04746652282189647,
+            "median": 0.9436607388257834,
+            "minimum": 0.8031313947074338,
+            "maximum": 0.9902914661618488
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9285535889602494,
+            "standard_deviation": 0.06909937089194902,
+            "median": 0.9525059672987574,
+            "minimum": 0.6640762956914256,
+            "maximum": 0.9933882889527444
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9489112141524072,
+            "standard_deviation": 0.04407797783428803,
+            "median": 0.9608030057984442,
+            "minimum": 0.7950967195330518,
+            "maximum": 0.9939950362773106
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9526636703275829,
+            "standard_deviation": 0.03287131383018405,
+            "median": 0.9612359044216034,
+            "minimum": 0.8595254610070567,
+            "maximum": 0.9935044341218195
+          }
+        }
+      },
+      "translation_32_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9336163067204738,
+          "standard_deviation": 0.0541892338315247,
+          "median": 0.9501338331745284,
+          "minimum": 0.5782075254632038,
+          "maximum": 0.9986313965728933
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9584366832920631,
+            "standard_deviation": 0.037358467599917386,
+            "median": 0.9681120723757495,
+            "minimum": 0.837639958117365,
+            "maximum": 0.9986313965728933
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9248207866586472,
+            "standard_deviation": 0.05911533184048875,
+            "median": 0.9465697954908305,
+            "minimum": 0.7141219499219061,
+            "maximum": 0.9886794977747141
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9178824628324707,
+            "standard_deviation": 0.0659054309076745,
+            "median": 0.9404797030577016,
+            "minimum": 0.6830841106145112,
+            "maximum": 0.991616951765348
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9211884516769844,
+            "standard_deviation": 0.05206276637154361,
+            "median": 0.9371115398566403,
+            "minimum": 0.7737521741988508,
+            "maximum": 0.9909691396057181
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9493292482679544,
+            "standard_deviation": 0.036628312997701674,
+            "median": 0.9571345365544947,
+            "minimum": 0.8383154755534714,
+            "maximum": 0.9938501555896382
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9397428113974797,
+            "standard_deviation": 0.03959933173370237,
+            "median": 0.9505950365613894,
+            "minimum": 0.8391706229033525,
+            "maximum": 0.9919790238112896
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9224203044210035,
+            "standard_deviation": 0.04536405247652416,
+            "median": 0.9259109345492267,
+            "minimum": 0.7867834072990846,
+            "maximum": 0.988386778662088
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.952464334957781,
+            "standard_deviation": 0.03716296459973132,
+            "median": 0.9621912125926668,
+            "minimum": 0.8310639231907114,
+            "maximum": 0.9938588650218356
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9163584356611382,
+            "standard_deviation": 0.07805497934514935,
+            "median": 0.9265603414924326,
+            "minimum": 0.5782075254632038,
+            "maximum": 0.993245670206665
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9335195480392149,
+            "standard_deviation": 0.05311122132527034,
+            "median": 0.9490084198781901,
+            "minimum": 0.8117698129142376,
+            "maximum": 0.9961851440935588
+          }
+        }
+      },
+      "translation_32_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9478643269736847,
+          "standard_deviation": 0.04028622018792583,
+          "median": 0.9563878908994479,
+          "minimum": 0.7389717215162488,
+          "maximum": 0.9988031230871696
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9533833419208968,
+            "standard_deviation": 0.028235582997989672,
+            "median": 0.9593704032356407,
+            "minimum": 0.8576680002912678,
+            "maximum": 0.9914042543206899
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9494502273123792,
+            "standard_deviation": 0.04839788051787586,
+            "median": 0.9678950913977702,
+            "minimum": 0.7956464425726406,
+            "maximum": 0.9988031230871696
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9316047275770053,
+            "standard_deviation": 0.044833282854584475,
+            "median": 0.9431257067185751,
+            "minimum": 0.7393323315018197,
+            "maximum": 0.9841054171486094
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9334951889089149,
+            "standard_deviation": 0.05310676615698019,
+            "median": 0.9510189656621791,
+            "minimum": 0.7389717215162488,
+            "maximum": 0.9971538063725893
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9469810927927651,
+            "standard_deviation": 0.039230317716729225,
+            "median": 0.9574319376707615,
+            "minimum": 0.8076127618587267,
+            "maximum": 0.9941326079237799
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.953117984696701,
+            "standard_deviation": 0.029627247494710896,
+            "median": 0.9587416293777687,
+            "minimum": 0.8697967527504785,
+            "maximum": 0.9959031323956643
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9447667252177802,
+            "standard_deviation": 0.030035186913050963,
+            "median": 0.9516038597245791,
+            "minimum": 0.8670875582980948,
+            "maximum": 0.9921395785040892
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9730701254913171,
+            "standard_deviation": 0.03185630289090474,
+            "median": 0.9856182171561572,
+            "minimum": 0.8382463394721922,
+            "maximum": 0.9978305978816276
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9439540675307951,
+            "standard_deviation": 0.04259528377451484,
+            "median": 0.9520961895224973,
+            "minimum": 0.7715051756415255,
+            "maximum": 0.9872084104926144
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9488197882882929,
+            "standard_deviation": 0.030305468687706418,
+            "median": 0.9558394577022862,
+            "minimum": 0.825637914186054,
+            "maximum": 0.9850202831805773
+          }
+        }
+      },
+      "translation_32_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9485114498610856,
+          "standard_deviation": 0.0399693845446757,
+          "median": 0.9576268267987448,
+          "minimum": 0.7549004296231078,
+          "maximum": 0.9987174786359727
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9544675338013421,
+            "standard_deviation": 0.027430898782178994,
+            "median": 0.9580352226975435,
+            "minimum": 0.8685928712724182,
+            "maximum": 0.9914988860060177
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.953907175208637,
+            "standard_deviation": 0.04679874175976997,
+            "median": 0.9645870591288981,
+            "minimum": 0.7549004296231078,
+            "maximum": 0.9987174786359727
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9324886743545285,
+            "standard_deviation": 0.038616573591162474,
+            "median": 0.9395560825890192,
+            "minimum": 0.7926495839136452,
+            "maximum": 0.9852095500781272
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9357294185407906,
+            "standard_deviation": 0.047801071847732926,
+            "median": 0.9472133250333167,
+            "minimum": 0.7874847946814819,
+            "maximum": 0.994753466123338
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9520756815425087,
+            "standard_deviation": 0.0348087857928231,
+            "median": 0.9603514561015839,
+            "minimum": 0.8347687452129534,
+            "maximum": 0.9950264620205331
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9454109124744248,
+            "standard_deviation": 0.050413193281457595,
+            "median": 0.9591261493703057,
+            "minimum": 0.7616768569510048,
+            "maximum": 0.9930767406929515
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9422112755596548,
+            "standard_deviation": 0.03608462182472986,
+            "median": 0.9448796729715396,
+            "minimum": 0.7762777772013734,
+            "maximum": 0.9940574723884839
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9720358504424191,
+            "standard_deviation": 0.032406571086742754,
+            "median": 0.983937043412614,
+            "minimum": 0.8228128375607011,
+            "maximum": 0.9980064841630831
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9485460572689471,
+            "standard_deviation": 0.031255061989247136,
+            "median": 0.9553044897387666,
+            "minimum": 0.8492961041227052,
+            "maximum": 0.9862809219710071
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9482419194176026,
+            "standard_deviation": 0.032776104823927205,
+            "median": 0.9572410160828884,
+            "minimum": 0.803392381493051,
+            "maximum": 0.9851164399287444
+          }
+        }
+      }
+    },
+    "clip": {
+      "grayscale": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.8934765666167893,
+          "standard_deviation": 0.04071122050056038,
+          "median": 0.8979818423161203,
+          "minimum": 0.725666368183661,
+          "maximum": 1.0
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9035046697427046,
+            "standard_deviation": 0.04444055973589761,
+            "median": 0.9023477102634287,
+            "minimum": 0.796141778346015,
+            "maximum": 1.0
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8820685470255188,
+            "standard_deviation": 0.03563466304207731,
+            "median": 0.8848998818377649,
+            "minimum": 0.795298553532572,
+            "maximum": 0.9460764639737903
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8976049432088999,
+            "standard_deviation": 0.03871589346119451,
+            "median": 0.9027420453680798,
+            "minimum": 0.7675255797658653,
+            "maximum": 0.9815424604052952
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9029823200573983,
+            "standard_deviation": 0.04775810933940092,
+            "median": 0.9048690902537727,
+            "minimum": 0.725666368183661,
+            "maximum": 1.0
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8947453179447895,
+            "standard_deviation": 0.030132739549560604,
+            "median": 0.893916522726222,
+            "minimum": 0.8226838527765551,
+            "maximum": 0.9705465557112151
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8983150670116978,
+            "standard_deviation": 0.03877582991849031,
+            "median": 0.903719164442722,
+            "minimum": 0.7654298221901242,
+            "maximum": 0.9649956271052731
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8975431813006126,
+            "standard_deviation": 0.04511853153804238,
+            "median": 0.9025697397787055,
+            "minimum": 0.7620732402217477,
+            "maximum": 1.0
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.897966268601094,
+            "standard_deviation": 0.034522081586526664,
+            "median": 0.9024103808178583,
+            "minimum": 0.7903266472953454,
+            "maximum": 0.9999999999999999
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8808631550965922,
+            "standard_deviation": 0.03807450024725406,
+            "median": 0.8802841917400823,
+            "minimum": 0.7978445373601739,
+            "maximum": 0.9555367228836961
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.8791721961785858,
+            "standard_deviation": 0.04119802004739452,
+            "median": 0.8854486397882052,
+            "minimum": 0.7786771848162979,
+            "maximum": 0.9603104315721446
+          }
+        }
+      },
+      "cue_conflict": {
+        "overall": {
+          "number_of_examples": 233,
+          "cosine_stability": 0.7261932258548017,
+          "standard_deviation": 0.08718907327061931,
+          "median": 0.7280162760347861,
+          "minimum": 0.523363822558001,
+          "maximum": 0.9180293064377202
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 19,
+            "cosine_stability": 0.7221943064102846,
+            "standard_deviation": 0.0630078140163149,
+            "median": 0.7017065702243257,
+            "minimum": 0.6065864538654104,
+            "maximum": 0.8602073456318234
+          },
+          "bird": {
+            "number_of_examples": 21,
+            "cosine_stability": 0.7486288399338745,
+            "standard_deviation": 0.06967562551275291,
+            "median": 0.7559910592251999,
+            "minimum": 0.6093297110505552,
+            "maximum": 0.8751111365499613
+          },
+          "car": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.6946591953834779,
+            "standard_deviation": 0.06049367964313514,
+            "median": 0.7019908791085733,
+            "minimum": 0.5822041207976726,
+            "maximum": 0.8190479818421141
+          },
+          "cat": {
+            "number_of_examples": 18,
+            "cosine_stability": 0.6715920591318275,
+            "standard_deviation": 0.08238875109589865,
+            "median": 0.6799534060813018,
+            "minimum": 0.5732133010662541,
+            "maximum": 0.9180293064377202
+          },
+          "deer": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.7080292309393486,
+            "standard_deviation": 0.08211987731690402,
+            "median": 0.6991714538067835,
+            "minimum": 0.5577213070087399,
+            "maximum": 0.8751341837135651
+          },
+          "dog": {
+            "number_of_examples": 26,
+            "cosine_stability": 0.6994121125278643,
+            "standard_deviation": 0.08381235425307478,
+            "median": 0.7123664399828413,
+            "minimum": 0.5468720971365961,
+            "maximum": 0.8298775321011238
+          },
+          "horse": {
+            "number_of_examples": 28,
+            "cosine_stability": 0.8293436926411281,
+            "standard_deviation": 0.05389459779757882,
+            "median": 0.8397440280588264,
+            "minimum": 0.6822900943211605,
+            "maximum": 0.9113933186961808
+          },
+          "monkey": {
+            "number_of_examples": 20,
+            "cosine_stability": 0.8056683262845057,
+            "standard_deviation": 0.047862731626444985,
+            "median": 0.8060141393480909,
+            "minimum": 0.6643728109133017,
+            "maximum": 0.9042431256832748
+          },
+          "ship": {
+            "number_of_examples": 24,
+            "cosine_stability": 0.6602381247075697,
+            "standard_deviation": 0.08518250439487134,
+            "median": 0.6654219280461564,
+            "minimum": 0.523363822558001,
+            "maximum": 0.8545588383839424
+          },
+          "truck": {
+            "number_of_examples": 23,
+            "cosine_stability": 0.7150795559078627,
+            "standard_deviation": 0.050589690070124226,
+            "median": 0.7210465396591142,
+            "minimum": 0.603813693020908,
+            "maximum": 0.8109153194279907
+          }
+        }
+      },
+      "patch_shuffle": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.7356689793721154,
+          "standard_deviation": 0.05854981638066635,
+          "median": 0.7419151614309775,
+          "minimum": 0.5481816135525003,
+          "maximum": 0.8879735537943001
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7243660369606113,
+            "standard_deviation": 0.060506435541212,
+            "median": 0.7298578804145038,
+            "minimum": 0.5872978890550815,
+            "maximum": 0.8285659356413446
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7701416175798319,
+            "standard_deviation": 0.04345502796503055,
+            "median": 0.7699130570615031,
+            "minimum": 0.6859898196356246,
+            "maximum": 0.8564928359397294
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.6915788118050847,
+            "standard_deviation": 0.05561566983311799,
+            "median": 0.6986719200556237,
+            "minimum": 0.5556512389724046,
+            "maximum": 0.7956804646270305
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7485338143209536,
+            "standard_deviation": 0.05332450386369413,
+            "median": 0.7507457534235183,
+            "minimum": 0.5946775807175401,
+            "maximum": 0.8283607336271656
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7509737181833251,
+            "standard_deviation": 0.05445392619194902,
+            "median": 0.7524596391168228,
+            "minimum": 0.6159893978704001,
+            "maximum": 0.8737183916983641
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7269913744986245,
+            "standard_deviation": 0.04900237483089771,
+            "median": 0.7387927810091619,
+            "minimum": 0.626444978666865,
+            "maximum": 0.802227561995427
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7530309001263094,
+            "standard_deviation": 0.057747406159119656,
+            "median": 0.7670610654955832,
+            "minimum": 0.5797689188885065,
+            "maximum": 0.8401374609014438
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7586171913235604,
+            "standard_deviation": 0.04117829585128577,
+            "median": 0.7636196728090641,
+            "minimum": 0.6525313120495826,
+            "maximum": 0.8326344017509716
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7285561073061656,
+            "standard_deviation": 0.056031918637674774,
+            "median": 0.7272332638738601,
+            "minimum": 0.5481816135525003,
+            "maximum": 0.8879735537943001
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.7039002216166871,
+            "standard_deviation": 0.06029408765218811,
+            "median": 0.7036251265707264,
+            "minimum": 0.5783563978550004,
+            "maximum": 0.8301680221411655
+          }
+        }
+      },
+      "translation_8_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9807518689733816,
+          "standard_deviation": 0.009600717831183561,
+          "median": 0.9822405609514264,
+          "minimum": 0.9332158325416862,
+          "maximum": 0.9961917349222768
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9804376596921115,
+            "standard_deviation": 0.009854453617617383,
+            "median": 0.9818680211324722,
+            "minimum": 0.9561302192165589,
+            "maximum": 0.9952444170360012
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9837616855388082,
+            "standard_deviation": 0.00847400093047663,
+            "median": 0.9850252226346132,
+            "minimum": 0.9544343621829114,
+            "maximum": 0.9961917349222768
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9745506848651732,
+            "standard_deviation": 0.009816276258315123,
+            "median": 0.976590310598147,
+            "minimum": 0.9438572710864896,
+            "maximum": 0.9910139489308379
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9807179553216396,
+            "standard_deviation": 0.008428038196718224,
+            "median": 0.9805390564579504,
+            "minimum": 0.958241967002276,
+            "maximum": 0.9946299760266846
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9857655863772555,
+            "standard_deviation": 0.006730401375983711,
+            "median": 0.9874939479557454,
+            "minimum": 0.9624468222931674,
+            "maximum": 0.9953482188339717
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9822007680350155,
+            "standard_deviation": 0.009243219330459008,
+            "median": 0.985095002856733,
+            "minimum": 0.957179985093416,
+            "maximum": 0.9941649023692534
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9816726257274465,
+            "standard_deviation": 0.00897010364985893,
+            "median": 0.9822810173065528,
+            "minimum": 0.9497394817044845,
+            "maximum": 0.994678436774897
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9814721761241413,
+            "standard_deviation": 0.007046614846915311,
+            "median": 0.9834361720460937,
+            "minimum": 0.9654562663049555,
+            "maximum": 0.9919637225609544
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9825791366453526,
+            "standard_deviation": 0.006543192112353148,
+            "median": 0.9827148349349262,
+            "minimum": 0.9658843063989675,
+            "maximum": 0.9956522462859473
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9743604114068724,
+            "standard_deviation": 0.012702557344655847,
+            "median": 0.9771916759025605,
+            "minimum": 0.9332158325416862,
+            "maximum": 0.9927222475791212
+          }
+        }
+      },
+      "translation_8_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9810780190043837,
+          "standard_deviation": 0.009217352021706848,
+          "median": 0.9826697701832723,
+          "minimum": 0.9402049249640432,
+          "maximum": 0.9965906217275561
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9809161098105131,
+            "standard_deviation": 0.011366879630459929,
+            "median": 0.9838411617331594,
+            "minimum": 0.9402049249640432,
+            "maximum": 0.995861673596872
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9862037290367831,
+            "standard_deviation": 0.004995196350787835,
+            "median": 0.9857578733440641,
+            "minimum": 0.9749671351314123,
+            "maximum": 0.9965906217275561
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9765726343713292,
+            "standard_deviation": 0.007597498376590086,
+            "median": 0.9782580061416271,
+            "minimum": 0.9555695615091491,
+            "maximum": 0.9905204632693374
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9817282397025613,
+            "standard_deviation": 0.008077761922713603,
+            "median": 0.9827180724316238,
+            "minimum": 0.9482251259166781,
+            "maximum": 0.9931086738708633
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.984363056449517,
+            "standard_deviation": 0.00734224687270305,
+            "median": 0.9855477186868784,
+            "minimum": 0.9654370478892021,
+            "maximum": 0.993548882412553
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9814629405294343,
+            "standard_deviation": 0.009186697251791645,
+            "median": 0.9834000649597157,
+            "minimum": 0.9549104903330593,
+            "maximum": 0.9936413923401686
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.980449004938858,
+            "standard_deviation": 0.008443327707475835,
+            "median": 0.9821218681232249,
+            "minimum": 0.9613664682533026,
+            "maximum": 0.9964942602939917
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9814002196290496,
+            "standard_deviation": 0.009017773670836357,
+            "median": 0.9830568560836103,
+            "minimum": 0.9504799801366166,
+            "maximum": 0.9946924019179451
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9826742701312745,
+            "standard_deviation": 0.006573510738905925,
+            "median": 0.983587051721454,
+            "minimum": 0.965861797569017,
+            "maximum": 0.9958100623222308
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9750099854445173,
+            "standard_deviation": 0.011853776139641777,
+            "median": 0.9769161776232886,
+            "minimum": 0.9473075353745941,
+            "maximum": 0.9930849369630549
+          }
+        }
+      },
+      "translation_8_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9812457935252894,
+          "standard_deviation": 0.010454849518014805,
+          "median": 0.9838119971661721,
+          "minimum": 0.9148359433316889,
+          "maximum": 0.9964314684657587
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9816723284236888,
+            "standard_deviation": 0.009687590848549942,
+            "median": 0.9835766046780821,
+            "minimum": 0.9485961254025259,
+            "maximum": 0.9938942231938972
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9837465514184441,
+            "standard_deviation": 0.008172016127577918,
+            "median": 0.986199936211505,
+            "minimum": 0.9662106791818686,
+            "maximum": 0.9964314684657587
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9763746998458888,
+            "standard_deviation": 0.010012988941596907,
+            "median": 0.9775959189956598,
+            "minimum": 0.939383660297386,
+            "maximum": 0.9910817982295121
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9779007162823143,
+            "standard_deviation": 0.014487604924952336,
+            "median": 0.9834051204972991,
+            "minimum": 0.9148359433316889,
+            "maximum": 0.9955491596230093
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9856878400533194,
+            "standard_deviation": 0.007358802759767142,
+            "median": 0.9877943591810864,
+            "minimum": 0.9569649954896973,
+            "maximum": 0.9953852214468532
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9824306229141125,
+            "standard_deviation": 0.008506279112256791,
+            "median": 0.9844256943270597,
+            "minimum": 0.9557657495789682,
+            "maximum": 0.9936632606173913
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9806857365489337,
+            "standard_deviation": 0.011333715222420144,
+            "median": 0.9840266837905847,
+            "minimum": 0.9442807448299994,
+            "maximum": 0.9948649512972805
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9810689724076425,
+            "standard_deviation": 0.008162513428678781,
+            "median": 0.9832288992455476,
+            "minimum": 0.9563662656527315,
+            "maximum": 0.99482807010964
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.985480889680935,
+            "standard_deviation": 0.006252487787903345,
+            "median": 0.9875256984242167,
+            "minimum": 0.9697946467029767,
+            "maximum": 0.9947082082826092
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9774095776776152,
+            "standard_deviation": 0.012887546227177728,
+            "median": 0.9798442250198262,
+            "minimum": 0.9194849346622074,
+            "maximum": 0.9931654136001041
+          }
+        }
+      },
+      "translation_8_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9812117155768937,
+          "standard_deviation": 0.010925867126027278,
+          "median": 0.9840244845367452,
+          "minimum": 0.9019890449689466,
+          "maximum": 0.9974765343543558
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9817143747475319,
+            "standard_deviation": 0.011060119353352348,
+            "median": 0.9851834020510857,
+            "minimum": 0.9414363404364837,
+            "maximum": 0.9948747094777547
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9843369098676479,
+            "standard_deviation": 0.009179915534970719,
+            "median": 0.986499024294859,
+            "minimum": 0.9538624696966272,
+            "maximum": 0.9974765343543558
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9758341090556999,
+            "standard_deviation": 0.008188124149454684,
+            "median": 0.9769733392326895,
+            "minimum": 0.9483968388073358,
+            "maximum": 0.9902414389829036
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.981153711092935,
+            "standard_deviation": 0.00807281758229878,
+            "median": 0.9817128999140696,
+            "minimum": 0.9570569003512152,
+            "maximum": 0.9956471009477859
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9861000883954193,
+            "standard_deviation": 0.007949637872463422,
+            "median": 0.9875905105067826,
+            "minimum": 0.947128549352212,
+            "maximum": 0.9946252086119837
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9789708870367079,
+            "standard_deviation": 0.011216155850187403,
+            "median": 0.9806386037422389,
+            "minimum": 0.9435475340324762,
+            "maximum": 0.9950248031184245
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9824392201288968,
+            "standard_deviation": 0.010422318636536712,
+            "median": 0.9856879622843149,
+            "minimum": 0.931989052598917,
+            "maximum": 0.9965625851656593
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9802623250920126,
+            "standard_deviation": 0.00855322619236562,
+            "median": 0.9820670679373542,
+            "minimum": 0.9489626142218871,
+            "maximum": 0.9921825567640116
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9862939655628292,
+            "standard_deviation": 0.006832433089026327,
+            "median": 0.987215512093034,
+            "minimum": 0.9628417813001149,
+            "maximum": 0.9969697037164016
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9750115647892565,
+            "standard_deviation": 0.01740491787622389,
+            "median": 0.978549232986339,
+            "minimum": 0.9019890449689466,
+            "maximum": 0.9943906124930748
+          }
+        }
+      },
+      "translation_16_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9698208977352928,
+          "standard_deviation": 0.01402753775024008,
+          "median": 0.972348137601049,
+          "minimum": 0.9032733981282662,
+          "maximum": 0.9933578805694511
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9698890756990979,
+            "standard_deviation": 0.017142234436143048,
+            "median": 0.9744209894335121,
+            "minimum": 0.9229485695579775,
+            "maximum": 0.9920214999280392
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9735254823865594,
+            "standard_deviation": 0.013490723454514296,
+            "median": 0.9743413187725772,
+            "minimum": 0.9134308268395809,
+            "maximum": 0.9919176088956191
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9628214644387844,
+            "standard_deviation": 0.014712153807589914,
+            "median": 0.9647255375593464,
+            "minimum": 0.9032733981282662,
+            "maximum": 0.9839664553870007
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9697404408702327,
+            "standard_deviation": 0.012818051845054503,
+            "median": 0.9721932923509717,
+            "minimum": 0.9292174423293641,
+            "maximum": 0.9915629143709486
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9749096994838287,
+            "standard_deviation": 0.009091542530142192,
+            "median": 0.9758972586138366,
+            "minimum": 0.9564970937315488,
+            "maximum": 0.9919024091676256
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9719265730124714,
+            "standard_deviation": 0.01172508907615604,
+            "median": 0.9729705666337793,
+            "minimum": 0.9410297349699565,
+            "maximum": 0.989999663008493
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9697835393251989,
+            "standard_deviation": 0.015462945685146732,
+            "median": 0.9743858328982777,
+            "minimum": 0.9144985192427625,
+            "maximum": 0.9880144814143235
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9655872370900714,
+            "standard_deviation": 0.015324239272082945,
+            "median": 0.9683932445973851,
+            "minimum": 0.9286823323522424,
+            "maximum": 0.9933578805694511
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9737382476979326,
+            "standard_deviation": 0.010131775091991879,
+            "median": 0.9752495541977162,
+            "minimum": 0.9523344685485085,
+            "maximum": 0.9914494465255113
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9662872173487504,
+            "standard_deviation": 0.013250508380915266,
+            "median": 0.9665773990511738,
+            "minimum": 0.9272525455884301,
+            "maximum": 0.988570813920371
+          }
+        }
+      },
+      "translation_16_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9712094161515474,
+          "standard_deviation": 0.013709788540874493,
+          "median": 0.9733811047208942,
+          "minimum": 0.911350757174529,
+          "maximum": 0.9922895825826445
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9703809688946948,
+            "standard_deviation": 0.015760371117803935,
+            "median": 0.9733720570853688,
+            "minimum": 0.9281975833734033,
+            "maximum": 0.9922895825826445
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9756427404810789,
+            "standard_deviation": 0.00921552398301754,
+            "median": 0.9779342214239322,
+            "minimum": 0.9540820367518021,
+            "maximum": 0.9914270461726522
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9654034648553754,
+            "standard_deviation": 0.011587203403999215,
+            "median": 0.9660434110813654,
+            "minimum": 0.9292993051066797,
+            "maximum": 0.9863155271713373
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9701200635511775,
+            "standard_deviation": 0.016848195483688676,
+            "median": 0.9731904751306641,
+            "minimum": 0.911350757174529,
+            "maximum": 0.9912392176110171
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9785544875785801,
+            "standard_deviation": 0.008964927618609966,
+            "median": 0.9791829628309928,
+            "minimum": 0.9441046165174576,
+            "maximum": 0.992188235153607
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9745331452472371,
+            "standard_deviation": 0.011710011049136139,
+            "median": 0.9767733809303063,
+            "minimum": 0.9407176973931175,
+            "maximum": 0.9911390850581601
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9693826592726384,
+            "standard_deviation": 0.01602992677922665,
+            "median": 0.9729791312291067,
+            "minimum": 0.9212455683859564,
+            "maximum": 0.9912814023474547
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9691681042270532,
+            "standard_deviation": 0.0142430500403787,
+            "median": 0.9720230310251128,
+            "minimum": 0.9211102573660767,
+            "maximum": 0.9877685106845607
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9723527480358303,
+            "standard_deviation": 0.010862244277212274,
+            "median": 0.9737732405200425,
+            "minimum": 0.9436707752686243,
+            "maximum": 0.9915833181728373
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9665557793718089,
+            "standard_deviation": 0.013495775794003148,
+            "median": 0.9699284919490687,
+            "minimum": 0.9206747574216185,
+            "maximum": 0.9912021387787072
+          }
+        }
+      },
+      "translation_16_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9652811892923796,
+          "standard_deviation": 0.019809138568034273,
+          "median": 0.9701351173195725,
+          "minimum": 0.8168124890927148,
+          "maximum": 0.993441081304287
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9694398362050215,
+            "standard_deviation": 0.01628337999780467,
+            "median": 0.9745473376986662,
+            "minimum": 0.9159710667645865,
+            "maximum": 0.9917448074257625
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9679939501402803,
+            "standard_deviation": 0.017954745497113567,
+            "median": 0.9738080194195404,
+            "minimum": 0.9144934006831089,
+            "maximum": 0.9883602481355191
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9595281688419327,
+            "standard_deviation": 0.014193187320221552,
+            "median": 0.9598026248839441,
+            "minimum": 0.924325951134866,
+            "maximum": 0.9823806725893695
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9603966533421034,
+            "standard_deviation": 0.027716847748027656,
+            "median": 0.9675474418176578,
+            "minimum": 0.8168124890927148,
+            "maximum": 0.9922161199290174
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9706476753807446,
+            "standard_deviation": 0.013221079433987667,
+            "median": 0.9719353244614002,
+            "minimum": 0.9264622011822798,
+            "maximum": 0.993441081304287
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9632887842071988,
+            "standard_deviation": 0.019032968879937308,
+            "median": 0.9674911915846942,
+            "minimum": 0.8702089066407782,
+            "maximum": 0.9893002951124836
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9628564113434197,
+            "standard_deviation": 0.024058136707743094,
+            "median": 0.9683997380497391,
+            "minimum": 0.847204885795105,
+            "maximum": 0.9898641436571038
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9614084838139028,
+            "standard_deviation": 0.02030386985445148,
+            "median": 0.9678730963427074,
+            "minimum": 0.8820750193022446,
+            "maximum": 0.9899413263287801
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9761713987145124,
+            "standard_deviation": 0.012542343458190223,
+            "median": 0.9771643053082737,
+            "minimum": 0.9307640777385467,
+            "maximum": 0.991488615339803
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9610805309346808,
+            "standard_deviation": 0.020246680086975128,
+            "median": 0.9668089061456961,
+            "minimum": 0.9006737314967136,
+            "maximum": 0.9913640018726164
+          }
+        }
+      },
+      "translation_16_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9657525919003926,
+          "standard_deviation": 0.01947754825748668,
+          "median": 0.9691692028237933,
+          "minimum": 0.8530231641764869,
+          "maximum": 0.9936450109540924
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.967686824847255,
+            "standard_deviation": 0.016819066896072966,
+            "median": 0.9714855363679717,
+            "minimum": 0.9243712489543291,
+            "maximum": 0.9930137923260755
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9690416497611472,
+            "standard_deviation": 0.018149067429450997,
+            "median": 0.969104231626158,
+            "minimum": 0.9017945937783656,
+            "maximum": 0.9936450109540924
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9596981113752201,
+            "standard_deviation": 0.017280320780822776,
+            "median": 0.962788294211057,
+            "minimum": 0.8881967434311484,
+            "maximum": 0.9871631874533089
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9620998243535385,
+            "standard_deviation": 0.023363307480533543,
+            "median": 0.9689259677191454,
+            "minimum": 0.8530231641764869,
+            "maximum": 0.9902658271370229
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9724326674497625,
+            "standard_deviation": 0.013080499932742915,
+            "median": 0.9749226011814283,
+            "minimum": 0.9404819980317194,
+            "maximum": 0.9929662913586229
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9602846052793349,
+            "standard_deviation": 0.0216634973240629,
+            "median": 0.965627517005512,
+            "minimum": 0.8802709725414098,
+            "maximum": 0.9875600874561298
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9679367977411215,
+            "standard_deviation": 0.0201869638443572,
+            "median": 0.972132846333172,
+            "minimum": 0.8670881859191522,
+            "maximum": 0.9901125399112481
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.96075694328551,
+            "standard_deviation": 0.01968203052442528,
+            "median": 0.9655715307085833,
+            "minimum": 0.8866807969213485,
+            "maximum": 0.9870647407448028
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9748316296676387,
+            "standard_deviation": 0.012672420299221672,
+            "median": 0.9773809377152858,
+            "minimum": 0.9420996422419274,
+            "maximum": 0.9924834828059491
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9627568652433977,
+            "standard_deviation": 0.021929921493216212,
+            "median": 0.9679163561728517,
+            "minimum": 0.9000110596112321,
+            "maximum": 0.9869615336320229
+          }
+        }
+      },
+      "translation_32_up": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9745118106598779,
+          "standard_deviation": 0.017710617751701272,
+          "median": 0.9791118496752953,
+          "minimum": 0.8767180272112146,
+          "maximum": 0.9987182722122733
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9799119057479454,
+            "standard_deviation": 0.015489225112311723,
+            "median": 0.9818337088712696,
+            "minimum": 0.9196982277696804,
+            "maximum": 0.9987182722122733
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9695051112417796,
+            "standard_deviation": 0.019179210875088445,
+            "median": 0.9773050638524674,
+            "minimum": 0.9159633843437504,
+            "maximum": 0.9926162353121518
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9727678550156689,
+            "standard_deviation": 0.016854863772893747,
+            "median": 0.9758550320373693,
+            "minimum": 0.887830308717811,
+            "maximum": 0.9931287559438017
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.977292848484506,
+            "standard_deviation": 0.010407004799670183,
+            "median": 0.980283600106272,
+            "minimum": 0.9488617317838356,
+            "maximum": 0.9938260303979882
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9806534087890924,
+            "standard_deviation": 0.01345387532642792,
+            "median": 0.9853739051999204,
+            "minimum": 0.9386312876123828,
+            "maximum": 0.9970819664788217
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9733512750179856,
+            "standard_deviation": 0.018357365821038807,
+            "median": 0.9780050857833952,
+            "minimum": 0.9039131211724862,
+            "maximum": 0.9948072615086434
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9658286442638543,
+            "standard_deviation": 0.024890399150988472,
+            "median": 0.9763212155134282,
+            "minimum": 0.8771394201796363,
+            "maximum": 0.9931042940675062
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.969160465427486,
+            "standard_deviation": 0.022214863159972766,
+            "median": 0.976805940187941,
+            "minimum": 0.8767180272112146,
+            "maximum": 0.988943993338343
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9800526334156082,
+            "standard_deviation": 0.012142886755234648,
+            "median": 0.9828463226841075,
+            "minimum": 0.9487593455709225,
+            "maximum": 0.9966577156603296
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9765939591948529,
+            "standard_deviation": 0.01071857860470377,
+            "median": 0.9778257044455847,
+            "minimum": 0.9541782272525146,
+            "maximum": 0.9952236693643344
+          }
+        }
+      },
+      "translation_32_down": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9763505715202953,
+          "standard_deviation": 0.015626941455528568,
+          "median": 0.9798140784546375,
+          "minimum": 0.895462301245943,
+          "maximum": 0.9977954286676982
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9824412613453873,
+            "standard_deviation": 0.013803085257219237,
+            "median": 0.9868114925581921,
+            "minimum": 0.9295078998853716,
+            "maximum": 0.9977954286676982
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9751432934012226,
+            "standard_deviation": 0.01316021000896315,
+            "median": 0.9753972079164153,
+            "minimum": 0.9447769288062355,
+            "maximum": 0.9959411283273024
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9776429964960646,
+            "standard_deviation": 0.012805949097273409,
+            "median": 0.9790232701933326,
+            "minimum": 0.9408303250309894,
+            "maximum": 0.9972584527270437
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9756593362542375,
+            "standard_deviation": 0.016468375304953906,
+            "median": 0.9818349473613872,
+            "minimum": 0.9111052505015347,
+            "maximum": 0.9962130465314921
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9829309616537679,
+            "standard_deviation": 0.012812366162684245,
+            "median": 0.9880453031944026,
+            "minimum": 0.9464049556465206,
+            "maximum": 0.9967193337004083
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9758260730251602,
+            "standard_deviation": 0.013558881694231218,
+            "median": 0.9799439875590927,
+            "minimum": 0.9332490077352085,
+            "maximum": 0.9939877430914492
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9722919459022102,
+            "standard_deviation": 0.017633509150914287,
+            "median": 0.9775378423281731,
+            "minimum": 0.9052807816149677,
+            "maximum": 0.9967001364528032
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9729304177932526,
+            "standard_deviation": 0.018421955044628527,
+            "median": 0.9745994740211688,
+            "minimum": 0.9025835004577251,
+            "maximum": 0.9938400351001221
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9764321700759102,
+            "standard_deviation": 0.012431526944231691,
+            "median": 0.9774639149246215,
+            "minimum": 0.9396931295331542,
+            "maximum": 0.9974913501415908
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9722072592557387,
+            "standard_deviation": 0.018990066822550354,
+            "median": 0.9762252343987192,
+            "minimum": 0.895462301245943,
+            "maximum": 0.9955105191906248
+          }
+        }
+      },
+      "translation_32_left": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9632529830022235,
+          "standard_deviation": 0.02266399808173603,
+          "median": 0.9677061917990578,
+          "minimum": 0.812034325730529,
+          "maximum": 0.9985692641510568
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9688879830118112,
+            "standard_deviation": 0.016301976549804077,
+            "median": 0.972778956815006,
+            "minimum": 0.9143602816432411,
+            "maximum": 0.9891259342575998
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9598120368353134,
+            "standard_deviation": 0.028862112427698563,
+            "median": 0.9665637269156578,
+            "minimum": 0.8775058029908263,
+            "maximum": 0.9985692641510568
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9537425215583795,
+            "standard_deviation": 0.025187075395140052,
+            "median": 0.9571662385651241,
+            "minimum": 0.812034325730529,
+            "maximum": 0.9781598874567585
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9592651184150782,
+            "standard_deviation": 0.023785102465577673,
+            "median": 0.9642771923022447,
+            "minimum": 0.8864730485718155,
+            "maximum": 0.9968339481602907
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9760275166653092,
+            "standard_deviation": 0.012515868896742537,
+            "median": 0.9770451559982485,
+            "minimum": 0.9384488688824999,
+            "maximum": 0.9946543306824558
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9553224166670401,
+            "standard_deviation": 0.020741167913647152,
+            "median": 0.9582332322650613,
+            "minimum": 0.885957445550029,
+            "maximum": 0.9932788540664056
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.958538033790786,
+            "standard_deviation": 0.01954285967157058,
+            "median": 0.96140432631457,
+            "minimum": 0.8949979924600505,
+            "maximum": 0.9966993990615952
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9652026483103313,
+            "standard_deviation": 0.024918090110045876,
+            "median": 0.9706031498954927,
+            "minimum": 0.9076418062158269,
+            "maximum": 0.9959735949377353
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9762047368353193,
+            "standard_deviation": 0.011166020130003116,
+            "median": 0.9786221681941139,
+            "minimum": 0.94276284323103,
+            "maximum": 0.9950868624091949
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9595268179328668,
+            "standard_deviation": 0.023229778354407524,
+            "median": 0.96505565655855,
+            "minimum": 0.8963704027684609,
+            "maximum": 0.9907798828556027
+          }
+        }
+      },
+      "translation_32_right": {
+        "overall": {
+          "number_of_examples": 500,
+          "cosine_stability": 0.9622563044102949,
+          "standard_deviation": 0.023611635298829283,
+          "median": 0.9668813916183343,
+          "minimum": 0.8157433716522149,
+          "maximum": 0.9984243060879943
+        },
+        "per_class": {
+          "airplane": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9693681638899878,
+            "standard_deviation": 0.014790943294081623,
+            "median": 0.9723343089476009,
+            "minimum": 0.9316848281759448,
+            "maximum": 0.9924049640737419
+          },
+          "bird": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9556594346315123,
+            "standard_deviation": 0.02937057691444418,
+            "median": 0.9587929078763131,
+            "minimum": 0.8776361276685426,
+            "maximum": 0.9984243060879943
+          },
+          "car": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9515963304348766,
+            "standard_deviation": 0.025632837136409004,
+            "median": 0.9569929815195597,
+            "minimum": 0.8157433716522149,
+            "maximum": 0.9854845010670594
+          },
+          "cat": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9577511761944943,
+            "standard_deviation": 0.02143877134345247,
+            "median": 0.9623222116456402,
+            "minimum": 0.8953260439458174,
+            "maximum": 0.994560229231572
+          },
+          "deer": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.97466636486972,
+            "standard_deviation": 0.01335195054119325,
+            "median": 0.9772185867899642,
+            "minimum": 0.9266828892194345,
+            "maximum": 0.9972021963155913
+          },
+          "dog": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9515807086146476,
+            "standard_deviation": 0.025744231369721232,
+            "median": 0.9532493396342783,
+            "minimum": 0.8617701149271311,
+            "maximum": 0.9945671741513386
+          },
+          "horse": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9609731672836793,
+            "standard_deviation": 0.02725906847254469,
+            "median": 0.9656350517911145,
+            "minimum": 0.8414879741352884,
+            "maximum": 0.9897307003622589
+          },
+          "monkey": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9649841800654159,
+            "standard_deviation": 0.018852172075046716,
+            "median": 0.9690422548479167,
+            "minimum": 0.9148183576803837,
+            "maximum": 0.9955759197825691
+          },
+          "ship": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9732581499353331,
+            "standard_deviation": 0.017947507232045766,
+            "median": 0.9769153690118964,
+            "minimum": 0.9059960608901385,
+            "maximum": 0.9969185719813637
+          },
+          "truck": {
+            "number_of_examples": 50,
+            "cosine_stability": 0.9627253681832815,
+            "standard_deviation": 0.022114658776737198,
+            "median": 0.9695321366909428,
+            "minimum": 0.8733855038991148,
+            "maximum": 0.9882223409079212
+          }
+        }
+      }
+    }
+  },
+  "translation_feature_stability": {
+    "resnet50": [
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 1.0,
+        "standard_deviation": 7.480629683664038e-17,
+        "median": 1.0,
+        "minimum": 0.9999999999999998,
+        "maximum": 1.0,
+        "displacement": 0,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.480629683664038e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.480629683664038e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.480629683664038e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.480629683664038e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9685306223978121,
+        "standard_deviation": 0.01776476577127818,
+        "median": 0.9724398476024976,
+        "minimum": 0.8350367661870147,
+        "maximum": 0.994438504845558,
+        "displacement": 8,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9692078373193097,
+            "standard_deviation": 0.014399783612935578,
+            "median": 0.9720522516137863,
+            "minimum": 0.867108904285311,
+            "maximum": 0.9908533780412813
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.965525789306735,
+            "standard_deviation": 0.018487636431053705,
+            "median": 0.9693430789226507,
+            "minimum": 0.8350367661870147,
+            "maximum": 0.9935091803734518
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9737907973423641,
+            "standard_deviation": 0.013902947799162452,
+            "median": 0.9767834866741092,
+            "minimum": 0.9112443522823818,
+            "maximum": 0.994438504845558
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9655980656228391,
+            "standard_deviation": 0.021775036477127127,
+            "median": 0.9716092309224195,
+            "minimum": 0.855510559625593,
+            "maximum": 0.9931213653334924
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9524929341731817,
+        "standard_deviation": 0.029317266751261697,
+        "median": 0.9600505004929711,
+        "minimum": 0.7761951049505185,
+        "maximum": 0.9918451078617603,
+        "displacement": 16,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9559150768067566,
+            "standard_deviation": 0.023934232173642916,
+            "median": 0.9611607695723907,
+            "minimum": 0.7920129435868275,
+            "maximum": 0.9883311192821905
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9493029081374472,
+            "standard_deviation": 0.030263521033491194,
+            "median": 0.9560790603902947,
+            "minimum": 0.7761951049505185,
+            "maximum": 0.9880426636548244
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9607936557517673,
+            "standard_deviation": 0.02216465802006806,
+            "median": 0.966219356032358,
+            "minimum": 0.8261936181252884,
+            "maximum": 0.9918451078617603
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9439600959967553,
+            "standard_deviation": 0.035977904975722126,
+            "median": 0.9549040691165444,
+            "minimum": 0.797080706128659,
+            "maximum": 0.9889770601145983
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9327246260601771,
+        "standard_deviation": 0.04219023782004914,
+        "median": 0.9431750251943983,
+        "minimum": 0.6762415698252218,
+        "maximum": 0.9966758284445798,
+        "displacement": 32,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9379681791030822,
+            "standard_deviation": 0.03904140086158605,
+            "median": 0.9472703722902878,
+            "minimum": 0.7336226258962961,
+            "maximum": 0.9940013931402196
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9326639556613383,
+            "standard_deviation": 0.044882821603683835,
+            "median": 0.9450087152914111,
+            "minimum": 0.6762415698252218,
+            "maximum": 0.9914063208787028
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9402149975425862,
+            "standard_deviation": 0.03592436773134566,
+            "median": 0.9486108815019021,
+            "minimum": 0.7405998925888997,
+            "maximum": 0.9947332752541181
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9200513719337016,
+            "standard_deviation": 0.04523925564705214,
+            "median": 0.9306514385697948,
+            "minimum": 0.7443734650121455,
+            "maximum": 0.9966758284445798
+          }
+        }
+      }
+    ],
+    "vit_b_16": [
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 1.0,
+        "standard_deviation": 7.803217357074378e-17,
+        "median": 1.0,
+        "minimum": 0.9999999999999998,
+        "maximum": 1.0,
+        "displacement": 0,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.803217357074378e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.803217357074378e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.803217357074378e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 7.803217357074378e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9471183905418782,
+        "standard_deviation": 0.032241268442615684,
+        "median": 0.9535747361878228,
+        "minimum": 0.7615823577120949,
+        "maximum": 0.9920079025389388,
+        "displacement": 8,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9448002920283107,
+            "standard_deviation": 0.03239485467642278,
+            "median": 0.9507319392959661,
+            "minimum": 0.7615823577120949,
+            "maximum": 0.990939033424989
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9447149456116538,
+            "standard_deviation": 0.03197220972200524,
+            "median": 0.9491633544402933,
+            "minimum": 0.7751945368813264,
+            "maximum": 0.9917589361157392
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9500127714620725,
+            "standard_deviation": 0.031703833874079865,
+            "median": 0.9577215388805509,
+            "minimum": 0.762239920310155,
+            "maximum": 0.9920079025389388
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9489455530654753,
+            "standard_deviation": 0.03253228526826057,
+            "median": 0.9576410191117535,
+            "minimum": 0.7785407411601951,
+            "maximum": 0.9918672543650358
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9743198397383573,
+        "standard_deviation": 0.025605985971837004,
+        "median": 0.9821087416302254,
+        "minimum": 0.7631045037904446,
+        "maximum": 0.9996263482149783,
+        "displacement": 16,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9744415433325182,
+            "standard_deviation": 0.0245835376650606,
+            "median": 0.9822703966457407,
+            "minimum": 0.8469511163826864,
+            "maximum": 0.9994289035615862
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9716614865413767,
+            "standard_deviation": 0.030196881874307635,
+            "median": 0.9815791880537399,
+            "minimum": 0.7631045037904446,
+            "maximum": 0.999538209873228
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9760961166541999,
+            "standard_deviation": 0.021637497880091613,
+            "median": 0.9820111514018418,
+            "minimum": 0.8399292950769293,
+            "maximum": 0.9996263482149783
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9750802124253344,
+            "standard_deviation": 0.025049306916534796,
+            "median": 0.9822059770791575,
+            "minimum": 0.7927967901342506,
+            "maximum": 0.99958269268579
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9417606211335707,
+        "standard_deviation": 0.04763726771660808,
+        "median": 0.9552507723662738,
+        "minimum": 0.5782075254632038,
+        "maximum": 0.9988031230871696,
+        "displacement": 32,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9370504009790386,
+            "standard_deviation": 0.052429837461152554,
+            "median": 0.9540545053817875,
+            "minimum": 0.6640762956914256,
+            "maximum": 0.9985728776378351
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9336163067204738,
+            "standard_deviation": 0.0541892338315247,
+            "median": 0.9501338331745284,
+            "minimum": 0.5782075254632038,
+            "maximum": 0.9986313965728933
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9478643269736847,
+            "standard_deviation": 0.04028622018792583,
+            "median": 0.9563878908994479,
+            "minimum": 0.7389717215162488,
+            "maximum": 0.9988031230871696
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9485114498610856,
+            "standard_deviation": 0.0399693845446757,
+            "median": 0.9576268267987448,
+            "minimum": 0.7549004296231078,
+            "maximum": 0.9987174786359727
+          }
+        }
+      }
+    ],
+    "clip": [
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 1.0,
+        "standard_deviation": 8.614071563282454e-17,
+        "median": 1.0,
+        "minimum": 0.9999999999999998,
+        "maximum": 1.0,
+        "displacement": 0,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 8.614071563282454e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 8.614071563282454e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 8.614071563282454e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 1.0,
+            "standard_deviation": 8.614071563282454e-17,
+            "median": 1.0,
+            "minimum": 0.9999999999999998,
+            "maximum": 1.0
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.981071849269987,
+        "standard_deviation": 0.010074274871046625,
+        "median": 0.983296951579527,
+        "minimum": 0.9019890449689466,
+        "maximum": 0.9974765343543558,
+        "displacement": 8,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9807518689733816,
+            "standard_deviation": 0.009600717831183561,
+            "median": 0.9822405609514264,
+            "minimum": 0.9332158325416862,
+            "maximum": 0.9961917349222768
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9810780190043837,
+            "standard_deviation": 0.009217352021706848,
+            "median": 0.9826697701832723,
+            "minimum": 0.9402049249640432,
+            "maximum": 0.9965906217275561
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9812457935252894,
+            "standard_deviation": 0.010454849518014805,
+            "median": 0.9838119971661721,
+            "minimum": 0.9148359433316889,
+            "maximum": 0.9964314684657587
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9812117155768937,
+            "standard_deviation": 0.010925867126027278,
+            "median": 0.9840244845367452,
+            "minimum": 0.9019890449689466,
+            "maximum": 0.9974765343543558
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.968016023769903,
+        "standard_deviation": 0.01719421954089267,
+        "median": 0.9716192479949957,
+        "minimum": 0.8168124890927148,
+        "maximum": 0.9936450109540924,
+        "displacement": 16,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9698208977352928,
+            "standard_deviation": 0.01402753775024008,
+            "median": 0.972348137601049,
+            "minimum": 0.9032733981282662,
+            "maximum": 0.9933578805694511
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9712094161515474,
+            "standard_deviation": 0.013709788540874493,
+            "median": 0.9733811047208942,
+            "minimum": 0.911350757174529,
+            "maximum": 0.9922895825826445
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9652811892923796,
+            "standard_deviation": 0.019809138568034273,
+            "median": 0.9701351173195725,
+            "minimum": 0.8168124890927148,
+            "maximum": 0.993441081304287
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9657525919003926,
+            "standard_deviation": 0.01947754825748668,
+            "median": 0.9691692028237933,
+            "minimum": 0.8530231641764869,
+            "maximum": 0.9936450109540924
+          }
+        }
+      },
+      {
+        "number_of_examples": 2000,
+        "cosine_stability": 0.9690929173981728,
+        "standard_deviation": 0.021165511270510196,
+        "median": 0.9742145196264324,
+        "minimum": 0.812034325730529,
+        "maximum": 0.9987182722122733,
+        "displacement": 32,
+        "direction_results": {
+          "up": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9745118106598779,
+            "standard_deviation": 0.017710617751701272,
+            "median": 0.9791118496752953,
+            "minimum": 0.8767180272112146,
+            "maximum": 0.9987182722122733
+          },
+          "down": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9763505715202953,
+            "standard_deviation": 0.015626941455528568,
+            "median": 0.9798140784546375,
+            "minimum": 0.895462301245943,
+            "maximum": 0.9977954286676982
+          },
+          "left": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9632529830022235,
+            "standard_deviation": 0.02266399808173603,
+            "median": 0.9677061917990578,
+            "minimum": 0.812034325730529,
+            "maximum": 0.9985692641510568
+          },
+          "right": {
+            "number_of_examples": 500,
+            "cosine_stability": 0.9622563044102949,
+            "standard_deviation": 0.023611635298829283,
+            "median": 0.9668813916183343,
+            "minimum": 0.8157433716522149,
+            "maximum": 0.9984243060879943
+          }
+        }
+      }
+    ]
+  },
+  "prediction_feature_comparison": {
+    "resnet50_linear": {
+      "grayscale": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 483,
+        "changed_prediction_count": 17,
+        "prediction_consistency": 0.966,
+        "stable_prediction_cosine_stability": 0.7911023838472142,
+        "changed_prediction_cosine_stability": 0.7128346893912695
+      },
+      "cue_conflict": {
+        "number_of_examples": 233,
+        "stable_prediction_count": 115,
+        "changed_prediction_count": 118,
+        "prediction_consistency": 0.49356223175965663,
+        "stable_prediction_cosine_stability": 0.4577961544832403,
+        "changed_prediction_cosine_stability": 0.27284383249948735
+      },
+      "patch_shuffle": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 461,
+        "changed_prediction_count": 39,
+        "prediction_consistency": 0.922,
+        "stable_prediction_cosine_stability": 0.7196015810118894,
+        "changed_prediction_cosine_stability": 0.7005198143664482
+      },
+      "translation_8_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 497,
+        "changed_prediction_count": 3,
+        "prediction_consistency": 0.994,
+        "stable_prediction_cosine_stability": 0.9692892986573681,
+        "changed_prediction_cosine_stability": 0.9557124089809883
+      },
+      "translation_8_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 497,
+        "changed_prediction_count": 3,
+        "prediction_consistency": 0.994,
+        "stable_prediction_cosine_stability": 0.9655941396272736,
+        "changed_prediction_cosine_stability": 0.9542024195375216
+      },
+      "translation_8_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 498,
+        "changed_prediction_count": 2,
+        "prediction_consistency": 0.996,
+        "stable_prediction_cosine_stability": 0.9739632343532681,
+        "changed_prediction_cosine_stability": 0.9308539816272458
+      },
+      "translation_8_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 497,
+        "changed_prediction_count": 3,
+        "prediction_consistency": 0.994,
+        "stable_prediction_cosine_stability": 0.9660424242240053,
+        "changed_prediction_cosine_stability": 0.8919826573629762
+      },
+      "translation_16_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 495,
+        "changed_prediction_count": 5,
+        "prediction_consistency": 0.99,
+        "stable_prediction_cosine_stability": 0.9561490152311342,
+        "changed_prediction_cosine_stability": 0.932755172793384
+      },
+      "translation_16_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 497,
+        "changed_prediction_count": 3,
+        "prediction_consistency": 0.994,
+        "stable_prediction_cosine_stability": 0.9494823405040247,
+        "changed_prediction_cosine_stability": 0.9195769460744403
+      },
+      "translation_16_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 496,
+        "changed_prediction_count": 4,
+        "prediction_consistency": 0.992,
+        "stable_prediction_cosine_stability": 0.9612069426411338,
+        "changed_prediction_cosine_stability": 0.9095460814703357
+      },
+      "translation_16_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 495,
+        "changed_prediction_count": 5,
+        "prediction_consistency": 0.99,
+        "stable_prediction_cosine_stability": 0.9445356271009934,
+        "changed_prediction_cosine_stability": 0.8869825166771914
+      },
+      "translation_32_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 494,
+        "changed_prediction_count": 6,
+        "prediction_consistency": 0.988,
+        "stable_prediction_cosine_stability": 0.9383779674351066,
+        "changed_prediction_cosine_stability": 0.9042289397664037
+      },
+      "translation_32_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 494,
+        "changed_prediction_count": 6,
+        "prediction_consistency": 0.988,
+        "stable_prediction_cosine_stability": 0.9328964266933882,
+        "changed_prediction_cosine_stability": 0.9135238406892271
+      },
+      "translation_32_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 494,
+        "changed_prediction_count": 6,
+        "prediction_consistency": 0.988,
+        "stable_prediction_cosine_stability": 0.9404533451678408,
+        "changed_prediction_cosine_stability": 0.9205910430632906
+      },
+      "translation_32_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9205744367761571,
+        "changed_prediction_cosine_stability": 0.8878828841226942
+      }
+    },
+    "vit_b_16_linear": {
+      "grayscale": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 478,
+        "changed_prediction_count": 22,
+        "prediction_consistency": 0.956,
+        "stable_prediction_cosine_stability": 0.7475060291354667,
+        "changed_prediction_cosine_stability": 0.5618022439639487
+      },
+      "cue_conflict": {
+        "number_of_examples": 233,
+        "stable_prediction_count": 169,
+        "changed_prediction_count": 64,
+        "prediction_consistency": 0.7253218884120172,
+        "stable_prediction_cosine_stability": 0.4518241211634091,
+        "changed_prediction_cosine_stability": 0.1973670157210279
+      },
+      "patch_shuffle": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 454,
+        "changed_prediction_count": 46,
+        "prediction_consistency": 0.908,
+        "stable_prediction_cosine_stability": 0.6640992324474341,
+        "changed_prediction_cosine_stability": 0.5895548759626636
+      },
+      "translation_8_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 491,
+        "changed_prediction_count": 9,
+        "prediction_consistency": 0.982,
+        "stable_prediction_cosine_stability": 0.9452355793657012,
+        "changed_prediction_cosine_stability": 0.9210529495106685
+      },
+      "translation_8_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 493,
+        "changed_prediction_count": 7,
+        "prediction_consistency": 0.986,
+        "stable_prediction_cosine_stability": 0.9449512918275506,
+        "changed_prediction_cosine_stability": 0.9280694192634878
+      },
+      "translation_8_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 493,
+        "changed_prediction_count": 7,
+        "prediction_consistency": 0.986,
+        "stable_prediction_cosine_stability": 0.9506932960020203,
+        "changed_prediction_cosine_stability": 0.9020844002914613
+      },
+      "translation_8_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 491,
+        "changed_prediction_count": 9,
+        "prediction_consistency": 0.982,
+        "stable_prediction_cosine_stability": 0.9496913589689354,
+        "changed_prediction_cosine_stability": 0.9082576976655938
+      },
+      "translation_16_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 493,
+        "changed_prediction_count": 7,
+        "prediction_consistency": 0.986,
+        "stable_prediction_cosine_stability": 0.9747525820643383,
+        "changed_prediction_cosine_stability": 0.952535529791463
+      },
+      "translation_16_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 494,
+        "changed_prediction_count": 6,
+        "prediction_consistency": 0.988,
+        "stable_prediction_cosine_stability": 0.9718551925935076,
+        "changed_prediction_cosine_stability": 0.955713021582601
+      },
+      "translation_16_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 496,
+        "changed_prediction_count": 4,
+        "prediction_consistency": 0.992,
+        "stable_prediction_cosine_stability": 0.9763973752679691,
+        "changed_prediction_cosine_stability": 0.9387400485468357
+      },
+      "translation_16_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 496,
+        "changed_prediction_count": 4,
+        "prediction_consistency": 0.992,
+        "stable_prediction_cosine_stability": 0.9755532971174643,
+        "changed_prediction_cosine_stability": 0.9164177106012243
+      },
+      "translation_32_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 486,
+        "changed_prediction_count": 14,
+        "prediction_consistency": 0.972,
+        "stable_prediction_cosine_stability": 0.9393113007160606,
+        "changed_prediction_cosine_stability": 0.8585648815367035
+      },
+      "translation_32_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 486,
+        "changed_prediction_count": 14,
+        "prediction_consistency": 0.972,
+        "stable_prediction_cosine_stability": 0.934513368955276,
+        "changed_prediction_cosine_stability": 0.9024754319980526
+      },
+      "translation_32_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 486,
+        "changed_prediction_count": 14,
+        "prediction_consistency": 0.972,
+        "stable_prediction_cosine_stability": 0.9498055291197272,
+        "changed_prediction_cosine_stability": 0.8804768810467891
+      },
+      "translation_32_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 489,
+        "changed_prediction_count": 11,
+        "prediction_consistency": 0.978,
+        "stable_prediction_cosine_stability": 0.9495311951138957,
+        "changed_prediction_cosine_stability": 0.9031791381679747
+      }
+    },
+    "clip_linear": {
+      "grayscale": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 479,
+        "changed_prediction_count": 21,
+        "prediction_consistency": 0.958,
+        "stable_prediction_cosine_stability": 0.8954018032671974,
+        "changed_prediction_cosine_stability": 0.8495628354003374
+      },
+      "cue_conflict": {
+        "number_of_examples": 233,
+        "stable_prediction_count": 174,
+        "changed_prediction_count": 59,
+        "prediction_consistency": 0.7467811158798283,
+        "stable_prediction_cosine_stability": 0.7516289794382981,
+        "changed_prediction_cosine_stability": 0.6511793085068633
+      },
+      "patch_shuffle": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 403,
+        "changed_prediction_count": 97,
+        "prediction_consistency": 0.806,
+        "stable_prediction_cosine_stability": 0.7420223629802848,
+        "changed_prediction_cosine_stability": 0.7092729629381742
+      },
+      "translation_8_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 490,
+        "changed_prediction_count": 10,
+        "prediction_consistency": 0.98,
+        "stable_prediction_cosine_stability": 0.9808987409380621,
+        "changed_prediction_cosine_stability": 0.9735551427040484
+      },
+      "translation_8_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 495,
+        "changed_prediction_count": 5,
+        "prediction_consistency": 0.99,
+        "stable_prediction_cosine_stability": 0.9811038333528568,
+        "changed_prediction_cosine_stability": 0.9785223985055543
+      },
+      "translation_8_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 493,
+        "changed_prediction_count": 7,
+        "prediction_consistency": 0.986,
+        "stable_prediction_cosine_stability": 0.9812653512801606,
+        "changed_prediction_cosine_stability": 0.9798683687893605
+      },
+      "translation_8_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 493,
+        "changed_prediction_count": 7,
+        "prediction_consistency": 0.986,
+        "stable_prediction_cosine_stability": 0.9812613492520528,
+        "changed_prediction_cosine_stability": 0.9777160867406965
+      },
+      "translation_16_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 490,
+        "changed_prediction_count": 10,
+        "prediction_consistency": 0.98,
+        "stable_prediction_cosine_stability": 0.9699287028908572,
+        "changed_prediction_cosine_stability": 0.9645384451126311
+      },
+      "translation_16_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 491,
+        "changed_prediction_count": 9,
+        "prediction_consistency": 0.982,
+        "stable_prediction_cosine_stability": 0.9713640801739778,
+        "changed_prediction_cosine_stability": 0.962771634483399
+      },
+      "translation_16_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9657723157205659,
+        "changed_prediction_cosine_stability": 0.9350769139589299
+      },
+      "translation_16_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 489,
+        "changed_prediction_count": 11,
+        "prediction_consistency": 0.978,
+        "stable_prediction_cosine_stability": 0.9662558129999964,
+        "changed_prediction_cosine_stability": 0.9433821266543713
+      },
+      "translation_32_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 488,
+        "changed_prediction_count": 12,
+        "prediction_consistency": 0.976,
+        "stable_prediction_cosine_stability": 0.9750059879096376,
+        "changed_prediction_cosine_stability": 0.9544152691696538
+      },
+      "translation_32_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9763117228416871,
+        "changed_prediction_cosine_stability": 0.9787397652546909
+      },
+      "translation_32_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 486,
+        "changed_prediction_count": 14,
+        "prediction_consistency": 0.972,
+        "stable_prediction_cosine_stability": 0.9638504469503533,
+        "changed_prediction_cosine_stability": 0.942512448802858
+      },
+      "translation_32_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9626003714338035,
+        "changed_prediction_cosine_stability": 0.9410961824645074
+      }
+    },
+    "clip_zero_shot": {
+      "grayscale": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 476,
+        "changed_prediction_count": 24,
+        "prediction_consistency": 0.952,
+        "stable_prediction_cosine_stability": 0.8954689092102621,
+        "changed_prediction_cosine_stability": 0.853961771846247
+      },
+      "cue_conflict": {
+        "number_of_examples": 233,
+        "stable_prediction_count": 183,
+        "changed_prediction_count": 50,
+        "prediction_consistency": 0.7854077253218884,
+        "stable_prediction_cosine_stability": 0.7441195879430337,
+        "changed_prediction_cosine_stability": 0.6605827406118729
+      },
+      "patch_shuffle": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 398,
+        "changed_prediction_count": 102,
+        "prediction_consistency": 0.796,
+        "stable_prediction_cosine_stability": 0.7428202236225818,
+        "changed_prediction_cosine_stability": 0.707765104747746
+      },
+      "translation_8_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 489,
+        "changed_prediction_count": 11,
+        "prediction_consistency": 0.978,
+        "stable_prediction_cosine_stability": 0.9808477222710605,
+        "changed_prediction_cosine_stability": 0.9764907541947441
+      },
+      "translation_8_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 490,
+        "changed_prediction_count": 10,
+        "prediction_consistency": 0.98,
+        "stable_prediction_cosine_stability": 0.981124737230117,
+        "changed_prediction_cosine_stability": 0.9787888259434621
+      },
+      "translation_8_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9813369754243415,
+        "changed_prediction_cosine_stability": 0.9756381067335806
+      },
+      "translation_8_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 491,
+        "changed_prediction_count": 9,
+        "prediction_consistency": 0.982,
+        "stable_prediction_cosine_stability": 0.9814351241552517,
+        "changed_prediction_cosine_stability": 0.9690235364686978
+      },
+      "translation_16_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 488,
+        "changed_prediction_count": 12,
+        "prediction_consistency": 0.976,
+        "stable_prediction_cosine_stability": 0.969979793923469,
+        "changed_prediction_cosine_stability": 0.9633591194161246
+      },
+      "translation_16_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 489,
+        "changed_prediction_count": 11,
+        "prediction_consistency": 0.978,
+        "stable_prediction_cosine_stability": 0.9712774999482843,
+        "changed_prediction_cosine_stability": 0.9681827819147899
+      },
+      "translation_16_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 492,
+        "changed_prediction_count": 8,
+        "prediction_consistency": 0.984,
+        "stable_prediction_cosine_stability": 0.9658789781147067,
+        "changed_prediction_cosine_stability": 0.9285171767192797
+      },
+      "translation_16_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 490,
+        "changed_prediction_count": 10,
+        "prediction_consistency": 0.98,
+        "stable_prediction_cosine_stability": 0.9661260164265272,
+        "changed_prediction_cosine_stability": 0.9474547901198
+      },
+      "translation_32_up": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 489,
+        "changed_prediction_count": 11,
+        "prediction_consistency": 0.978,
+        "stable_prediction_cosine_stability": 0.9747178283149004,
+        "changed_prediction_cosine_stability": 0.9653533894502441
+      },
+      "translation_32_down": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 488,
+        "changed_prediction_count": 12,
+        "prediction_consistency": 0.976,
+        "stable_prediction_cosine_stability": 0.9765534902588386,
+        "changed_prediction_cosine_stability": 0.9680985428195314
+      },
+      "translation_32_left": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 483,
+        "changed_prediction_count": 17,
+        "prediction_consistency": 0.966,
+        "stable_prediction_cosine_stability": 0.9635883447955721,
+        "changed_prediction_cosine_stability": 0.9537247626382618
+      },
+      "translation_32_right": {
+        "number_of_examples": 500,
+        "stable_prediction_count": 486,
+        "changed_prediction_count": 14,
+        "prediction_consistency": 0.972,
+        "stable_prediction_cosine_stability": 0.9626005225944427,
+        "changed_prediction_cosine_stability": 0.9503070160177314
+      }
+    }
+  }
+}

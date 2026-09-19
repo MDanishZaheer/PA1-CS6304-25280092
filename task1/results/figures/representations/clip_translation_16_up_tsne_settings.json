@@ -1,0 +1,16 @@
+{
+  "method": "t-SNE",
+  "seed": 6304,
+  "number_of_pairs": 500,
+  "number_of_points": 1000,
+  "original_feature_dimension": 512,
+  "components": 2,
+  "perplexity": 30.0,
+  "learning_rate": "auto",
+  "initialization": "pca",
+  "max_iterations": 1000,
+  "metric": "euclidean",
+  "features_l2_normalized": true,
+  "clean_condition": "clean",
+  "transformed_condition": "translation_16_up"
+}

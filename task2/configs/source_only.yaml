@@ -1,0 +1,5 @@
+base_config: base.yaml
+
+method:
+  name: source_only
+  run_name: source_only

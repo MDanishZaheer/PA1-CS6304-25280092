@@ -1,0 +1,84 @@
+experiment_name: task4_cifar_open_set_recognition
+seed: 6304
+
+paths:
+  cifar10_directory: Data/cifar10
+  cifar100_directory: Data/cifar100
+  feature_cache_directory: Data/task4_cache/features
+  logits_cache_directory: Data/task4_cache/logits
+  mahalanobis_cache_directory: Data/task4_cache/mahalanobis
+  cifar10_split_file: task4/data/splits/cifar10_seed6304.json
+  unknown_protocol_file: task4/data/splits/cifar100_fixed_unknowns.json
+  results_directory: task4/results
+
+dataset:
+  known_name: CIFAR10
+  unknown_name: CIFAR100
+  known_class_names:
+    - airplane
+    - automobile
+    - bird
+    - cat
+    - deer
+    - dog
+    - frog
+    - horse
+    - ship
+    - truck
+  near_unknown_classes:
+    - bus
+    - pickup_truck
+    - motorcycle
+    - tractor
+    - wolf
+    - fox
+    - leopard
+    - camel
+  far_unknown_classes:
+    - bottle
+    - bowl
+    - chair
+    - clock
+    - keyboard
+    - mushroom
+    - sunflower
+    - wardrobe
+  train_ratio: 0.9
+  validation_ratio: 0.1
+  download: true
+
+transforms:
+  image_size: 32
+  crop_padding: 4
+  random_horizontal_flip: true
+  normalization: cifar10
+
+model:
+  backbone: resnet18
+  pretrained: false
+  first_convolution_kernel_size: 3
+  first_convolution_stride: 1
+  use_initial_max_pool: false
+  feature_dimension: 512
+  number_of_known_classes: 10
+
+training:
+  optimizer: sgd
+  learning_rate: 0.1
+  momentum: 0.9
+  weight_decay: 0.0005
+  batch_size: 128
+  evaluation_batch_size: 256
+  maximum_epochs: 100
+  scheduler: cosine
+  number_of_workers: 0
+  pin_memory: true
+  mixed_precision: true
+  checkpoint_metric: validation_accuracy
+
+evaluation:
+  threshold_percentile: 95.0
+  mahalanobis_epsilon: 0.000001
+  energy_temperature: 1.0
+  proser_temperature: 1024.0
+  minimum_failure_cases_per_group: 3

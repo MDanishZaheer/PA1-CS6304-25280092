@@ -1,0 +1,16 @@
+base_config: base.yaml
+
+training:
+  learning_rate: 0.001
+  maximum_epochs: 50
+
+method:
+  name: proser
+  run_name: proser
+  use_randaugment: false
+  initialize_from_vanilla: true
+  number_of_dummy_classes: 5
+  classifier_placeholder_weight: 1.0
+  data_placeholder_weight: 0.1
+  beta_distribution_alpha: 2.0
+  manifold_mixup_location: after_layer2

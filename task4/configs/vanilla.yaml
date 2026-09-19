@@ -1,0 +1,8 @@
+base_config: base.yaml
+
+method:
+  name: vanilla
+  run_name: vanilla
+  use_randaugment: false
+  initialize_from_vanilla: false
+  number_of_dummy_classes: 0

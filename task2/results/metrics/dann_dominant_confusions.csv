@@ -1,0 +1,8 @@
+true_class,dominant_confusion,confusion_count
+dog,person,655
+elephant,person,653
+giraffe,person,600
+guitar,person,313
+horse,person,689
+house,elephant,48
+person,elephant,43
