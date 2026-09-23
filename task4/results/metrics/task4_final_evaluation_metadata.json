@@ -1,0 +1,37 @@
+{
+  "unknown_protocol": {
+    "dataset": "CIFAR100",
+    "partition": "test",
+    "selection_source": "ATML-PA1 Task 4 fixed protocol",
+    "examples_per_class": 100,
+    "near": {
+      "expected_count": 800,
+      "classes": {
+        "bus": 13,
+        "pickup_truck": 58,
+        "motorcycle": 48,
+        "tractor": 89,
+        "wolf": 97,
+        "fox": 34,
+        "leopard": 42,
+        "camel": 15
+      }
+    },
+    "far": {
+      "expected_count": 800,
+      "classes": {
+        "bottle": 9,
+        "bowl": 10,
+        "chair": 20,
+        "clock": 22,
+        "keyboard": 39,
+        "mushroom": 51,
+        "sunflower": 82,
+        "wardrobe": 94
+      }
+    }
+  },
+  "number_of_near_unknowns": 800,
+  "number_of_far_unknowns": 800,
+  "lock_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\metrics\\task4_experiment_lock.json"
+}

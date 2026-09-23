@@ -1,0 +1,12 @@
+base_config: base.yaml
+
+method:
+  name: rpl
+  run_name: rpl
+  use_randaugment: false
+  initialize_from_vanilla: false
+  number_of_dummy_classes: 0
+  number_of_reciprocal_points: 1
+  reciprocal_temperature: 1.0
+  open_space_weight: 0.1
+  margin_initial_value: 0.0

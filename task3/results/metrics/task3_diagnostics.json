@@ -1,0 +1,122 @@
+{
+  "erm": {
+    "source_domain_separability": {
+      "accuracy": 0.8538205980066446,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.22877748310565948,
+      "perturbed_loss": 0.6041002869606018,
+      "sharpness_increase": 0.3753228187561035,
+      "gradient_norm": 7.61332893371582,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "dan_dg": {
+    "source_domain_separability": {
+      "accuracy": 0.4485049833887043,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 1.9378433227539062,
+      "perturbed_loss": 1.9438997507095337,
+      "sharpness_increase": 0.006056427955627441,
+      "gradient_norm": 0.2148522436618805,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "sam": {
+    "source_domain_separability": {
+      "accuracy": 0.8538205980066446,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.0743580013513565,
+      "perturbed_loss": 0.1957133263349533,
+      "sharpness_increase": 0.1213553249835968,
+      "gradient_norm": 1.7197571992874146,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "sam_rho_0p01": {
+    "source_domain_separability": {
+      "accuracy": 0.8604651162790697,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.07978134602308273,
+      "perturbed_loss": 0.24965041875839233,
+      "sharpness_increase": 0.169869065284729,
+      "gradient_norm": 2.5357532501220703,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "sam_rho_0p1": {
+    "source_domain_separability": {
+      "accuracy": 0.770764119601329,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.1327425092458725,
+      "perturbed_loss": 0.2314700037240982,
+      "sharpness_increase": 0.09872749447822571,
+      "gradient_norm": 1.6745216846466064,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  }
+}

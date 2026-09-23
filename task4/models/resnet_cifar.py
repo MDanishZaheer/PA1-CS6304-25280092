@@ -7,11 +7,20 @@ import torch
 from torch import nn
 from torchvision.models import resnet18
 
+from task4.methods.rpl import ReciprocalPointHead
+
 
 class CIFARResNet18(nn.Module):
     """Expose known logits, dummy logits, features, and the layer2 mix point."""
 
-    def __init__(self, number_of_known_classes=10, number_of_dummy_classes=0):
+    def __init__(
+        self,
+        number_of_known_classes=10,
+        number_of_dummy_classes=0,
+        number_of_reciprocal_points=0,
+        reciprocal_temperature=1.0,
+        margin_initial_value=0.0,
+    ):
         super().__init__()
         self.number_of_known_classes = int(number_of_known_classes)
         self.number_of_dummy_classes = int(number_of_dummy_classes)
@@ -34,6 +43,16 @@ class CIFARResNet18(nn.Module):
         )
         self.network.maxpool = nn.Identity()
         self.feature_dimension = int(self.network.fc.in_features)
+        self.reciprocal_head = None
+        if int(number_of_reciprocal_points) > 0:
+            self.network.fc = nn.Identity()
+            self.reciprocal_head = ReciprocalPointHead(
+                number_of_classes=self.number_of_known_classes,
+                feature_dimension=self.feature_dimension,
+                number_of_reciprocal_points=number_of_reciprocal_points,
+                temperature=reciprocal_temperature,
+                margin_initial_value=margin_initial_value,
+            )
         if self.number_of_dummy_classes > 0:
             self.dummy_classifier = nn.Linear(
                 self.feature_dimension,
@@ -64,7 +83,10 @@ class CIFARResNet18(nn.Module):
 
     def classify_features(self, features):
         """Apply known and optional dummy classifiers to feature vectors."""
-        known_logits = self.network.fc(features)
+        if self.reciprocal_head is None:
+            known_logits = self.network.fc(features)
+        else:
+            known_logits = self.reciprocal_head(features)
         dummy_logits = None
         if self.dummy_classifier is not None:
             dummy_logits = self.dummy_classifier(features)
@@ -102,6 +124,12 @@ def build_model(configuration, device):
     model = CIFARResNet18(
         number_of_known_classes=model_configuration["number_of_known_classes"],
         number_of_dummy_classes=method["number_of_dummy_classes"],
+        number_of_reciprocal_points=method.get(
+            "number_of_reciprocal_points",
+            0,
+        ),
+        reciprocal_temperature=method.get("reciprocal_temperature", 1.0),
+        margin_initial_value=method.get("margin_initial_value", 0.0),
     ).to(device)
     if model.feature_dimension != model_configuration["feature_dimension"]:
         raise ValueError("The configured feature dimension does not match ResNet-18.")

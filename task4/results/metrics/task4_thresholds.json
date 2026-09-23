@@ -1,0 +1,66 @@
+{
+  "vanilla_msp": {
+    "model": "vanilla",
+    "score": "msp",
+    "threshold": 0.15383133874535457,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "vanilla_mls": {
+    "model": "vanilla",
+    "score": "mls",
+    "threshold": -5.869001364707946,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "vanilla_energy": {
+    "model": "vanilla",
+    "score": "energy",
+    "threshold": -6.0658750076964045,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "vanilla_mahalanobis": {
+    "model": "vanilla",
+    "score": "mahalanobis",
+    "threshold": 2906.797669901136,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "gcsc_mls": {
+    "model": "gcsc",
+    "score": "mls",
+    "threshold": -6.1239283084869385,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "rpl_mls": {
+    "model": "rpl",
+    "score": "mls",
+    "threshold": -7.221278715133667,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "rpl_msp": {
+    "model": "rpl",
+    "score": "msp",
+    "threshold": 0.4879737906315791,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "proser_mls": {
+    "model": "proser",
+    "score": "mls",
+    "threshold": -4.130692124366759,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000
+  },
+  "proser_placeholder": {
+    "model": "proser",
+    "score": "placeholder",
+    "threshold": 2.2147977976030973e-12,
+    "validation_percentile": 95.0,
+    "number_of_validation_examples": 5000,
+    "dummy_calibration_bias": -0.5507381439208985
+  }
+}

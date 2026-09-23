@@ -12,7 +12,7 @@ import yaml
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIRECTORY = Path(__file__).resolve().parent
-AVAILABLE_METHODS = ("vanilla", "gcsc", "proser")
+AVAILABLE_METHODS = ("vanilla", "gcsc", "rpl", "proser")
 KNOWN_CLASSES = [
     "airplane",
     "automobile",
@@ -198,13 +198,19 @@ def validate_task4_config(configuration):
     if method["name"] not in AVAILABLE_METHODS:
         raise ValueError(f"Unknown Task 4 method: {method['name']}")
 
-    if method["name"] in {"vanilla", "gcsc"}:
+    if method["name"] in {"vanilla", "gcsc", "rpl"}:
         if training["learning_rate"] != 0.1 or training["maximum_epochs"] != 100:
-            raise ValueError("Vanilla and GCSC require learning rate 0.1 for 100 epochs.")
+            raise ValueError(
+                "Vanilla, GCSC, and RPL require learning rate 0.1 for 100 epochs."
+            )
         if method["initialize_from_vanilla"] is not False:
-            raise ValueError("Vanilla and GCSC must start from random initialization.")
+            raise ValueError(
+                "Vanilla, GCSC, and RPL must start from random initialization."
+            )
         if method["number_of_dummy_classes"] != 0:
-            raise ValueError("Vanilla and GCSC must have ten output classes.")
+            raise ValueError(
+                "Vanilla, GCSC, and RPL must not use PROSER dummy classes."
+            )
         expected_randaugment = method["name"] == "gcsc"
         if method["use_randaugment"] is not expected_randaugment:
             raise ValueError("Only GCSC may use RandAugment.")
@@ -213,6 +219,13 @@ def validate_task4_config(configuration):
             or method["randaugment_magnitude"] != 9
         ):
             raise ValueError("GCSC requires RandAugment(num_ops=2, magnitude=9).")
+        if method["name"] == "rpl" and (
+            method["number_of_reciprocal_points"] != 1
+            or method["reciprocal_temperature"] != 1.0
+            or method["open_space_weight"] != 0.1
+            or method["margin_initial_value"] != 0.0
+        ):
+            raise ValueError("RPL requires the fixed reciprocal-point settings.")
     else:
         if training["learning_rate"] != 0.001 or training["maximum_epochs"] != 50:
             raise ValueError("PROSER requires learning rate 1e-3 for 50 epochs.")

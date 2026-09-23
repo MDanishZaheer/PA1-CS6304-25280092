@@ -1,0 +1,8 @@
+{
+  "best_vanilla_score": "I expect MLS to give the best overall Vanilla unknown AUROC because an unknown image may still produce a high relative softmax probability, while its maximum raw logit should remain lower than for familiar CIFAR-10 images.",
+  "near_versus_far": "I expect near unknowns to be harder to reject than far unknowns because their semantic and visual features are closer to the CIFAR-10 classes.",
+  "gcsc_effect": "I expect GCSC augmentation to slightly improve closed-set accuracy by learning more robust features, but its MLS open-set improvement may be small because stronger augmentation can also broaden the region treated as known.",
+  "rpl_effect": "I expect RPL to improve unknown rejection by explicitly learning reciprocal points and an open-space margin, although this extra constraint may cause a small decrease in closed-set accuracy.",
+  "proser_effect": "I expect the PROSER placeholder score to reject unknowns better than PROSER MLS because the dummy classifiers are trained to represent unsupported regions, while its known-class accuracy should remain close to Vanilla.",
+  "expected_failure_pattern": "I expect most confidently accepted unknowns to come from the near group, especially vehicles being predicted as automobile or truck and animals being predicted as cat, dog, deer, or horse. Far failures may occur when an object has a familiar texture, color, or background."
+}

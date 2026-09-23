@@ -1,0 +1,543 @@
+{
+  "created_utc": "2026-09-21T15:00:55.773295+00:00",
+  "seed": 6304,
+  "cifar100_used_for_training_selection_scores_or_thresholds": false,
+  "hypotheses": {
+    "best_vanilla_score": "I expect MLS to give the best overall Vanilla unknown AUROC because an unknown image may still produce a high relative softmax probability, while its maximum raw logit should remain lower than for familiar CIFAR-10 images.",
+    "near_versus_far": "I expect near unknowns to be harder to reject than far unknowns because their semantic and visual features are closer to the CIFAR-10 classes.",
+    "gcsc_effect": "I expect GCSC augmentation to slightly improve closed-set accuracy by learning more robust features, but its MLS open-set improvement may be small because stronger augmentation can also broaden the region treated as known.",
+    "rpl_effect": "I expect RPL to improve unknown rejection by explicitly learning reciprocal points and an open-space margin, although this extra constraint may cause a small decrease in closed-set accuracy.",
+    "proser_effect": "I expect the PROSER placeholder score to reject unknowns better than PROSER MLS because the dummy classifiers are trained to represent unsupported regions, while its known-class accuracy should remain close to Vanilla.",
+    "expected_failure_pattern": "I expect most confidently accepted unknowns to come from the near group, especially vehicles being predicted as automobile or truck and animals being predicted as cat, dog, deer, or horse. Far failures may occur when an object has a familiar texture, color, or background."
+  },
+  "runs": {
+    "vanilla": {
+      "checkpoint": {
+        "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\checkpoints\\vanilla_best.pt",
+        "sha256": "09824103ef82cc29d2efda0a51ede81864d848af8b75917e0cd5bf1c38a2f696"
+      },
+      "configuration_sha256": "571881a412ccb26dc449403324dbf313831ce7188996a361e6649ec3119ed29b",
+      "configuration": {
+        "experiment_name": "task4_cifar_open_set_recognition",
+        "seed": 6304,
+        "paths": {
+          "cifar10_directory": "Data/cifar10",
+          "cifar100_directory": "Data/cifar100",
+          "feature_cache_directory": "Data/task4_cache/features",
+          "logits_cache_directory": "Data/task4_cache/logits",
+          "mahalanobis_cache_directory": "Data/task4_cache/mahalanobis",
+          "cifar10_split_file": "task4/data/splits/cifar10_seed6304.json",
+          "unknown_protocol_file": "task4/data/splits/cifar100_fixed_unknowns.json",
+          "results_directory": "task4/results"
+        },
+        "dataset": {
+          "known_name": "CIFAR10",
+          "unknown_name": "CIFAR100",
+          "known_class_names": [
+            "airplane",
+            "automobile",
+            "bird",
+            "cat",
+            "deer",
+            "dog",
+            "frog",
+            "horse",
+            "ship",
+            "truck"
+          ],
+          "near_unknown_classes": [
+            "bus",
+            "pickup_truck",
+            "motorcycle",
+            "tractor",
+            "wolf",
+            "fox",
+            "leopard",
+            "camel"
+          ],
+          "far_unknown_classes": [
+            "bottle",
+            "bowl",
+            "chair",
+            "clock",
+            "keyboard",
+            "mushroom",
+            "sunflower",
+            "wardrobe"
+          ],
+          "train_ratio": 0.9,
+          "validation_ratio": 0.1,
+          "download": true
+        },
+        "transforms": {
+          "image_size": 32,
+          "crop_padding": 4,
+          "random_horizontal_flip": true,
+          "normalization": "cifar10"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained": false,
+          "first_convolution_kernel_size": 3,
+          "first_convolution_stride": 1,
+          "use_initial_max_pool": false,
+          "feature_dimension": 512,
+          "number_of_known_classes": 10
+        },
+        "training": {
+          "optimizer": "sgd",
+          "learning_rate": 0.1,
+          "momentum": 0.9,
+          "weight_decay": 0.0005,
+          "batch_size": 128,
+          "evaluation_batch_size": 256,
+          "maximum_epochs": 100,
+          "scheduler": "cosine",
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "validation_accuracy"
+        },
+        "evaluation": {
+          "threshold_percentile": 95.0,
+          "mahalanobis_epsilon": 1e-06,
+          "energy_temperature": 1.0,
+          "proser_temperature": 1024.0,
+          "minimum_failure_cases_per_group": 3
+        },
+        "method": {
+          "name": "vanilla",
+          "run_name": "vanilla",
+          "use_randaugment": false,
+          "initialize_from_vanilla": false,
+          "number_of_dummy_classes": 0
+        }
+      }
+    },
+    "gcsc": {
+      "checkpoint": {
+        "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\checkpoints\\gcsc_best.pt",
+        "sha256": "f818258e55832a37bd128f783ea39cfa11a81b89dd15203b05bcd80717b48960"
+      },
+      "configuration_sha256": "5dd2a225ba3e132e96c44d7e13bb1577b51fde422244b25811f2d1b5ae13f0f9",
+      "configuration": {
+        "experiment_name": "task4_cifar_open_set_recognition",
+        "seed": 6304,
+        "paths": {
+          "cifar10_directory": "Data/cifar10",
+          "cifar100_directory": "Data/cifar100",
+          "feature_cache_directory": "Data/task4_cache/features",
+          "logits_cache_directory": "Data/task4_cache/logits",
+          "mahalanobis_cache_directory": "Data/task4_cache/mahalanobis",
+          "cifar10_split_file": "task4/data/splits/cifar10_seed6304.json",
+          "unknown_protocol_file": "task4/data/splits/cifar100_fixed_unknowns.json",
+          "results_directory": "task4/results"
+        },
+        "dataset": {
+          "known_name": "CIFAR10",
+          "unknown_name": "CIFAR100",
+          "known_class_names": [
+            "airplane",
+            "automobile",
+            "bird",
+            "cat",
+            "deer",
+            "dog",
+            "frog",
+            "horse",
+            "ship",
+            "truck"
+          ],
+          "near_unknown_classes": [
+            "bus",
+            "pickup_truck",
+            "motorcycle",
+            "tractor",
+            "wolf",
+            "fox",
+            "leopard",
+            "camel"
+          ],
+          "far_unknown_classes": [
+            "bottle",
+            "bowl",
+            "chair",
+            "clock",
+            "keyboard",
+            "mushroom",
+            "sunflower",
+            "wardrobe"
+          ],
+          "train_ratio": 0.9,
+          "validation_ratio": 0.1,
+          "download": true
+        },
+        "transforms": {
+          "image_size": 32,
+          "crop_padding": 4,
+          "random_horizontal_flip": true,
+          "normalization": "cifar10"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained": false,
+          "first_convolution_kernel_size": 3,
+          "first_convolution_stride": 1,
+          "use_initial_max_pool": false,
+          "feature_dimension": 512,
+          "number_of_known_classes": 10
+        },
+        "training": {
+          "optimizer": "sgd",
+          "learning_rate": 0.1,
+          "momentum": 0.9,
+          "weight_decay": 0.0005,
+          "batch_size": 128,
+          "evaluation_batch_size": 256,
+          "maximum_epochs": 100,
+          "scheduler": "cosine",
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "validation_accuracy"
+        },
+        "evaluation": {
+          "threshold_percentile": 95.0,
+          "mahalanobis_epsilon": 1e-06,
+          "energy_temperature": 1.0,
+          "proser_temperature": 1024.0,
+          "minimum_failure_cases_per_group": 3
+        },
+        "method": {
+          "name": "gcsc",
+          "run_name": "gcsc",
+          "use_randaugment": true,
+          "randaugment_number_of_operations": 2,
+          "randaugment_magnitude": 9,
+          "initialize_from_vanilla": false,
+          "number_of_dummy_classes": 0
+        }
+      }
+    },
+    "rpl": {
+      "checkpoint": {
+        "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\checkpoints\\rpl_best.pt",
+        "sha256": "a935a4f32c3e34db093bfb1b29e05b4ea8368a82d6a2750f96a485aa1c7d879d"
+      },
+      "configuration_sha256": "7dcb563dded4624af4c48c31de8cba3f605303349802db90464b484b856d450b",
+      "configuration": {
+        "experiment_name": "task4_cifar_open_set_recognition",
+        "seed": 6304,
+        "paths": {
+          "cifar10_directory": "Data/cifar10",
+          "cifar100_directory": "Data/cifar100",
+          "feature_cache_directory": "Data/task4_cache/features",
+          "logits_cache_directory": "Data/task4_cache/logits",
+          "mahalanobis_cache_directory": "Data/task4_cache/mahalanobis",
+          "cifar10_split_file": "task4/data/splits/cifar10_seed6304.json",
+          "unknown_protocol_file": "task4/data/splits/cifar100_fixed_unknowns.json",
+          "results_directory": "task4/results"
+        },
+        "dataset": {
+          "known_name": "CIFAR10",
+          "unknown_name": "CIFAR100",
+          "known_class_names": [
+            "airplane",
+            "automobile",
+            "bird",
+            "cat",
+            "deer",
+            "dog",
+            "frog",
+            "horse",
+            "ship",
+            "truck"
+          ],
+          "near_unknown_classes": [
+            "bus",
+            "pickup_truck",
+            "motorcycle",
+            "tractor",
+            "wolf",
+            "fox",
+            "leopard",
+            "camel"
+          ],
+          "far_unknown_classes": [
+            "bottle",
+            "bowl",
+            "chair",
+            "clock",
+            "keyboard",
+            "mushroom",
+            "sunflower",
+            "wardrobe"
+          ],
+          "train_ratio": 0.9,
+          "validation_ratio": 0.1,
+          "download": true
+        },
+        "transforms": {
+          "image_size": 32,
+          "crop_padding": 4,
+          "random_horizontal_flip": true,
+          "normalization": "cifar10"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained": false,
+          "first_convolution_kernel_size": 3,
+          "first_convolution_stride": 1,
+          "use_initial_max_pool": false,
+          "feature_dimension": 512,
+          "number_of_known_classes": 10
+        },
+        "training": {
+          "optimizer": "sgd",
+          "learning_rate": 0.1,
+          "momentum": 0.9,
+          "weight_decay": 0.0005,
+          "batch_size": 128,
+          "evaluation_batch_size": 256,
+          "maximum_epochs": 100,
+          "scheduler": "cosine",
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "validation_accuracy"
+        },
+        "evaluation": {
+          "threshold_percentile": 95.0,
+          "mahalanobis_epsilon": 1e-06,
+          "energy_temperature": 1.0,
+          "proser_temperature": 1024.0,
+          "minimum_failure_cases_per_group": 3
+        },
+        "method": {
+          "name": "rpl",
+          "run_name": "rpl",
+          "use_randaugment": false,
+          "initialize_from_vanilla": false,
+          "number_of_dummy_classes": 0,
+          "number_of_reciprocal_points": 1,
+          "reciprocal_temperature": 1.0,
+          "open_space_weight": 0.1,
+          "margin_initial_value": 0.0
+        }
+      }
+    },
+    "proser": {
+      "checkpoint": {
+        "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\checkpoints\\proser_best.pt",
+        "sha256": "0e44e8467c69bbfd82249da24c19402dc3ecd55783b4cc450c4782af8cf95b10"
+      },
+      "configuration_sha256": "9ad2b7e390ac8f9eff53b6159c9efd3b2b23860a30040ebfb38002d4e9b9c1de",
+      "configuration": {
+        "experiment_name": "task4_cifar_open_set_recognition",
+        "seed": 6304,
+        "paths": {
+          "cifar10_directory": "Data/cifar10",
+          "cifar100_directory": "Data/cifar100",
+          "feature_cache_directory": "Data/task4_cache/features",
+          "logits_cache_directory": "Data/task4_cache/logits",
+          "mahalanobis_cache_directory": "Data/task4_cache/mahalanobis",
+          "cifar10_split_file": "task4/data/splits/cifar10_seed6304.json",
+          "unknown_protocol_file": "task4/data/splits/cifar100_fixed_unknowns.json",
+          "results_directory": "task4/results"
+        },
+        "dataset": {
+          "known_name": "CIFAR10",
+          "unknown_name": "CIFAR100",
+          "known_class_names": [
+            "airplane",
+            "automobile",
+            "bird",
+            "cat",
+            "deer",
+            "dog",
+            "frog",
+            "horse",
+            "ship",
+            "truck"
+          ],
+          "near_unknown_classes": [
+            "bus",
+            "pickup_truck",
+            "motorcycle",
+            "tractor",
+            "wolf",
+            "fox",
+            "leopard",
+            "camel"
+          ],
+          "far_unknown_classes": [
+            "bottle",
+            "bowl",
+            "chair",
+            "clock",
+            "keyboard",
+            "mushroom",
+            "sunflower",
+            "wardrobe"
+          ],
+          "train_ratio": 0.9,
+          "validation_ratio": 0.1,
+          "download": true
+        },
+        "transforms": {
+          "image_size": 32,
+          "crop_padding": 4,
+          "random_horizontal_flip": true,
+          "normalization": "cifar10"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained": false,
+          "first_convolution_kernel_size": 3,
+          "first_convolution_stride": 1,
+          "use_initial_max_pool": false,
+          "feature_dimension": 512,
+          "number_of_known_classes": 10
+        },
+        "training": {
+          "optimizer": "sgd",
+          "learning_rate": 0.001,
+          "momentum": 0.9,
+          "weight_decay": 0.0005,
+          "batch_size": 128,
+          "evaluation_batch_size": 256,
+          "maximum_epochs": 50,
+          "scheduler": "cosine",
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "validation_accuracy"
+        },
+        "evaluation": {
+          "threshold_percentile": 95.0,
+          "mahalanobis_epsilon": 1e-06,
+          "energy_temperature": 1.0,
+          "proser_temperature": 1024.0,
+          "minimum_failure_cases_per_group": 3
+        },
+        "method": {
+          "name": "proser",
+          "run_name": "proser",
+          "use_randaugment": false,
+          "initialize_from_vanilla": true,
+          "number_of_dummy_classes": 5,
+          "classifier_placeholder_weight": 1.0,
+          "data_placeholder_weight": 0.1,
+          "beta_distribution_alpha": 2.0,
+          "manifold_mixup_location": "after_layer2"
+        }
+      }
+    }
+  },
+  "files": {
+    "hypotheses": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\metrics\\task4_hypotheses.json",
+      "sha256": "7b72eeb9d733ff885f404e0834338639e901a2a49c8237ce550c8619494f016d"
+    },
+    "thresholds": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\results\\metrics\\task4_thresholds.json",
+      "sha256": "a9736fe97b95f5563cef0fbe78b7acf881e3be720782a3b162cffaeaa759fb8b"
+    },
+    "unknown_protocol": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\data\\splits\\cifar100_fixed_unknowns.json",
+      "sha256": "91681f6fc501e20257edc9f58945e97609d2715aa094d34b5661debe14257357"
+    },
+    "mahalanobis_statistics": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\mahalanobis\\vanilla_statistics.npz",
+      "sha256": "2a63d1a9c4ebd197c09201db53285c682261d1396f403266e324943611c0fb3c"
+    },
+    "score_code/__init__.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\__init__.py",
+      "sha256": "764946f20e58c5bd9cfd8c6915016e5ea2aa0268a72b3d0df0ef98156e3ffa3b"
+    },
+    "score_code/energy.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\energy.py",
+      "sha256": "e0153f48e48eb3f7a997484c8f00e7cef1fc3907f933772f8f7977be99af392d"
+    },
+    "score_code/mahalanobis.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\mahalanobis.py",
+      "sha256": "261d4eac665b65d07c1ca62a749e7cbc514dcc53ff7f323cbaa8e66a892ebca4"
+    },
+    "score_code/mls.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\mls.py",
+      "sha256": "af20dbb882399137227e34346e24ddfd630c7632018b26cbe92a929da5500aaa"
+    },
+    "score_code/msp.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\msp.py",
+      "sha256": "33ccfe481289c8c95b2b9929242eb253aa875f638a1860d3d7b374f05ceba214"
+    },
+    "score_code/proser_placeholder.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\scores\\proser_placeholder.py",
+      "sha256": "27c6bc7c21eeabf2cc8e50201bb3dd53a4a914f9ce1d78d70c8bdee3302b1111"
+    },
+    "decision_code/evaluate_osr.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\evaluation\\evaluate_osr.py",
+      "sha256": "91e64b5460dd5ffd363bfb07179c9b961625f01de8963cba2bb8c6464c11dea9"
+    },
+    "decision_code/extract_outputs.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\evaluation\\extract_outputs.py",
+      "sha256": "e4ef8dc9744a1b405d34068b0bd0bdee9ce25ea734f2564ce5cd3281eb0af1f4"
+    },
+    "decision_code/metrics.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\evaluation\\metrics.py",
+      "sha256": "0cf63724a2006790d25bec5eca6118901c9642901853c67850b99b457f4748cc"
+    },
+    "decision_code/thresholds.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\evaluation\\thresholds.py",
+      "sha256": "784f64bdeed1357d8fce6894f53970581843958d6c977a7b27e3a33c51a5a884"
+    },
+    "decision_code/resnet_cifar.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\models\\resnet_cifar.py",
+      "sha256": "4250a1e5cfaee37a229ed167899d927a8c12ca889dab2ab8877c5eeb37eea1c0"
+    },
+    "decision_code/cifar10.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\data\\cifar10.py",
+      "sha256": "50844ebc1eb90e4a9a76118abbe502f0bb650a8a60a2bd0c69bd155c5ee6ea57"
+    },
+    "decision_code/cifar100_unknowns.py": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task4\\data\\cifar100_unknowns.py",
+      "sha256": "72d69c90f02be317298078b197bb22dab0077f7e9b9b7a4c78089d2fa4cc38ec"
+    },
+    "known_outputs/vanilla/train": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\vanilla_train_outputs.npz",
+      "sha256": "789d10e4ab8004520ae9d07b212c2f680cc00eac9f01cac08a0493a4277a179e"
+    },
+    "known_outputs/vanilla/validation": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\vanilla_validation_outputs.npz",
+      "sha256": "67079789737c230e561c0569f1dfb71840cf8c640d6573546b3b347d319408fc"
+    },
+    "known_outputs/vanilla/test": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\vanilla_test_outputs.npz",
+      "sha256": "205870b1f9ea799e121aa19187685476d2fd9b1202d4759c1ea0013ddcbb3236"
+    },
+    "known_outputs/gcsc/validation": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\gcsc_validation_outputs.npz",
+      "sha256": "92def296a8490b7491eb24fc0e6b779c784f0c6ff04748ea4c7d42d05658c3b4"
+    },
+    "known_outputs/gcsc/test": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\gcsc_test_outputs.npz",
+      "sha256": "8ad6a689a94f742602efc2b42db98bdf037fb3cab3dcd8296ac464732b2c5c59"
+    },
+    "known_outputs/rpl/validation": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\rpl_validation_outputs.npz",
+      "sha256": "2f7ead4d4731e8b4a8a3383d081da94004aabb6ad64ef522a0af1bd3592e08f4"
+    },
+    "known_outputs/rpl/test": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\rpl_test_outputs.npz",
+      "sha256": "e647e779413b90e6c3177d24171b83fb2a8cf4c445c7d167877af24bf41594e4"
+    },
+    "known_outputs/proser/validation": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\proser_validation_outputs.npz",
+      "sha256": "6d83537cb157b9ececc15fee6e2e059a6672f22e2ef20b7ec4be2e602f6ccb35"
+    },
+    "known_outputs/proser/test": {
+      "path": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\Data\\task4_cache\\logits\\proser_test_outputs.npz",
+      "sha256": "1c1d4337fa6ebc46ff162450cf2afaa8a0abdb8d12a0366dd6b9054faa10aabc"
+    }
+  }
+}

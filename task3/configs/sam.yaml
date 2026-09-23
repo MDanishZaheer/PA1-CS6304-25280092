@@ -1,5 +1,8 @@
 base_config: base.yaml
 
+training:
+  mixed_precision: false
+
 method:
   name: sam
   run_name: sam

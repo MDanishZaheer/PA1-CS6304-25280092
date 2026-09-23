@@ -1,0 +1,82 @@
+{
+  "erm": {
+    "largest_improvement": {
+      "class_index": 0,
+      "class_name": "dog",
+      "baseline_source_only_accuracy": 0.14378238341968913,
+      "erm_accuracy": 0.14378238341968913,
+      "accuracy_change": 0.0
+    },
+    "largest_degradation": {
+      "class_index": 6,
+      "class_name": "person",
+      "baseline_source_only_accuracy": 0.88125,
+      "erm_accuracy": 0.88125,
+      "accuracy_change": 0.0
+    }
+  },
+  "dan_dg": {
+    "largest_improvement": {
+      "class_index": 6,
+      "class_name": "person",
+      "baseline_source_only_accuracy": 0.88125,
+      "dan_dg_accuracy": 1.0,
+      "accuracy_change": 0.11875000000000002
+    },
+    "largest_degradation": {
+      "class_index": 5,
+      "class_name": "house",
+      "baseline_source_only_accuracy": 0.8875,
+      "dan_dg_accuracy": 0.0,
+      "accuracy_change": -0.8875
+    }
+  },
+  "sam": {
+    "largest_improvement": {
+      "class_index": 0,
+      "class_name": "dog",
+      "baseline_source_only_accuracy": 0.14378238341968913,
+      "sam_accuracy": 0.47668393782383417,
+      "accuracy_change": 0.33290155440414504
+    },
+    "largest_degradation": {
+      "class_index": 4,
+      "class_name": "horse",
+      "baseline_source_only_accuracy": 0.8321078431372549,
+      "sam_accuracy": 0.5931372549019608,
+      "accuracy_change": -0.23897058823529416
+    }
+  },
+  "sam_rho_0p01": {
+    "largest_improvement": {
+      "class_index": 1,
+      "class_name": "elephant",
+      "baseline_source_only_accuracy": 0.654054054054054,
+      "sam_rho_0p01_accuracy": 0.972972972972973,
+      "accuracy_change": 0.318918918918919
+    },
+    "largest_degradation": {
+      "class_index": 4,
+      "class_name": "horse",
+      "baseline_source_only_accuracy": 0.8321078431372549,
+      "sam_rho_0p01_accuracy": 0.5196078431372549,
+      "accuracy_change": -0.3125
+    }
+  },
+  "sam_rho_0p1": {
+    "largest_improvement": {
+      "class_index": 0,
+      "class_name": "dog",
+      "baseline_source_only_accuracy": 0.14378238341968913,
+      "sam_rho_0p1_accuracy": 0.5816062176165803,
+      "accuracy_change": 0.43782383419689114
+    },
+    "largest_degradation": {
+      "class_index": 2,
+      "class_name": "giraffe",
+      "baseline_source_only_accuracy": 0.5245683930942895,
+      "sam_rho_0p1_accuracy": 0.4395750332005312,
+      "accuracy_change": -0.08499335989375828
+    }
+  }
+}

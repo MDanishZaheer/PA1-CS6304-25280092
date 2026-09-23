@@ -1,0 +1,453 @@
+{
+  "created_utc": "2026-09-20T17:18:47.305912+00:00",
+  "seed": 6304,
+  "target_domain": "sketch",
+  "sketch_used_for_training_or_selection": false,
+  "hypotheses_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task3\\results\\metrics\\task3_hypotheses.json",
+  "hypotheses_sha256": "6ccae57cef747c52fa2d6329030ddcc7aa4d734531568c93498aff644aa8880d",
+  "hypotheses": {
+    "main_methods": "I expect ERM to remain a strong source baseline, while DAN-DG may improve domain invariance by aligning the three source domains but can also lose class information if alignment becomes too strong. SAM is expected to find a flatter solution and generalize better while preserving source classification.",
+    "sam_radius": "I expect a moderate SAM radius to give the best trade-off between source performance and flatness. A very small radius may behave close to ERM, while a large radius may make training difficult and reduce source and Sketch performance.",
+    "task2_vs_task3_dan": "I expect Task 2 DAN to have an advantage because it directly uses unlabeled Sketch examples for alignment. Task 3 DAN-DG only aligns the available source domains, so it may preserve source performance better but cannot directly correct the shift towards Sketch. However, target access alone may not help if the alignment becomes too strong."
+  },
+  "runs": {
+    "erm": {
+      "method": "erm",
+      "run_name": "erm",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task2\\results\\checkpoints\\source_only_best.pt",
+      "checkpoint_sha256": "64f089863fc171878a0a22fafc59a56514b1c25d2fbd7f6fcfc6b39bd68e4fbe",
+      "configuration_sha256": "45eac10685fddc4cd4323fc21ca9fe1cd826b47ece94c92dda4a9ab120adfe99",
+      "configuration": {
+        "experiment_name": "task3_pacs_domain_generalization",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "feature_cache_directory": "Data/task3_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "task2_erm_checkpoint": "task2/results/checkpoints/source_only_best.pt",
+          "task2_erm_history": "task2/results/histories/source_only_history.csv",
+          "task2_final_summary": "task2/results/metrics/task2_final_summary.csv",
+          "task2_metrics_directory": "task2/results/metrics",
+          "results_directory": "task3/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "diagnostics": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "sharpness_examples_per_domain": 32,
+          "sharpness_radius": 0.05
+        },
+        "controlled_study": {
+          "sam_rho_values": [
+            0.01,
+            0.05,
+            0.1
+          ]
+        },
+        "method": {
+          "name": "erm",
+          "run_name": "erm",
+          "trainable": false,
+          "reuse_task2_source_only": true
+        }
+      }
+    },
+    "dan_dg": {
+      "method": "dan_dg",
+      "run_name": "dan_dg",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task3\\results\\checkpoints\\dan_dg_best.pt",
+      "checkpoint_sha256": "ff9fde7b1f5b6340daa72e055d35dca10c7ff7f62c70d7d796dda311982f118b",
+      "configuration_sha256": "109644a5519ece71c38bcaf7e600f7ba524977d35e8ec7ca432a7a28c61e9481",
+      "configuration": {
+        "experiment_name": "task3_pacs_domain_generalization",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "feature_cache_directory": "Data/task3_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "task2_erm_checkpoint": "task2/results/checkpoints/source_only_best.pt",
+          "task2_erm_history": "task2/results/histories/source_only_history.csv",
+          "task2_final_summary": "task2/results/metrics/task2_final_summary.csv",
+          "task2_metrics_directory": "task2/results/metrics",
+          "results_directory": "task3/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": true,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "diagnostics": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "sharpness_examples_per_domain": 32,
+          "sharpness_radius": 0.05
+        },
+        "controlled_study": {
+          "sam_rho_values": [
+            0.01,
+            0.05,
+            0.1
+          ]
+        },
+        "method": {
+          "name": "dan_dg",
+          "run_name": "dan_dg",
+          "trainable": true,
+          "mmd_weight": 1.0,
+          "kernel_bandwidth_multipliers": [
+            0.5,
+            1.0,
+            2.0
+          ]
+        }
+      }
+    },
+    "sam": {
+      "method": "sam",
+      "run_name": "sam",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task3\\results\\checkpoints\\sam_best.pt",
+      "checkpoint_sha256": "f45479f9fc438bf95d3527a11aa5310962779725a3ff28969203e89c2b97c3ce",
+      "configuration_sha256": "624dd329a31d1ba8b5dc4b1db4e0047b94c258fdadfc1d491505951712f28e00",
+      "configuration": {
+        "experiment_name": "task3_pacs_domain_generalization",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "feature_cache_directory": "Data/task3_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "task2_erm_checkpoint": "task2/results/checkpoints/source_only_best.pt",
+          "task2_erm_history": "task2/results/histories/source_only_history.csv",
+          "task2_final_summary": "task2/results/metrics/task2_final_summary.csv",
+          "task2_metrics_directory": "task2/results/metrics",
+          "results_directory": "task3/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "diagnostics": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "sharpness_examples_per_domain": 32,
+          "sharpness_radius": 0.05
+        },
+        "controlled_study": {
+          "sam_rho_values": [
+            0.01,
+            0.05,
+            0.1
+          ]
+        },
+        "method": {
+          "name": "sam",
+          "run_name": "sam",
+          "trainable": true,
+          "rho": 0.05,
+          "adaptive": false
+        }
+      }
+    },
+    "sam_rho_0p01": {
+      "method": "sam",
+      "run_name": "sam_rho_0p01",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task3\\results\\checkpoints\\sam_rho_0p01_best.pt",
+      "checkpoint_sha256": "6656cab5f1d22e67d2dd63968fe299803a1f458775dcda34848d1dbcfb9f9a13",
+      "configuration_sha256": "97bdfb7a3583ac4974dc4e9cbb255522a0136365f19bc4f54e79228373ed9e94",
+      "configuration": {
+        "experiment_name": "task3_pacs_domain_generalization",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "feature_cache_directory": "Data/task3_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "task2_erm_checkpoint": "task2/results/checkpoints/source_only_best.pt",
+          "task2_erm_history": "task2/results/histories/source_only_history.csv",
+          "task2_final_summary": "task2/results/metrics/task2_final_summary.csv",
+          "task2_metrics_directory": "task2/results/metrics",
+          "results_directory": "task3/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "diagnostics": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "sharpness_examples_per_domain": 32,
+          "sharpness_radius": 0.05
+        },
+        "controlled_study": {
+          "sam_rho_values": [
+            0.01,
+            0.05,
+            0.1
+          ]
+        },
+        "method": {
+          "name": "sam",
+          "run_name": "sam_rho_0p01",
+          "trainable": true,
+          "rho": 0.01,
+          "adaptive": false
+        }
+      }
+    },
+    "sam_rho_0p1": {
+      "method": "sam",
+      "run_name": "sam_rho_0p1",
+      "checkpoint_file": "C:\\Users\\DanishZaheer\\Desktop\\LUMS\\Semester_3\\ATML\\PA_1\\task3\\results\\checkpoints\\sam_rho_0p1_best.pt",
+      "checkpoint_sha256": "b5ca8808c7a048b3625cdf0e0cf1d60ded0fd1b2bb486720e72c3c98df2ac154",
+      "configuration_sha256": "80d48119abb466e6a5d9b57e1491a6ec265875315cf8bdb586b937085a5635c6",
+      "configuration": {
+        "experiment_name": "task3_pacs_domain_generalization",
+        "seed": 6304,
+        "paths": {
+          "dataset_directory": "Data/pacs",
+          "feature_cache_directory": "Data/task3_cache/features",
+          "model_cache_directory": "Data/task2_cache/model_weights/torch",
+          "split_file": "shared_task_2and3/splits/pacs_sketch_seed6304.json",
+          "task2_erm_checkpoint": "task2/results/checkpoints/source_only_best.pt",
+          "task2_erm_history": "task2/results/histories/source_only_history.csv",
+          "task2_final_summary": "task2/results/metrics/task2_final_summary.csv",
+          "task2_metrics_directory": "task2/results/metrics",
+          "results_directory": "task3/results"
+        },
+        "dataset": {
+          "name": "PACS",
+          "class_names": [
+            "dog",
+            "elephant",
+            "giraffe",
+            "guitar",
+            "horse",
+            "house",
+            "person"
+          ],
+          "source_domains": [
+            "photo",
+            "art_painting",
+            "cartoon"
+          ],
+          "target_domain": "sketch",
+          "source_train_ratio": 0.8,
+          "source_validation_ratio": 0.2
+        },
+        "transforms": {
+          "resize_size": 256,
+          "crop_size": 224,
+          "random_horizontal_flip": true,
+          "normalization": "imagenet1k_v1"
+        },
+        "model": {
+          "backbone": "resnet18",
+          "pretrained_weights": "IMAGENET1K_V1",
+          "feature_dimension": 512,
+          "number_of_classes": 7,
+          "freeze_batch_norm_statistics": true
+        },
+        "training": {
+          "maximum_epochs": 30,
+          "learning_rate": 0.0001,
+          "weight_decay": 0.0001,
+          "early_stopping_patience": 5,
+          "source_batch_size_per_domain": 8,
+          "evaluation_batch_size": 64,
+          "number_of_workers": 0,
+          "pin_memory": true,
+          "mixed_precision": false,
+          "checkpoint_metric": "mean_source_validation_macro_f1"
+        },
+        "diagnostics": {
+          "logistic_regression_c": 1.0,
+          "diagnostic_train_ratio": 0.7,
+          "sharpness_examples_per_domain": 32,
+          "sharpness_radius": 0.05
+        },
+        "controlled_study": {
+          "sam_rho_values": [
+            0.01,
+            0.05,
+            0.1
+          ]
+        },
+        "method": {
+          "name": "sam",
+          "run_name": "sam_rho_0p1",
+          "trainable": true,
+          "rho": 0.1,
+          "adaptive": false
+        }
+      }
+    }
+  }
+}

@@ -62,11 +62,13 @@ from task4.training.train import (
 SCORE_PLAN = {
     "vanilla": ("msp", "mls", "energy", "mahalanobis"),
     "gcsc": ("mls",),
+    "rpl": ("mls", "msp"),
     "proser": ("mls", "placeholder"),
 }
 KNOWN_CACHE_SPLITS = {
     "vanilla": ("train", "validation", "test"),
     "gcsc": ("validation", "test"),
+    "rpl": ("validation", "test"),
     "proser": ("validation", "test"),
 }
 
@@ -152,7 +154,9 @@ def prepare_known_evaluation(
 ):
     """Freeze CIFAR-10 outputs, statistics, scores, and thresholds before unknowns."""
     if set(configurations) != set(SCORE_PLAN):
-        raise ValueError("Known evaluation requires Vanilla, GCSC, and PROSER configs.")
+        raise ValueError(
+            "Known evaluation requires Vanilla, GCSC, RPL, and PROSER configs."
+        )
     if set(datasets_by_method) != set(configurations):
         raise ValueError("Each Task 4 method requires its known-only dataset mapping.")
     selected_device = select_training_device(device)
@@ -200,7 +204,9 @@ def prepare_known_evaluation(
 
     reference_validation_ids = known_outputs["vanilla"]["validation"]["identifiers"]
     reference_test_ids = known_outputs["vanilla"]["test"]["identifiers"]
-    for method_name in ("gcsc", "proser"):
+    for method_name in configurations:
+        if method_name == "vanilla":
+            continue
         if not np.array_equal(
             reference_validation_ids,
             known_outputs[method_name]["validation"]["identifiers"],
@@ -349,7 +355,7 @@ def _register_locked_file(file_path):
 def create_experiment_lock(configurations, lock_file):
     """Hash models, known outputs, thresholds, scores, protocol, and hypotheses."""
     if set(configurations) != set(SCORE_PLAN):
-        raise ValueError("The Task 4 lock requires Vanilla, GCSC, and PROSER.")
+        raise ValueError("The Task 4 lock requires Vanilla, GCSC, RPL, and PROSER.")
     reference_configuration = configurations["vanilla"]
     paths = get_output_paths(reference_configuration)
     hypotheses_file, hypotheses = _load_completed_hypotheses(
@@ -645,6 +651,8 @@ def run_final_open_set_evaluation(configurations, lock_file, device=None):
     model_comparison_names = {
         "vanilla_mls",
         "gcsc_mls",
+        "rpl_mls",
+        "rpl_msp",
         "proser_mls",
         "proser_placeholder",
     }

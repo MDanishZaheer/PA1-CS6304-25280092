@@ -1,0 +1,7 @@
+identifier,dataset_index,unknown_group,unknown_class,predicted_known_index,unknownness_score,threshold,predicted_known_class
+cifar100_test_00720,720,near,wolf,5,-12.147109985351562,-5.869001364707946,dog
+cifar100_test_04586,4586,near,bus,1,-11.810209274291992,-5.869001364707946,automobile
+cifar100_test_09231,9231,near,wolf,3,-11.766223907470703,-5.869001364707946,cat
+cifar100_test_06297,6297,far,keyboard,2,-13.337425231933594,-5.869001364707946,bird
+cifar100_test_05219,5219,far,mushroom,3,-12.0228910446167,-5.869001364707946,cat
+cifar100_test_07443,7443,far,bottle,3,-12.02127742767334,-5.869001364707946,cat

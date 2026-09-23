@@ -1,0 +1,5 @@
+{
+  "main_methods": "I expect ERM to remain a strong source baseline, while DAN-DG may improve domain invariance by aligning the three source domains but can also lose class information if alignment becomes too strong. SAM is expected to find a flatter solution and generalize better while preserving source classification.",
+  "sam_radius": "I expect a moderate SAM radius to give the best trade-off between source performance and flatness. A very small radius may behave close to ERM, while a large radius may make training difficult and reduce source and Sketch performance.",
+  "task2_vs_task3_dan": "I expect Task 2 DAN to have an advantage because it directly uses unlabeled Sketch examples for alignment. Task 3 DAN-DG only aligns the available source domains, so it may preserve source performance better but cannot directly correct the shift towards Sketch. However, target access alone may not help if the alignment becomes too strong."
+}

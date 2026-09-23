@@ -1,0 +1,143 @@
+{
+  "erm": {
+    "source_metrics": {
+      "domains": {
+        "photo": {
+          "accuracy": 0.9700598802395209,
+          "macro_f1": 0.9686514788424694,
+          "number_of_examples": 334
+        },
+        "art_painting": {
+          "accuracy": 0.9195121951219513,
+          "macro_f1": 0.9161829088719846,
+          "number_of_examples": 410
+        },
+        "cartoon": {
+          "accuracy": 0.9360341151385928,
+          "macro_f1": 0.9406187484731596,
+          "number_of_examples": 469
+        }
+      },
+      "mean_accuracy": 0.9418687301666884,
+      "mean_macro_f1": 0.9418177120625378,
+      "worst_accuracy": 0.9195121951219513,
+      "worst_macro_f1": 0.9161829088719846
+    },
+    "source_domain_separability": {
+      "accuracy": 0.8538205980066446,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.22877748310565948,
+      "perturbed_loss": 0.6041002869606018,
+      "sharpness_increase": 0.3753228187561035,
+      "gradient_norm": 7.61332893371582,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "dan_dg": {
+    "source_metrics": {
+      "domains": {
+        "photo": {
+          "accuracy": 0.25748502994011974,
+          "macro_f1": 0.058503401360544216,
+          "number_of_examples": 334
+        },
+        "art_painting": {
+          "accuracy": 0.21951219512195122,
+          "macro_f1": 0.05142857142857143,
+          "number_of_examples": 410
+        },
+        "cartoon": {
+          "accuracy": 0.17270788912579957,
+          "macro_f1": 0.04207792207792208,
+          "number_of_examples": 469
+        }
+      },
+      "mean_accuracy": 0.21656837139595686,
+      "mean_macro_f1": 0.05066996495567924,
+      "worst_accuracy": 0.17270788912579957,
+      "worst_macro_f1": 0.04207792207792208
+    },
+    "source_domain_separability": {
+      "accuracy": 0.4485049833887043,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 1.9378433227539062,
+      "perturbed_loss": 1.9438997507095337,
+      "sharpness_increase": 0.006056427955627441,
+      "gradient_norm": 0.2148522436618805,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  },
+  "sam": {
+    "source_metrics": {
+      "domains": {
+        "photo": {
+          "accuracy": 0.9700598802395209,
+          "macro_f1": 0.9632207247225806,
+          "number_of_examples": 334
+        },
+        "art_painting": {
+          "accuracy": 0.9341463414634147,
+          "macro_f1": 0.9346841582063258,
+          "number_of_examples": 410
+        },
+        "cartoon": {
+          "accuracy": 0.9552238805970149,
+          "macro_f1": 0.9605355508942371,
+          "number_of_examples": 469
+        }
+      },
+      "mean_accuracy": 0.9531433674333168,
+      "mean_macro_f1": 0.9528134779410479,
+      "worst_accuracy": 0.9341463414634147,
+      "worst_macro_f1": 0.9346841582063258
+    },
+    "source_domain_separability": {
+      "accuracy": 0.8538205980066446,
+      "chance_accuracy": 0.3333333333333333,
+      "balanced_examples_per_domain": 334,
+      "training_examples": 701,
+      "test_examples": 301,
+      "domain_order": [
+        "photo",
+        "art_painting",
+        "cartoon"
+      ],
+      "seed": 6304,
+      "logistic_regression_c": 1.0
+    },
+    "sharpness": {
+      "original_loss": 0.0743580013513565,
+      "perturbed_loss": 0.1957133263349533,
+      "sharpness_increase": 0.1213553249835968,
+      "gradient_norm": 1.7197571992874146,
+      "radius": 0.05,
+      "number_of_examples": 96
+    }
+  }
+}

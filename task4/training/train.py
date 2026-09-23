@@ -1,7 +1,7 @@
 # Name : Muhammad Danish Zaheer Awan
 # REG id : 25280092
 
-"""Train Vanilla, GCSC, and PROSER using CIFAR-10 data only."""
+"""Train Vanilla, GCSC, RPL, and PROSER using CIFAR-10 data only."""
 
 import hashlib
 import random
@@ -23,6 +23,7 @@ from task4.configs.config_loader import (
 )
 from task4.methods.gcsc import calculate_gcsc_loss
 from task4.methods.proser import calculate_proser_loss
+from task4.methods.rpl import calculate_rpl_loss
 from task4.methods.vanilla import calculate_vanilla_loss
 from task4.models.resnet_cifar import build_model
 
@@ -248,6 +249,59 @@ def run_proser_training_epoch(
     return averaged
 
 
+def run_rpl_training_epoch(
+    configuration,
+    model,
+    optimizer,
+    gradient_scaler,
+    training_loader,
+    device,
+):
+    """Run one RPL epoch with reciprocal classification and open-space losses."""
+    use_mixed_precision = bool(
+        configuration["training"]["mixed_precision"] and device.type == "cuda"
+    )
+    metric_names = (
+        "total_loss",
+        "classification_loss",
+        "open_space_loss",
+        "mean_reciprocal_distance",
+        "mean_true_class_margin",
+    )
+    totals = {name: 0.0 for name in metric_names}
+    total_correct = 0
+    total_examples = 0
+    model.train()
+    for batch in training_loader:
+        images = batch["image"].to(device, non_blocking=True)
+        labels = batch["label"].to(device, non_blocking=True)
+        optimizer.zero_grad(set_to_none=True)
+        with torch.autocast(device_type=device.type, enabled=use_mixed_precision):
+            loss_details = calculate_rpl_loss(
+                model,
+                images,
+                labels,
+                configuration,
+            )
+        gradient_scaler.scale(loss_details["total_loss"]).backward()
+        gradient_scaler.step(optimizer)
+        gradient_scaler.update()
+        for metric_name in metric_names:
+            totals[metric_name] += float(
+                loss_details[metric_name].detach().item()
+            ) * len(labels)
+        total_correct += int(
+            (loss_details["known_logits"].argmax(dim=1) == labels).sum().item()
+        )
+        total_examples += int(len(labels))
+    averaged = {
+        name: total / total_examples
+        for name, total in totals.items()
+    }
+    averaged["training_accuracy"] = total_correct / total_examples
+    return averaged
+
+
 def calculate_file_sha256(file_path):
     """Calculate the SHA-256 digest of one model checkpoint."""
     digest = hashlib.sha256()
@@ -382,6 +436,15 @@ def train_task4_method(configuration, datasets, device=None):
         learning_rate = float(optimizer.param_groups[0]["lr"])
         if method_name == "proser":
             training_metrics = run_proser_training_epoch(
+                configuration,
+                model,
+                optimizer,
+                gradient_scaler,
+                training_loader,
+                selected_device,
+            )
+        elif method_name == "rpl":
+            training_metrics = run_rpl_training_epoch(
                 configuration,
                 model,
                 optimizer,
